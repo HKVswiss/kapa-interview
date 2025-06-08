@@ -1,0 +1,18 @@
+from pathlib import Path
+from typing import List
+
+from src.loader.types import LoadedPDF
+
+
+class DirectoryPDFLoader:
+    def __init__(self, path: Path) -> None:
+        self.path = path
+
+    def load(self) -> List[LoadedPDF]:
+        docs = []
+        for p in self.path.glob("*.pdf"):
+            print(f"Loading {p}")
+            with open(p, "rb") as f:
+                print(f"Loading {p.name}")
+                docs.append(LoadedPDF(name=p.name, raw_bytes=f.read()))
+        return docs

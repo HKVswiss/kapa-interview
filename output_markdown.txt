@@ -1,0 +1,328 @@
+ESP8266
+Hardware Design Guidelines version 2.8
+a |
+ESPRESSIF
+
+
+=================== Tables =============================
+
+ESP8266 Hardware Design Guidelines version 2.8 S)) ESPRESSIF L www.espressif.com ===================End Page-0===========================
+
+About This Guide
+This document provides product information of ESP8266EX series, including ESP8266EX
+chip, ESP-LAUNCHER development board and ESP8266EX modules.
+Release Notes
+Date Version Release Notes
+2015.12 V1.3 Initial release.
+2016.01 V1.4 Update Section 1.5.2, Section 1.5.3 and Section 1.6.
+2016.06 V1.5 Update Section 3.1.
+2016.07 V1.6 Update Section 2.1.
+Updated the minimum voltage of ESP8266EX to 2.5V;
+2017.01 V2.0
+Updated Table 1-1.
+Updated the chip's output impedance from 500 to 39+j6 Q;
+2017.04 v2.4 Added a note that the size of ESP-LAUNCHER’s Flash1 and Flash2 is 32
+Mbit;
+Updated Section 1.4.5.
+2017.06 V2.2 Updated Section 1.4.2.
+Updated the name of the document from “ESP8266 System Description”
+to “ESP8266 Hardware Design Guidelines”;
+2018.04 V2.3 Updated all the figures in the document;
+Updated Section 1.4 Schematic Checklist;
+Updated Chapter 3 ESP8266EX Module.
+Updated description in Section 1.4.2 about reset;
+2018.12 V2.4
+Updated formatting.
+2019.10 V2.5 Updated description in Section 1.6.2 about position.
+2019.10 V2.6 Added UART SWAP specifications in Section 1.4.7.
+Updated the flash size in Table 2-1;
+2023.02 V2.7
+Added Documentation Feedback Link.
+Updated the title page and disclaimer page;
+2024.10 V2.8 Updated the Figure 1-3 and Figure 1-8;
+Added description in Section 1.4.7 about UART GPIO configuration.
+
+
+=================== Tables =============================
+
+ESP8266 Hardware Design Guidelines version 2.8 S)) ESPRESSIF L www.espressif.com About This Guide This document provides product information of ESP8266EX series, including ESP8266EX chip, ESP-LAUNCHER development board and ESP8266EX modules. Release Notes Date Version Release Notes 2015.12 V1.3 Initial release. 2016.01 V1.4 Update Section 1.5.2, Section 1.5.3 and Section 1.6. 2016.06 V1.5 Update Section 3.1. 2016.07 V1.6 Update Section 2.1. Updated the minimum voltage of ESP8266EX to 2.5V; 2017.01 V2.0 Updated Table 1-1. Updated the chip's output impedance from 500 to 39+j6 Q; Added a note that the size of ESP-LAUNCHER’s Flash1 and Flash2 is 32 2017.04 V2.4 Mbit; Updated Section 1.4.5. 2017.06 V2.2 Updated Section 1.4.2. Updated the name of the document from “ESP8266 System Description” to “ESP8266 Hardware Design Guidelines”; 2018.04 V2.3 Updated all the figures in the document; Updated Section 1.4 Schematic Checklist; Updated Chapter 3 ESP8266EX Module. Updated description in Section 1.4.2 about reset; 2018.12 V2.4 Updated formatting. 2019.10 V2.5 Updated description in Section 1.6.2 about position. 2019.10 V2.6 Added UART SWAP specifications in Section 1.4.7. 2023.02 V2.7 Updated the flash size in Table 2-1; Added Documentation Feedback Link. Updated the title page and disclaimer page; 2024.10 V2.8 Updated the Figure 1-3 and Figure 1-8; Added description in Section 1.4.7 about UART GPIO configuration. ===================End Page-1===========================
+
+Documentation Change Notification
+Espressif provides email notifications to keep customers updated on changes to
+technical documentation. Please subscribe at httos://www.espressif.com/en/subscribe.
+Certification
+Download certificates for Espressif products from /hitps:/Avww.espressif.com/en/
+certificates.
+
+
+=================== Tables =============================
+
+ESP8266 Hardware Design Guidelines version 2.8 S)) ESPRESSIF L www.espressif.com About This Guide This document provides product information of ESP8266EX series, including ESP8266EX chip, ESP-LAUNCHER development board and ESP8266EX modules. Release Notes Date Version Release Notes 2015.12 V1.3 Initial release. 2016.01 V1.4 Update Section 1.5.2, Section 1.5.3 and Section 1.6. 2016.06 V1.5 Update Section 3.1. 2016.07 V1.6 Update Section 2.1. Updated the minimum voltage of ESP8266EX to 2.5V; 2017.01 V2.0 Updated Table 1-1. Updated the chip's output impedance from 500 to 39+j6 Q; Added a note that the size of ESP-LAUNCHER’s Flash1 and Flash2 is 32 2017.04 V2.4 Mbit; Updated Section 1.4.5. 2017.06 V2.2 Updated Section 1.4.2. Updated the name of the document from “ESP8266 System Description” to “ESP8266 Hardware Design Guidelines”; 2018.04 V2.3 Updated all the figures in the document; Updated Section 1.4 Schematic Checklist; Updated Chapter 3 ESP8266EX Module. Updated description in Section 1.4.2 about reset; 2018.12 V2.4 Updated formatting. 2019.10 V2.5 Updated description in Section 1.6.2 about position. 2019.10 V2.6 Added UART SWAP specifications in Section 1.4.7. 2023.02 V2.7 Updated the flash size in Table 2-1; Added Documentation Feedback Link. Updated the title page and disclaimer page; 2024.10 V2.8 Updated the Figure 1-3 and Figure 1-8; Added description in Section 1.4.7 about UART GPIO configuration. Documentation Change Notification Espressif provides email notifications to keep customers updated on changes to technical documentation. Please subscribe at httos://www.espressif.com/en/subscribe. Certification Download certificates for Espressif products from /hitps:/Avww.espressif.com/en/ certificates. ===================End Page-2===========================
+
+Table of Contents
+
+VA. OVOPVIOW oo ceeeecsccsccesesescstssesesesnsseseessnssescessusseseesssssesesssssssesssussesesesesnessssscsnsasssstsnensecsceneesssseeeeeeeee d
+1.2. Specifications... cece ceccecceeseeseseeseessseeeeeseseeeesesseeecesaeeecaeeaeeecaeeessecaeeesseeeeesaeseeeecateesseeeseaeeeeatee®
+1.3. Pin Definition «00.0... ceesestscesesessesesesesseseseesssescscessesesesesussesesssusnesesssnensssscsnensssscsceesessseenessseseeeeesO
+1.4. Schematic Checklist ........c.ccccccsccccesesseesesssssssseessseesesesesesesssnenesesssenssesssnensssscsceesssseseensssseseeeeesD
+1.4.1. Power Supply ....cccccccccecscccscscscsesesesesesscscscscssscsesessscscseesssssseecesecesessssenesenesssesesesseeeesess sO
+
+1.4.2. Power-on Sequence and Power ReSet.........:.ccecceseseeeeseseeeceseseeeeeeeeeseeeeeeeaeerseeeaeeeeeeeeee®)
+
+DAB. FLAS occ ccececc cece cscs csesesesesecssscscscsssesesesssssscscssscsesesasssececesessssessacecssesssseseeecesssesessaseeeeesesss®
+
+1.4.4. Crystal OSCIator oo. ccc cee eee esesesecscscscsessscsesesscscscscesessssessesecssesseseseseeesesesessaseeeeeseee®
+
+1.4.6. External Resistor 12K ......c.ccsccccccsscsceseseseseeesessenesessseenssesssesnssssssessssscsesessssssesesssseseeeee TO
+
+1.5. Slave SDIO/SPI ......cececeecscecececseseecseecscseseseeecesesecsesassesceeecesessesesaescecesssssseseneescesesitasieteseeeceeeesee TO.
+1.6. PCB Layout DeSign.........c.ccccsesccessscssssssescecececscsessssessececesecsesesasssscesessssesesaescecesssaseeeeesceceeeee TA
+1.6.1. General Principles of PCB Layout DeSign ...........:ccccccccssssseeescseseseesseseneeseesetesesseeeeeeee TA
+
+1.6.2. Positioning a ESP8266EX Module on a Base Board ..........:ccccccceseseseeeeeeseeeeeeeee DD
+
+1.6.3. Standalone ESP8266EX Module ...........cccccsesceeeseeseeeeeseseetsssssseeessssestsesssssseeesssseseeees TO
+
+1.6.4. ESP8266EX as a Slave Device «.......c.cccsscsceeesesceeeseseseeeesesesesesssscsesnsssscsesesssssseeesssseseeeee TD
+
+1.6.5. Typical Layout Problems and Solutions............ccccccccccessseseseesesesessseseseeeeseesssesesseseeeeees2O
+
+1.7. Typical Application ..........ccccsesceeescesecscscsessessesesecscscssessessseseeesesessssasasseecesesassesaneeseesesesasseeeeesl T
+1.7.1. UART to Wi-Fi Smart Device ..........cccccsscscseesescsceeeseseseeessesescsnssssesesnssesssssesnssssceessessseesld
+
+1.7.2. SOMSOF...ceseeesesceseseseeseseseseesesesesenessscsusnesescscsussesesesuesesesesnssssssesssssssesnssssssssnsnsecssssssesesessl T
+
+1.7.3. Smart LIQht ......cccccccccsecececscsescsesesesesesscscscscssscsesesascscscessssesesasasecssesssseeeecesaseseseaseesens 2
+
+1.7.4. Smart PLUG .....ceccccccccesecececscscscsescsesesesscscscscssscsesesasssscecessesesesaasecssessssesesenesscesensaseeeenss 2
+
+2.1. OVOPVIOW u.ececsesesescesesessesesssessenescscsuesesescsnesessseesesesssessnssssesusnssssceusnssssesnsusssscsnsusissesesusisaesssneeeees 2
+2.2. Modules and Interfaces.........c.cscccccccsssesseesssseseenessseeesssssesesnsssseensnssssesessssseensssssesnsssssessaneeses 2
+2.3. SCHEMALICS .......ccceccscceceesssesteseseseseeseseseetenssssessesesssesesnssesesesnsssscensnessscsesusssscsesusessesessessessanseesees lO
+2.3.1. IMLOrPACES ...eeceeeesecccsesessesesesesseeseseseenesesescenssesssesussescsceussessscesssssscsesussssesnsssssscessenesess lO
+
+2.3.2. 5V Power Supply .......cccccccscscscscscseseseeececscssseseeesececesscssseaesssecesesesseseestecesetssieeenseseseeees 2D
+
+2.3.3.  TeSt MOUIE ........sccccccsescseeesessenesessseesescsestensssseseenssescsesussescscensussssceesussssesesssesscssssneseess 2]
+
+
+=================== Tables =============================
+
+ESP8266 Hardware Design Guidelines version 2.8 S)) ESPRESSIF L www.espressif.com About This Guide This document provides product information of ESP8266EX series, including ESP8266EX chip, ESP-LAUNCHER development board and ESP8266EX modules. Release Notes Date Version Release Notes 2015.12 V1.3 Initial release. 2016.01 V1.4 Update Section 1.5.2, Section 1.5.3 and Section 1.6. 2016.06 V1.5 Update Section 3.1. 2016.07 V1.6 Update Section 2.1. Updated the minimum voltage of ESP8266EX to 2.5V; 2017.01 V2.0 Updated Table 1-1. Updated the chip's output impedance from 500 to 39+j6 Q; Added a note that the size of ESP-LAUNCHER’s Flash1 and Flash2 is 32 2017.04 V2.4 Mbit; Updated Section 1.4.5. 2017.06 V2.2 Updated Section 1.4.2. Updated the name of the document from “ESP8266 System Description” to “ESP8266 Hardware Design Guidelines”; 2018.04 V2.3 Updated all the figures in the document; Updated Section 1.4 Schematic Checklist; Updated Chapter 3 ESP8266EX Module. Updated description in Section 1.4.2 about reset; 2018.12 V2.4 Updated formatting. 2019.10 V2.5 Updated description in Section 1.6.2 about position. 2019.10 V2.6 Added UART SWAP specifications in Section 1.4.7. 2023.02 V2.7 Updated the flash size in Table 2-1; Added Documentation Feedback Link. Updated the title page and disclaimer page; 2024.10 V2.8 Updated the Figure 1-3 and Figure 1-8; Added description in Section 1.4.7 about UART GPIO configuration. Documentation Change Notification Espressif provides email notifications to keep customers updated on changes to technical documentation. Please subscribe at httos://www.espressif.com/en/subscribe. Certification Download certificates for Espressif products from /hitps:/Avww.espressif.com/en/ certificates. Table of Contents 1. ESP8266EX 11 Overview 1.2. Specifications 1.3. Pin Definitions .. 1.4. Schematic Checklist 1.4.1 | Power Supply 1.4.2 Power-on Sequence and Power Reset. 1.4.3 Flash ....... 1.4.4 Crystal Oscillator 1.4.5 RF 10 1.4.6 External Resistor 12K 10 1.4.7 UART. 10 1.5. Slave SDIO/SPI 13 1.6. PCB Layout Design 14 1.6.1. General Principles of PCB Layout Design 14 1.6.2 Positioning a ESP8266EX Module on a Base Board 1.6.3 Standalone ESP8266EX Module ... 1.6.4 ESP8266ExX as a Slave Device ... 19 1.6.5 20 Typical Layout Problems and Solutions 21 1.7. Typical Application 1.7.41 UART to Wi-Fi Smart Device 21 1.7.2 Sensor. 21 1.7.3 Smart Light 22 1.7.4 Smart Plug 22 2 ESP-LAUNCHER 23 2.1. Overview 23 2.2. Modules and Interfaces. 23 2.3. Schematics 26 2.3.1. Interfaces 26 2.3.2. 5V Power Supply 27 2.3.3. Test Module 27 ===================End Page-3===========================
+
+MOdUIe .......cscesececeesesessseereassesseseesesesessesesaeseseceesssaesessensassseausseneassseauseaneoesesausesaeassesseasseeaseeeess OO
+3.3. ESP-WROOM-02D/ESP-WROOM-02U .......cccccsccseeseseeeeeeeecseseneeeseececesesseeeteeseeeesesasieeeeeeaeeeeees OO)
+
+
+=================== Tables =============================
+
+ESP8266 Hardware Design Guidelines version 2.8 S)) ESPRESSIF L www.espressif.com About This Guide This document provides product information of ESP8266EX series, including ESP8266EX chip, ESP-LAUNCHER development board and ESP8266EX modules. Release Notes Date Version Release Notes 2015.12 V1.3 Initial release. 2016.01 V1.4 Update Section 1.5.2, Section 1.5.3 and Section 1.6. 2016.06 V1.5 Update Section 3.1. 2016.07 V1.6 Update Section 2.1. Updated the minimum voltage of ESP8266EX to 2.5V; 2017.01 V2.0 Updated Table 1-1. Updated the chip's output impedance from 500 to 39+j6 Q; Added a note that the size of ESP-LAUNCHER’s Flash1 and Flash2 is 32 2017.04 V2.4 Mbit; Updated Section 1.4.5. 2017.06 V2.2 Updated Section 1.4.2. Updated the name of the document from “ESP8266 System Description” to “ESP8266 Hardware Design Guidelines”; 2018.04 V2.3 Updated all the figures in the document; Updated Section 1.4 Schematic Checklist; Updated Chapter 3 ESP8266EX Module. Updated description in Section 1.4.2 about reset; 2018.12 V2.4 Updated formatting. 2019.10 V2.5 Updated description in Section 1.6.2 about position. 2019.10 V2.6 Added UART SWAP specifications in Section 1.4.7. 2023.02 V2.7 Updated the flash size in Table 2-1; Added Documentation Feedback Link. Updated the title page and disclaimer page; 2024.10 V2.8 Updated the Figure 1-3 and Figure 1-8; Added description in Section 1.4.7 about UART GPIO configuration. Documentation Change Notification Espressif provides email notifications to keep customers updated on changes to technical documentation. Please subscribe at httos://www.espressif.com/en/subscribe. Certification Download certificates for Espressif products from /hitps:/Avww.espressif.com/en/ certificates. Table of Contents 1. ESP8266EX 11 Overview 1.2. Specifications 1.3. Pin Definitions .. 1.4. Schematic Checklist 1.4.1 | Power Supply 1.4.2 Power-on Sequence and Power Reset. 1.4.3 Flash ....... 1.4.4 Crystal Oscillator 1.4.5 RF 10 1.4.6 External Resistor 12K 10 1.4.7 UART. 10 1.5. Slave SDIO/SPI 13 1.6. PCB Layout Design 14 1.6.1. General Principles of PCB Layout Design 14 1.6.2 Positioning a ESP8266EX Module on a Base Board 1.6.3 Standalone ESP8266EX Module ... 1.6.4 ESP8266ExX as a Slave Device ... 19 1.6.5 20 Typical Layout Problems and Solutions 21 1.7. Typical Application 1.7.41 UART to Wi-Fi Smart Device 21 1.7.2 Sensor. 21 1.7.3 Smart Light 22 1.7.4 Smart Plug 22 2 ESP-LAUNCHER 23 2.1. Overview 23 2.2. Modules and Interfaces. 23 2.3. Schematics 26 2.3.1. Interfaces 26 2.3.2. 5V Power Supply 27 2.3.3. Test Module 27 Module .... 29 3.1. ESP-WROOM-S2. 29 3.2. ESP-WROOM-02. 3.3. ESP-WROOM-02D/ESP-WROOM-02U 30 ===================End Page-4===========================
+
+1. ESP8266EX
+1. ESP8266EX
+1.1. Overview
+Espressif’s ESP8266EX delivers a highly integrated Wi-Fi SoC solution to meet the
+continuous demand for efficient power usage, compact design and reliable performance in
+the industry.
+With its complete and self-contained Wi-Fi networking capabilities, ESP8266EX can
+perform either as a standalone application, or as a slave to a host MCU. When ESP8266EX
+hosts an application, it promptly boots up from the external flash. The integrated high-
+speed cache optimizes the system's performance and memory.
+Also, ESP8266EX can be applied to any micro-controller design as a Wi-Fi adaptor through
+SPI/SDIO or I2C/UART interfaces.
+Besides the Wi-Fi functionalities, ESP8266EX also integrates an enhanced version of
+Tensilica’s L106 Diamond series 32-bit processor and on-chip SRAM. It can be interfaced
+with external sensors and other devices through the GPIOs, resulting in low development
+cost at early stage and minimum footprint. Software Development Kit (SDK) provides
+sample codes for various applications.
+ESP8266EX integrates antenna switches, RF balun, power amplifier, low-noise receive
+amplifier, filters and power management modules. The compact design minimizes the PCB
+size and the external circuitry.
+ESP8266EX enables sophisticated features, such as:
+« Fast switching between sleep and wake-up modes for efficient energy use;
+¢ Adaptive radio biasing for low-power operation;
+« Advanced signal processing;
+¢ Spur cancellation;
+e Radio co-existence mechanisms for common cellular, Bluetooth, DDR, LVDS, LCD
+interference mitigation.
+Figure 1-1 shows the functional blocks of ESP8266EX.
+1/32
+Espressif Submit Documentation Feedback 2024.10
+
+
+=================== Tables =============================
+
+ESP8266 Hardware Design Guidelines version 2.8 S)) ESPRESSIF L www.espressif.com About This Guide This document provides product information of ESP8266EX series, including ESP8266EX chip, ESP-LAUNCHER development board and ESP8266EX modules. Release Notes Date Version Release Notes 2015.12 V1.3 Initial release. 2016.01 V1.4 Update Section 1.5.2, Section 1.5.3 and Section 1.6. 2016.06 V1.5 Update Section 3.1. 2016.07 V1.6 Update Section 2.1. Updated the minimum voltage of ESP8266EX to 2.5V; 2017.01 V2.0 Updated Table 1-1. Updated the chip's output impedance from 500 to 39+j6 Q; Added a note that the size of ESP-LAUNCHER’s Flash1 and Flash2 is 32 2017.04 V2.4 Mbit; Updated Section 1.4.5. 2017.06 V2.2 Updated Section 1.4.2. Updated the name of the document from “ESP8266 System Description” to “ESP8266 Hardware Design Guidelines”; 2018.04 V2.3 Updated all the figures in the document; Updated Section 1.4 Schematic Checklist; Updated Chapter 3 ESP8266EX Module. Updated description in Section 1.4.2 about reset; 2018.12 V2.4 Updated formatting. 2019.10 V2.5 Updated description in Section 1.6.2 about position. 2019.10 V2.6 Added UART SWAP specifications in Section 1.4.7. 2023.02 V2.7 Updated the flash size in Table 2-1; Added Documentation Feedback Link. Updated the title page and disclaimer page; 2024.10 V2.8 Updated the Figure 1-3 and Figure 1-8; Added description in Section 1.4.7 about UART GPIO configuration. Documentation Change Notification Espressif provides email notifications to keep customers updated on changes to technical documentation. Please subscribe at httos://www.espressif.com/en/subscribe. Certification Download certificates for Espressif products from /hitps:/Avww.espressif.com/en/ certificates. Table of Contents 1. ESP8266EX 11 Overview 1.2. Specifications 1.3. Pin Definitions .. 1.4. Schematic Checklist 1.4.1 | Power Supply 1.4.2 Power-on Sequence and Power Reset. 1.4.3 Flash ....... 1.4.4 Crystal Oscillator 1.4.5 RF 10 1.4.6 External Resistor 12K 10 1.4.7 UART. 10 1.5. Slave SDIO/SPI 13 1.6. PCB Layout Design 14 1.6.1. General Principles of PCB Layout Design 14 1.6.2 Positioning a ESP8266EX Module on a Base Board 1.6.3 Standalone ESP8266EX Module ... 1.6.4 ESP8266ExX as a Slave Device ... 19 1.6.5 20 Typical Layout Problems and Solutions 21 1.7. Typical Application 1.7.41 UART to Wi-Fi Smart Device 21 1.7.2 Sensor. 21 1.7.3 Smart Light 22 1.7.4 Smart Plug 22 2 ESP-LAUNCHER 23 2.1. Overview 23 2.2. Modules and Interfaces. 23 2.3. Schematics 26 2.3.1. Interfaces 26 2.3.2. 5V Power Supply 27 2.3.3. Test Module 27 Module .... 29 3.1. ESP-WROOM-S2. 29 3.2. ESP-WROOM-02. 3.3. ESP-WROOM-02D/ESP-WROOM-02U 30 1. ESP8266EX 1. ESP8266EX 1.1. Overview Espressif’s ESP8266EX delivers a highly integrated Wi-Fi SoC solution to meet the continuous demand for efficient power usage, compact design and reliable performance in the industry. With its complete and self-contained Wi-Fi networking capabilities, ESP8266EX can perform either as a standalone application, or as a slave to a host MCU. When ESP8266EX hosts an application, it promptly boots up from the external flash. The integrated high- speed cache optimizes the system's performance and memory. Also, ESP8266EX can be applied to any micro-controller design as a Wi-Fi adaptor through SPI/SDIO or I2C/UART interfaces. Besides the Wi-Fi functionalities, ESP8266EX also integrates an enhanced version of Tensilica’s L106 Diamond series 32-bit processor and on-chip SRAM. It can be interfaced with external sensors and other devices through the GPIOs, resulting in low development cost at early stage and minimum footprint. Software Development Kit (SDK) provides sample codes for various applications. ESP8266EX integrates antenna switches, RF balun, power amplifier, low-noise receive amplifier, filters and power management modules. The compact design minimizes the PCB size and the external circuitry. ESP8266EX enables sophisticated features, such as: . Fast switching between sleep and wake-up modes for efficient energy use; . Adaptive radio biasing for low-power operation; . Advanced signal processing; . Spur cancellation; . Radio co-existence mechanisms for common cellular, Bluetooth, DDR, LVDS, LCD interference mitigation. Figure 1-1 shows the functional blocks of ESP8266EX. 1/32 Submit Documentation Feedback 2024.10 Espressif ===================End Page-5===========================
+
+1, ESP8266EX
+VY
+RF (&) Analog MAC Interface
+receive <> receive
+= Registers
+glls
+# || 4 E ml
+ms
+ale i =
+RE SO Analog 8
+transmit CS transmit 3
+2 Sequencers
+Accelerator
+PLL (0) 1/2 PLL
+Figure 1-1. ESP8266EX Block Diagram
+1.2. Specifications
+Table 1-1. ESP8266EX Specifications
+Categories Items Parameters
+Standard FCC/CE/TELEC/SRRC.
+Protocols 802.11 b/g/n/e/i
+Frequency Range 2.4 G ~ 2.5 G (2400 M ~ 2483.5 M)
+802.11 b: + 20 dBm
+Tx power 802.11 g: + 17 dBm
+Wi-Fi
+802.11 n: + 14dBm
+802.11 b: -91 dBm (11 Mbps)
+Rx Sensitivity 802.11 g: -75 dBm (54 Mbps)
+802.11 n: -72 dBm (MCS7)
+Antenna on-board, external, IPEX connector, ceramic chip
+UART/SDIO/SPI/I2C/12S/IR Remote Control
+Peripheral interface
+GPIO/PWM
+Operating voltage 25V~3.6V
+Operating current Average: 80 mA.
+Hardware
+Operating temperature range -40 °C ~ 125°C
+Storage temperature range -40 °C ~ 125 °C
+2/32
+Espressif Submit Documentation Feedback 2024.10
+
+
+=================== Tables =============================
+
+ESP8266 Hardware Design Guidelines version 2.8 S)) ESPRESSIF L www.espressif.com About This Guide This document provides product information of ESP8266EX series, including ESP8266EX chip, ESP-LAUNCHER development board and ESP8266EX modules. Release Notes Date Version Release Notes 2015.12 V1.3 Initial release. 2016.01 V1.4 Update Section 1.5.2, Section 1.5.3 and Section 1.6. 2016.06 V1.5 Update Section 3.1. 2016.07 V1.6 Update Section 2.1. Updated the minimum voltage of ESP8266EX to 2.5V; 2017.01 V2.0 Updated Table 1-1. Updated the chip's output impedance from 500 to 39+j6 Q; Added a note that the size of ESP-LAUNCHER’s Flash1 and Flash2 is 32 2017.04 V2.4 Mbit; Updated Section 1.4.5. 2017.06 V2.2 Updated Section 1.4.2. Updated the name of the document from “ESP8266 System Description” to “ESP8266 Hardware Design Guidelines”; 2018.04 V2.3 Updated all the figures in the document; Updated Section 1.4 Schematic Checklist; Updated Chapter 3 ESP8266EX Module. Updated description in Section 1.4.2 about reset; 2018.12 V2.4 Updated formatting. 2019.10 V2.5 Updated description in Section 1.6.2 about position. 2019.10 V2.6 Added UART SWAP specifications in Section 1.4.7. 2023.02 V2.7 Updated the flash size in Table 2-1; Added Documentation Feedback Link. Updated the title page and disclaimer page; 2024.10 V2.8 Updated the Figure 1-3 and Figure 1-8; Added description in Section 1.4.7 about UART GPIO configuration. Documentation Change Notification Espressif provides email notifications to keep customers updated on changes to technical documentation. Please subscribe at httos://www.espressif.com/en/subscribe. Certification Download certificates for Espressif products from /hitps:/Avww.espressif.com/en/ certificates. Table of Contents 1. ESP8266EX 11 Overview 1.2. Specifications 1.3. Pin Definitions .. 1.4. Schematic Checklist 1.4.1 | Power Supply 1.4.2 Power-on Sequence and Power Reset. 1.4.3 Flash ....... 1.4.4 Crystal Oscillator 1.4.5 RF 10 1.4.6 External Resistor 12K 10 1.4.7 UART. 10 1.5. Slave SDIO/SPI 13 1.6. PCB Layout Design 14 1.6.1. General Principles of PCB Layout Design 14 1.6.2 Positioning a ESP8266EX Module on a Base Board 1.6.3 Standalone ESP8266EX Module ... 1.6.4 ESP8266ExX as a Slave Device ... 19 1.6.5 20 Typical Layout Problems and Solutions 21 1.7. Typical Application 1.7.41 UART to Wi-Fi Smart Device 21 1.7.2 Sensor. 21 1.7.3 Smart Light 22 1.7.4 Smart Plug 22 2 ESP-LAUNCHER 23 2.1. Overview 23 2.2. Modules and Interfaces. 23 2.3. Schematics 26 2.3.1. Interfaces 26 2.3.2. 5V Power Supply 27 2.3.3. Test Module 27 Module .... 29 3.1. ESP-WROOM-S2. 29 3.2. ESP-WROOM-02. 3.3. ESP-WROOM-02D/ESP-WROOM-02U 30 1. ESP8266EX 1. ESP8266EX 1.1. Overview Espressif’s ESP8266EX delivers a highly integrated Wi-Fi SoC solution to meet the continuous demand for efficient power usage, compact design and reliable performance in the industry. With its complete and self-contained Wi-Fi networking capabilities, ESP8266EX can perform either as a standalone application, or as a slave to a host MCU. When ESP8266EX hosts an application, it promptly boots up from the external flash. The integrated high- speed cache optimizes the system's performance and memory. Also, ESP8266EX can be applied to any micro-controller design as a Wi-Fi adaptor through SPI/SDIO or I2C/UART interfaces. Besides the Wi-Fi functionalities, ESP8266EX also integrates an enhanced version of Tensilica’s L106 Diamond series 32-bit processor and on-chip SRAM. It can be interfaced with external sensors and other devices through the GPIOs, resulting in low development cost at early stage and minimum footprint. Software Development Kit (SDK) provides sample codes for various applications. ESP8266EX integrates antenna switches, RF balun, power amplifier, low-noise receive amplifier, filters and power management modules. The compact design minimizes the PCB size and the external circuitry. ESP8266EX enables sophisticated features, such as: . Fast switching between sleep and wake-up modes for efficient energy use; . Adaptive radio biasing for low-power operation; . Advanced signal processing; . Spur cancellation; . Radio co-existence mechanisms for common cellular, Bluetooth, DDR, LVDS, LCD interference mitigation. Figure 1-1 shows the functional blocks of ESP8266EX. 1/32 Submit Documentation Feedback 2024.10 Espressif ESP8266EX RE Analog MAC Interface receive receive UART Registers GPIO ‘Switch 12C RF balun CPU RE 128 Analog transmit transmit SDIO Digital baseband Sequencers PWM ‘ADC PLL 1/2 PLL Accelerator SPI PMU Crystal Bias circuits SRAM PMU Flash Figure 1-1. ESP8266EX Block Diagram 1.2. Specifications Table 1-1. ESP8266EX Specifications Items Parameters Categories Standard FCC/CE/TELEC/SRRC. Protocols 802.11 b/g/n/e/i Frequency Range 2.4 G ~ 2.5 G (2400 M ~ 2483.5 M) 802.11 b: + 20 dBm Tx power 802.11 g: + 17 dBm Wi-Fi 802.11 n: + 14dBm 802.11 b -91 dBm (11 Mbps) Rx Sensitivity 802.11 g: -75 dBm (54 Mbps) 802.11 n: -72 dBm (MCS7) Antenna on-board, external, IPEX connector, ceramic chip UART/SDIO/SPI/I2C/12S/IR Remote Control Peripheral interface GPIO/PWM Operating voltage 25V~3.6V Operating current Average: 80 mA. Hardware -40 °C ~ 125°C Operating temperature range Storage temperature range -40 °C ~ 125°C 2/32 Espressif Submit Documentation Feedback 2024.10 ===================End Page-6===========================
+
+1. ESP8266EX
+Categories Items Parameters
+Package size QFN32-pin (5 mm x 5 mm)
+External interface N/A
+Wi-Fi mode Station/SoftAP/SoftAP+Station
+Security WPAVWPA2
+Encryption WEP/TKIP/AES,
+Software Firmware upgrade UART Download/OTA (via network)
+SDK for customized development/cloud server
+Software development
+development
+Network Protocols IPv4, TCP/UDP/HTTP/FTP
+User configuration AT Instruction Set, Cloud Server, Android/ iOS app.
+1.3. Pin Definitions
+The pin layout for the 32-pin QFN package is illustrated in Figure 1-2.
+8 Slo/S/RA/NAla)
+fa) mx ZEaQ
+Zz rN 4 Q 25 xB
+oO 2oOa20
+wr >< 83
+pie z
+in} K
+4 VDDA GPIO5 24
+37] LNA SD_DATA_1 +55
+4°] VDD3P3 SD_DATA_0 57
+5 | VOD3P3 SD_CLK [55
+@ | VDD_RTC SD_CMD }-4g
+7-| TOUT SD_DATA_3 | ag
+3] CHIP_EN SD_DATA_2 | 47
+XPD_DCDC VDDPST
+9
+aor
+2aR5R009
+EPBCPoaa
+S=>52000
+ASE NAS /21o
+Figure 1-2. ESP8266EX Pin Layout
+Table 1-2 lists the definitions and functions of each pin.
+3/32
+Espressif Submit Documentation Feedback 2024.10
+
+
+=================== Tables =============================
+
+ESP8266 Hardware Design Guidelines version 2.8 S)) ESPRESSIF L www.espressif.com About This Guide This document provides product information of ESP8266EX series, including ESP8266EX chip, ESP-LAUNCHER development board and ESP8266EX modules. Release Notes Date Version Release Notes 2015.12 V1.3 Initial release. 2016.01 V1.4 Update Section 1.5.2, Section 1.5.3 and Section 1.6. 2016.06 V1.5 Update Section 3.1. 2016.07 V1.6 Update Section 2.1. Updated the minimum voltage of ESP8266EX to 2.5V; 2017.01 V2.0 Updated Table 1-1. Updated the chip's output impedance from 500 to 39+j6 Q; Added a note that the size of ESP-LAUNCHER’s Flash1 and Flash2 is 32 2017.04 V2.4 Mbit; Updated Section 1.4.5. 2017.06 V2.2 Updated Section 1.4.2. Updated the name of the document from “ESP8266 System Description” to “ESP8266 Hardware Design Guidelines”; 2018.04 V2.3 Updated all the figures in the document; Updated Section 1.4 Schematic Checklist; Updated Chapter 3 ESP8266EX Module. Updated description in Section 1.4.2 about reset; 2018.12 V2.4 Updated formatting. 2019.10 V2.5 Updated description in Section 1.6.2 about position. 2019.10 V2.6 Added UART SWAP specifications in Section 1.4.7. 2023.02 V2.7 Updated the flash size in Table 2-1; Added Documentation Feedback Link. Updated the title page and disclaimer page; 2024.10 V2.8 Updated the Figure 1-3 and Figure 1-8; Added description in Section 1.4.7 about UART GPIO configuration. Documentation Change Notification Espressif provides email notifications to keep customers updated on changes to technical documentation. Please subscribe at httos://www.espressif.com/en/subscribe. Certification Download certificates for Espressif products from /hitps:/Avww.espressif.com/en/ certificates. Table of Contents 1. ESP8266EX 11 Overview 1.2. Specifications 1.3. Pin Definitions .. 1.4. Schematic Checklist 1.4.1 | Power Supply 1.4.2 Power-on Sequence and Power Reset. 1.4.3 Flash ....... 1.4.4 Crystal Oscillator 1.4.5 RF 10 1.4.6 External Resistor 12K 10 1.4.7 UART. 10 1.5. Slave SDIO/SPI 13 1.6. PCB Layout Design 14 1.6.1. General Principles of PCB Layout Design 14 1.6.2 Positioning a ESP8266EX Module on a Base Board 1.6.3 Standalone ESP8266EX Module ... 1.6.4 ESP8266ExX as a Slave Device ... 19 1.6.5 20 Typical Layout Problems and Solutions 21 1.7. Typical Application 1.7.41 UART to Wi-Fi Smart Device 21 1.7.2 Sensor. 21 1.7.3 Smart Light 22 1.7.4 Smart Plug 22 2 ESP-LAUNCHER 23 2.1. Overview 23 2.2. Modules and Interfaces. 23 2.3. Schematics 26 2.3.1. Interfaces 26 2.3.2. 5V Power Supply 27 2.3.3. Test Module 27 Module .... 29 3.1. ESP-WROOM-S2. 29 3.2. ESP-WROOM-02. 3.3. ESP-WROOM-02D/ESP-WROOM-02U 30 1. ESP8266EX 1. ESP8266EX 1.1. Overview Espressif’s ESP8266EX delivers a highly integrated Wi-Fi SoC solution to meet the continuous demand for efficient power usage, compact design and reliable performance in the industry. With its complete and self-contained Wi-Fi networking capabilities, ESP8266EX can perform either as a standalone application, or as a slave to a host MCU. When ESP8266EX hosts an application, it promptly boots up from the external flash. The integrated high- speed cache optimizes the system's performance and memory. Also, ESP8266EX can be applied to any micro-controller design as a Wi-Fi adaptor through SPI/SDIO or I2C/UART interfaces. Besides the Wi-Fi functionalities, ESP8266EX also integrates an enhanced version of Tensilica’s L106 Diamond series 32-bit processor and on-chip SRAM. It can be interfaced with external sensors and other devices through the GPIOs, resulting in low development cost at early stage and minimum footprint. Software Development Kit (SDK) provides sample codes for various applications. ESP8266EX integrates antenna switches, RF balun, power amplifier, low-noise receive amplifier, filters and power management modules. The compact design minimizes the PCB size and the external circuitry. ESP8266EX enables sophisticated features, such as: . Fast switching between sleep and wake-up modes for efficient energy use; . Adaptive radio biasing for low-power operation; . Advanced signal processing; . Spur cancellation; . Radio co-existence mechanisms for common cellular, Bluetooth, DDR, LVDS, LCD interference mitigation. Figure 1-1 shows the functional blocks of ESP8266EX. 1/32 Submit Documentation Feedback 2024.10 Espressif ESP8266EX RE Analog MAC Interface receive receive UART Registers GPIO ‘Switch 12C RF balun CPU RE 128 Analog transmit transmit SDIO Digital baseband Sequencers PWM ‘ADC PLL 1/2 PLL Accelerator SPI PMU Crystal Bias circuits SRAM PMU Flash Figure 1-1. ESP8266EX Block Diagram 1.2. Specifications Table 1-1. ESP8266EX Specifications Items Parameters Categories Standard FCC/CE/TELEC/SRRC. Protocols 802.11 b/g/n/e/i Frequency Range 2.4 G ~ 2.5 G (2400 M ~ 2483.5 M) 802.11 b: + 20 dBm Tx power 802.11 g: + 17 dBm Wi-Fi 802.11 n: + 14dBm 802.11 b -91 dBm (11 Mbps) Rx Sensitivity 802.11 g: -75 dBm (54 Mbps) 802.11 n: -72 dBm (MCS7) Antenna on-board, external, IPEX connector, ceramic chip UART/SDIO/SPI/I2C/12S/IR Remote Control Peripheral interface GPIO/PWM Operating voltage 25V~3.6V Operating current Average: 80 mA. Hardware -40 °C ~ 125°C Operating temperature range Storage temperature range -40 °C ~ 125°C 2/32 Espressif Submit Documentation Feedback 2024.10 1. ESP8266EX Items Parameters Categories Package size QFN32-pin (5 mm x 5 mm) External interface N/A Wi-Fi mode Station/SoftAP/SoftAP+Station WPAVWPA2 Security Encryption WEP/TKIP/AES, Software Firmware upgrade UART Download/OTA (via network) Software development SDK for customized development/cloud server development Network Protocols IPv4, TCP/UDP/HTTP/FTP User configuration AT Instruction Set, Cloud Server, Android/ iOS app 1.3. Pin Definitions The pin layout for the 32-pin QFN package is illustrated in Figure 1-2. 8 | 3/8 GND g ; By — VDDA i nN) 3 ~ Ble lo 8 FS VDD3P3 88 38 3 21 CG] VDD3P3, a! 2 8 () VDD_RTC a 0 Q' 19 TOUT 8 Bi > eBAo ~ CHIP_EN 8 8 3 N = 0) 00) =| x XPD_DCDC <! i g g 1D | 2 ke Figure 1-2. ESP8266EX Pin Layout Table 1-2 lists the definitions and functions of each pin. 3/32 Espressif Submit Documentation Feedback 2024.10 ===================End Page-7===========================
+
+1, ESP8266EX
+Table 1-2. ESP8266EX Pin Definitions
+1 VDDA P Analog Power 2.5 V ~ 3.6 V
+RF antenna interface
+2 LNA vo Chip output impedance = 39 + j6 ©. It is suggested that users
+retain the mt-type matching network which matches the antenna.
+3 VDD3P3 P Amplifier Power 2.5 V ~ 3.6 V
+4 VDD3P3 P Amplifier Power 2.5 V ~ 3.6 V
+5 VDD_RTC. P NC (1.1 V)
+ADC pin. It can be used to test the power-supply voltage of
+6 TOUT | VDD3P3 (Pin3 and Pin4) and the input power voltage of TOUT (Pin
+6). However, these two functions cannot be used simultaneously.
+Chip Enable
+7 CHIP_EN | High: On, chip works properly
+Low: Off, small current consumed
+8 XPD_DCDC vO Deep-sleep wakeup (need to be connected to EXT_RSTB);
+GPIO16
+oI MTMS vO GPIO 14; HSPI_CLK
+10 MTDI vO GPIO 12; HSPI_MISO
+1 VDDPST P Digital/IO Power Supply (1.8 V ~ 3.3 V)
+12 MTCK vO GPIO 13; HSPI_MOSI; UARTO_CTS
+13 MTDO vO GPIO 15; HSPI_CS; UARTO_RTS
+14 GPIO2 vO UART1_TX during flash programming; GPIO2
+15 GPIOO vO GPIOO; SPI_CS2
+16 GPIO4 vO GPIO 4
+17 VDDPST P Digital/IO Power Supply (1.8V ~ 3.3V)
+18 SDIO_DATA_2 vO Connects to SD_D2 (Series R: 200 Q); SPIHD; HSPIHD; GPIO 9
+19 SDIO_DATA_3 vO Connects to SD_D3 (Series R: 200 Q); SPIWP; HSPIWP; GPIO 10
+20 SDIO_CMD vO Connects to SD_CMD (Series R: 200 Q); SPI_CSO; GPIO 11
+a1 SDIO_CLK vO Connects to SD_CLK (Series R: 200 ©); SPILCLK; GPIO 6
+22 SDIO_DATA_O vO Connects to SD_DO (Series R: 200 ©); SPI_MSIO; GPIO 7
+23 SDIO_DATA_1 vO Connects to SD_D1 (Series R: 200 ©); SPI_LMOSI; GPIO 8
+4/32
+Espressif Submit Documentation Feedback 2024.10
+
+
+=================== Tables =============================
+
+ESP8266 Hardware Design Guidelines version 2.8 S)) ESPRESSIF L www.espressif.com About This Guide This document provides product information of ESP8266EX series, including ESP8266EX chip, ESP-LAUNCHER development board and ESP8266EX modules. Release Notes Date Version Release Notes 2015.12 V1.3 Initial release. 2016.01 V1.4 Update Section 1.5.2, Section 1.5.3 and Section 1.6. 2016.06 V1.5 Update Section 3.1. 2016.07 V1.6 Update Section 2.1. Updated the minimum voltage of ESP8266EX to 2.5V; 2017.01 V2.0 Updated Table 1-1. Updated the chip's output impedance from 500 to 39+j6 Q; Added a note that the size of ESP-LAUNCHER’s Flash1 and Flash2 is 32 2017.04 V2.4 Mbit; Updated Section 1.4.5. 2017.06 V2.2 Updated Section 1.4.2. Updated the name of the document from “ESP8266 System Description” to “ESP8266 Hardware Design Guidelines”; 2018.04 V2.3 Updated all the figures in the document; Updated Section 1.4 Schematic Checklist; Updated Chapter 3 ESP8266EX Module. Updated description in Section 1.4.2 about reset; 2018.12 V2.4 Updated formatting. 2019.10 V2.5 Updated description in Section 1.6.2 about position. 2019.10 V2.6 Added UART SWAP specifications in Section 1.4.7. 2023.02 V2.7 Updated the flash size in Table 2-1; Added Documentation Feedback Link. Updated the title page and disclaimer page; 2024.10 V2.8 Updated the Figure 1-3 and Figure 1-8; Added description in Section 1.4.7 about UART GPIO configuration. Documentation Change Notification Espressif provides email notifications to keep customers updated on changes to technical documentation. Please subscribe at httos://www.espressif.com/en/subscribe. Certification Download certificates for Espressif products from /hitps:/Avww.espressif.com/en/ certificates. Table of Contents 1. ESP8266EX 11 Overview 1.2. Specifications 1.3. Pin Definitions .. 1.4. Schematic Checklist 1.4.1 | Power Supply 1.4.2 Power-on Sequence and Power Reset. 1.4.3 Flash ....... 1.4.4 Crystal Oscillator 1.4.5 RF 10 1.4.6 External Resistor 12K 10 1.4.7 UART. 10 1.5. Slave SDIO/SPI 13 1.6. PCB Layout Design 14 1.6.1. General Principles of PCB Layout Design 14 1.6.2 Positioning a ESP8266EX Module on a Base Board 1.6.3 Standalone ESP8266EX Module ... 1.6.4 ESP8266ExX as a Slave Device ... 19 1.6.5 20 Typical Layout Problems and Solutions 21 1.7. Typical Application 1.7.41 UART to Wi-Fi Smart Device 21 1.7.2 Sensor. 21 1.7.3 Smart Light 22 1.7.4 Smart Plug 22 2 ESP-LAUNCHER 23 2.1. Overview 23 2.2. Modules and Interfaces. 23 2.3. Schematics 26 2.3.1. Interfaces 26 2.3.2. 5V Power Supply 27 2.3.3. Test Module 27 Module .... 29 3.1. ESP-WROOM-S2. 29 3.2. ESP-WROOM-02. 3.3. ESP-WROOM-02D/ESP-WROOM-02U 30 1. ESP8266EX 1. ESP8266EX 1.1. Overview Espressif’s ESP8266EX delivers a highly integrated Wi-Fi SoC solution to meet the continuous demand for efficient power usage, compact design and reliable performance in the industry. With its complete and self-contained Wi-Fi networking capabilities, ESP8266EX can perform either as a standalone application, or as a slave to a host MCU. When ESP8266EX hosts an application, it promptly boots up from the external flash. The integrated high- speed cache optimizes the system's performance and memory. Also, ESP8266EX can be applied to any micro-controller design as a Wi-Fi adaptor through SPI/SDIO or I2C/UART interfaces. Besides the Wi-Fi functionalities, ESP8266EX also integrates an enhanced version of Tensilica’s L106 Diamond series 32-bit processor and on-chip SRAM. It can be interfaced with external sensors and other devices through the GPIOs, resulting in low development cost at early stage and minimum footprint. Software Development Kit (SDK) provides sample codes for various applications. ESP8266EX integrates antenna switches, RF balun, power amplifier, low-noise receive amplifier, filters and power management modules. The compact design minimizes the PCB size and the external circuitry. ESP8266EX enables sophisticated features, such as: . Fast switching between sleep and wake-up modes for efficient energy use; . Adaptive radio biasing for low-power operation; . Advanced signal processing; . Spur cancellation; . Radio co-existence mechanisms for common cellular, Bluetooth, DDR, LVDS, LCD interference mitigation. Figure 1-1 shows the functional blocks of ESP8266EX. 1/32 Submit Documentation Feedback 2024.10 Espressif ESP8266EX RE Analog MAC Interface receive receive UART Registers GPIO ‘Switch 12C RF balun CPU RE 128 Analog transmit transmit SDIO Digital baseband Sequencers PWM ‘ADC PLL 1/2 PLL Accelerator SPI PMU Crystal Bias circuits SRAM PMU Flash Figure 1-1. ESP8266EX Block Diagram 1.2. Specifications Table 1-1. ESP8266EX Specifications Items Parameters Categories Standard FCC/CE/TELEC/SRRC. Protocols 802.11 b/g/n/e/i Frequency Range 2.4 G ~ 2.5 G (2400 M ~ 2483.5 M) 802.11 b: + 20 dBm Tx power 802.11 g: + 17 dBm Wi-Fi 802.11 n: + 14dBm 802.11 b -91 dBm (11 Mbps) Rx Sensitivity 802.11 g: -75 dBm (54 Mbps) 802.11 n: -72 dBm (MCS7) Antenna on-board, external, IPEX connector, ceramic chip UART/SDIO/SPI/I2C/12S/IR Remote Control Peripheral interface GPIO/PWM Operating voltage 25V~3.6V Operating current Average: 80 mA. Hardware -40 °C ~ 125°C Operating temperature range Storage temperature range -40 °C ~ 125°C 2/32 Espressif Submit Documentation Feedback 2024.10 1. ESP8266EX Items Parameters Categories Package size QFN32-pin (5 mm x 5 mm) External interface N/A Wi-Fi mode Station/SoftAP/SoftAP+Station WPAVWPA2 Security Encryption WEP/TKIP/AES, Software Firmware upgrade UART Download/OTA (via network) Software development SDK for customized development/cloud server development Network Protocols IPv4, TCP/UDP/HTTP/FTP User configuration AT Instruction Set, Cloud Server, Android/ iOS app 1.3. Pin Definitions The pin layout for the 32-pin QFN package is illustrated in Figure 1-2. 8 | 3/8 GND g ; By — VDDA i nN) 3 ~ Ble lo 8 FS VDD3P3 88 38 3 21 CG] VDD3P3, a! 2 8 () VDD_RTC a 0 Q' 19 TOUT 8 Bi > eBAo ~ CHIP_EN 8 8 3 N = 0) 00) =| x XPD_DCDC <! i g g 1D | 2 ke Figure 1-2. ESP8266EX Pin Layout Table 1-2 lists the definitions and functions of each pin. 3/32 Espressif Submit Documentation Feedback 2024.10 1. ESP8266EX Table 1-2. ESP8266EX Pin Definitions a 1 VDDA p Analog Power 2.5 V ~ 3.6 V RF antenna interface LNA vO Chip output impedance = 39 + j6 Q. It is suggested that users retain the mt-type matching network which matches the antenna. VDD3P3 Amplifier Power 2.5 V ~ 3.6 V VDD3P3 Amplifier Power 2.5 V ~ 3.6 V VDD_RTC. NC (1.1. V) ADC pin. It can be used to test the power-supply voltage of TOUT VDD3P3 (Pin3 and Pin4) and the input power voltage of TOUT (Pin }). However, these two functions cannot be used simultaneously. Chip Enable CHIP_EN High: On, chip works properly Low: Off, small current consumed XPD_DCDC vO Deep-sleep wakeup (need to be connected to EXT_RSTB); GPIO16 MTMS vO GPIO 14; HSPI_CLK 10 MTDI vO GPIO 12; HSPI_MISO an] VDDPST Digital/iO Power Supply (1.8 V ~ 3.3 V) 12 MTCK vO GPIO 13; HSPI_MOSI; UARTO_CTS 13 MTDO vO GPIO 15; HSPI_CS; UARTO_RTS 14 GPIO2 vO UART1_TX during flash programming; GPIO2 15 GPIOO vO GPIOO; SPI_CS2 16 GPIO4 vO GPIO 4 17 VDDPST Digital/iO Power Supply (1.8V ~ 3.3V) 18 SDIO_DATA_2 vO Connects to SD_D2 (Series R: 200 Q); SPIHD; HSPIHD; GPIO 9 19 SDIO_DATA_3 vO Connects to SD_D3 (Series R: 200 Q); SPIWP; HSPIWP; GPIO 10 20 SDIO_CMD vO Connects to SD_CMD (Series R: 200 ©); SPI_CSO; GPIO 11 a1 SDIO_CLK vO Connects to SD_CLK (Series R: 200 ©); SPILCLK; GPIO 6 22 SDIO_DATA_O vO Connects to SD_DO (Series R: 200 ©); SPI_MSIO; GPIO 7 23 SDIO_DATA_1 vO Connects to SD_D1 (Series R: 200 ); SPI_LMOSI; GPIO 8 4/32 Espressif Submit Documentation Feedback 2024.10 ===================End Page-8===========================
+
+1. ESP8266EX
+
+24 GPIOS vO GPIO5
+
+25 UORXD vO UART Rx during flash programming; GPIO 3
+
+26 UOTXD vO UART Tx during flash progamming; GPIO 1; SPI_CS1
+
+27 XTAL_OUT vO Connects to crystal oscillator output, can be used to provide BT
+
+clock input
+
+28 XTAL_IN vO Connects to crystal oscillator input
+
+29 VDDD P Analog Power 2.5 V ~ 3.6 V
+
+30 VDDA P Analog Power 2.5 V ~ 3.6 V
+
+31 RES12K | Serial connection with a 12 kQ resistor and connect to the ground
+32 EXT_RSTB | External reset signal (Low voltage level: Active)
+
+LU Note:
+
+GPIO2, GPIOO, and MTDO are configurable on PCB as the 3-bit strapping register that determines the
+booting mode and the SDIO timing mode.
+
+1.4. Schematic Checklist
+The highly-integrated design of ESP8266EX reduces the number of components required.
+Besides ESP8266Ex, less than 10 resistors and capacitors, one crystal oscillator and one
+SPI flash are needed to make a complete module with wireless communication capability.
+The following is a detailed description of ESP8266EX schematics, and the layout design
+which ensures optimum functionality.
+The complete circuit diagram of ESP8266ExX is illustrated in Figure 1-3.
+5/32
+Espressif Submit Documentation Feedback 2024.10
+
+
+=================== Tables =============================
+
+ESP8266 Hardware Design Guidelines version 2.8 S)) ESPRESSIF L www.espressif.com About This Guide This document provides product information of ESP8266EX series, including ESP8266EX chip, ESP-LAUNCHER development board and ESP8266EX modules. Release Notes Date Version Release Notes 2015.12 V1.3 Initial release. 2016.01 V1.4 Update Section 1.5.2, Section 1.5.3 and Section 1.6. 2016.06 V1.5 Update Section 3.1. 2016.07 V1.6 Update Section 2.1. Updated the minimum voltage of ESP8266EX to 2.5V; 2017.01 V2.0 Updated Table 1-1. Updated the chip's output impedance from 500 to 39+j6 Q; Added a note that the size of ESP-LAUNCHER’s Flash1 and Flash2 is 32 2017.04 V2.4 Mbit; Updated Section 1.4.5. 2017.06 V2.2 Updated Section 1.4.2. Updated the name of the document from “ESP8266 System Description” to “ESP8266 Hardware Design Guidelines”; 2018.04 V2.3 Updated all the figures in the document; Updated Section 1.4 Schematic Checklist; Updated Chapter 3 ESP8266EX Module. Updated description in Section 1.4.2 about reset; 2018.12 V2.4 Updated formatting. 2019.10 V2.5 Updated description in Section 1.6.2 about position. 2019.10 V2.6 Added UART SWAP specifications in Section 1.4.7. 2023.02 V2.7 Updated the flash size in Table 2-1; Added Documentation Feedback Link. Updated the title page and disclaimer page; 2024.10 V2.8 Updated the Figure 1-3 and Figure 1-8; Added description in Section 1.4.7 about UART GPIO configuration. Documentation Change Notification Espressif provides email notifications to keep customers updated on changes to technical documentation. Please subscribe at httos://www.espressif.com/en/subscribe. Certification Download certificates for Espressif products from /hitps:/Avww.espressif.com/en/ certificates. Table of Contents 1. ESP8266EX 11 Overview 1.2. Specifications 1.3. Pin Definitions .. 1.4. Schematic Checklist 1.4.1 | Power Supply 1.4.2 Power-on Sequence and Power Reset. 1.4.3 Flash ....... 1.4.4 Crystal Oscillator 1.4.5 RF 10 1.4.6 External Resistor 12K 10 1.4.7 UART. 10 1.5. Slave SDIO/SPI 13 1.6. PCB Layout Design 14 1.6.1. General Principles of PCB Layout Design 14 1.6.2 Positioning a ESP8266EX Module on a Base Board 1.6.3 Standalone ESP8266EX Module ... 1.6.4 ESP8266ExX as a Slave Device ... 19 1.6.5 20 Typical Layout Problems and Solutions 21 1.7. Typical Application 1.7.41 UART to Wi-Fi Smart Device 21 1.7.2 Sensor. 21 1.7.3 Smart Light 22 1.7.4 Smart Plug 22 2 ESP-LAUNCHER 23 2.1. Overview 23 2.2. Modules and Interfaces. 23 2.3. Schematics 26 2.3.1. Interfaces 26 2.3.2. 5V Power Supply 27 2.3.3. Test Module 27 Module .... 29 3.1. ESP-WROOM-S2. 29 3.2. ESP-WROOM-02. 3.3. ESP-WROOM-02D/ESP-WROOM-02U 30 1. ESP8266EX 1. ESP8266EX 1.1. Overview Espressif’s ESP8266EX delivers a highly integrated Wi-Fi SoC solution to meet the continuous demand for efficient power usage, compact design and reliable performance in the industry. With its complete and self-contained Wi-Fi networking capabilities, ESP8266EX can perform either as a standalone application, or as a slave to a host MCU. When ESP8266EX hosts an application, it promptly boots up from the external flash. The integrated high- speed cache optimizes the system's performance and memory. Also, ESP8266EX can be applied to any micro-controller design as a Wi-Fi adaptor through SPI/SDIO or I2C/UART interfaces. Besides the Wi-Fi functionalities, ESP8266EX also integrates an enhanced version of Tensilica’s L106 Diamond series 32-bit processor and on-chip SRAM. It can be interfaced with external sensors and other devices through the GPIOs, resulting in low development cost at early stage and minimum footprint. Software Development Kit (SDK) provides sample codes for various applications. ESP8266EX integrates antenna switches, RF balun, power amplifier, low-noise receive amplifier, filters and power management modules. The compact design minimizes the PCB size and the external circuitry. ESP8266EX enables sophisticated features, such as: . Fast switching between sleep and wake-up modes for efficient energy use; . Adaptive radio biasing for low-power operation; . Advanced signal processing; . Spur cancellation; . Radio co-existence mechanisms for common cellular, Bluetooth, DDR, LVDS, LCD interference mitigation. Figure 1-1 shows the functional blocks of ESP8266EX. 1/32 Submit Documentation Feedback 2024.10 Espressif ESP8266EX RE Analog MAC Interface receive receive UART Registers GPIO ‘Switch 12C RF balun CPU RE 128 Analog transmit transmit SDIO Digital baseband Sequencers PWM ‘ADC PLL 1/2 PLL Accelerator SPI PMU Crystal Bias circuits SRAM PMU Flash Figure 1-1. ESP8266EX Block Diagram 1.2. Specifications Table 1-1. ESP8266EX Specifications Items Parameters Categories Standard FCC/CE/TELEC/SRRC. Protocols 802.11 b/g/n/e/i Frequency Range 2.4 G ~ 2.5 G (2400 M ~ 2483.5 M) 802.11 b: + 20 dBm Tx power 802.11 g: + 17 dBm Wi-Fi 802.11 n: + 14dBm 802.11 b -91 dBm (11 Mbps) Rx Sensitivity 802.11 g: -75 dBm (54 Mbps) 802.11 n: -72 dBm (MCS7) Antenna on-board, external, IPEX connector, ceramic chip UART/SDIO/SPI/I2C/12S/IR Remote Control Peripheral interface GPIO/PWM Operating voltage 25V~3.6V Operating current Average: 80 mA. Hardware -40 °C ~ 125°C Operating temperature range Storage temperature range -40 °C ~ 125°C 2/32 Espressif Submit Documentation Feedback 2024.10 1. ESP8266EX Items Parameters Categories Package size QFN32-pin (5 mm x 5 mm) External interface N/A Wi-Fi mode Station/SoftAP/SoftAP+Station WPAVWPA2 Security Encryption WEP/TKIP/AES, Software Firmware upgrade UART Download/OTA (via network) Software development SDK for customized development/cloud server development Network Protocols IPv4, TCP/UDP/HTTP/FTP User configuration AT Instruction Set, Cloud Server, Android/ iOS app 1.3. Pin Definitions The pin layout for the 32-pin QFN package is illustrated in Figure 1-2. 8 | 3/8 GND g ; By — VDDA i nN) 3 ~ Ble lo 8 FS VDD3P3 88 38 3 21 CG] VDD3P3, a! 2 8 () VDD_RTC a 0 Q' 19 TOUT 8 Bi > eBAo ~ CHIP_EN 8 8 3 N = 0) 00) =| x XPD_DCDC <! i g g 1D | 2 ke Figure 1-2. ESP8266EX Pin Layout Table 1-2 lists the definitions and functions of each pin. 3/32 Espressif Submit Documentation Feedback 2024.10 1. ESP8266EX Table 1-2. ESP8266EX Pin Definitions a 1 VDDA p Analog Power 2.5 V ~ 3.6 V RF antenna interface LNA vO Chip output impedance = 39 + j6 Q. It is suggested that users retain the mt-type matching network which matches the antenna. VDD3P3 Amplifier Power 2.5 V ~ 3.6 V VDD3P3 Amplifier Power 2.5 V ~ 3.6 V VDD_RTC. NC (1.1. V) ADC pin. It can be used to test the power-supply voltage of TOUT VDD3P3 (Pin3 and Pin4) and the input power voltage of TOUT (Pin }). However, these two functions cannot be used simultaneously. Chip Enable CHIP_EN High: On, chip works properly Low: Off, small current consumed XPD_DCDC vO Deep-sleep wakeup (need to be connected to EXT_RSTB); GPIO16 MTMS vO GPIO 14; HSPI_CLK 10 MTDI vO GPIO 12; HSPI_MISO an] VDDPST Digital/iO Power Supply (1.8 V ~ 3.3 V) 12 MTCK vO GPIO 13; HSPI_MOSI; UARTO_CTS 13 MTDO vO GPIO 15; HSPI_CS; UARTO_RTS 14 GPIO2 vO UART1_TX during flash programming; GPIO2 15 GPIOO vO GPIOO; SPI_CS2 16 GPIO4 vO GPIO 4 17 VDDPST Digital/iO Power Supply (1.8V ~ 3.3V) 18 SDIO_DATA_2 vO Connects to SD_D2 (Series R: 200 Q); SPIHD; HSPIHD; GPIO 9 19 SDIO_DATA_3 vO Connects to SD_D3 (Series R: 200 Q); SPIWP; HSPIWP; GPIO 10 20 SDIO_CMD vO Connects to SD_CMD (Series R: 200 ©); SPI_CSO; GPIO 11 a1 SDIO_CLK vO Connects to SD_CLK (Series R: 200 ©); SPILCLK; GPIO 6 22 SDIO_DATA_O vO Connects to SD_DO (Series R: 200 ©); SPI_MSIO; GPIO 7 23 SDIO_DATA_1 vO Connects to SD_D1 (Series R: 200 ); SPI_LMOSI; GPIO 8 4/32 Espressif Submit Documentation Feedback 2024.10 1. ESP8266EX AP 24 GPIOS vO GPIO5 25 UORXD vO UART Rx during flash programming; GPIO 3 26 UOTXD vO UART Tx during flash progamming; GPIO 1; SPILCS1 27 vO Connects to crystal oscillator output, can be used to provide BT XTAL_OUT clock input 28 XTAL_IN vO Connects to crystal oscillator input 29 VDDD Analog Power 2.5 V ~ 3.6 V 30 VDDA Analog Power 2.5 V ~ 3.6 V 31 RES12K Serial connection with a 12 kQ resistor and connect to the ground 32 EXT_RSTB External reset signal (Low voltage level: Active) LU Note: GPIO2, GPIOO, and MTDO are configurable on PCB as the 3-bit strapping register that determines the booting mode and the SDIO timing mode. 1.4. Schematic Checklist The highly-integrated design of ESP8266EX reduces the number of components required. Besides ESP8266Ex, less than 10 resistors and capacitors, one crystal oscillator and one SPI flash are needed to make a complete module with wireless communication capability. The following is a detailed description of ESP8266EX schematics, and the layout design which ensures optimum functionality. The complete circuit diagram of ESP8266EX is illustrated in Figure 1-3. 5/32 Espressif Submit Documentation Feedback 2024.10 ===================End Page-9===========================
+

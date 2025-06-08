@@ -1,0 +1,14 @@
+Problems:
+    1. scanned doccument is not read in the current setup
+    1. No Image is completely processsed
+
+
+
+
+Thouht process:
+    1. This is not such a realtime application, if there are multiple pdf readers one for text other tables, images, i could ensemble them at page level to make a clean consolidated mardown
+    2. I could use LLM to consolidate in an iterative loop
+    3. its mentioned that gpt4.1 is used does this have multi model capabilities so some question related to image can be ansered
+     
+1. After fixing the pdf reader all the paragraphs of text was corrected. 
+All the question have been answered but page numbers are not coming

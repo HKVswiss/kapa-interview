@@ -1,0 +1,16 @@
+.env
+__pycache__/*
+**/**.pyc
+data/pdfs
+.DS_Store
+.vscode/
+venv/
+.pytest_cache/
+.coverage
+.coverage.*
+.coverage.xml
+.coverage.xml.*
+.coverage.xml.*.*
+.coverage.xml.*.*.*
+.coverage.xml.*.*.*.*
+:memory:/chunks.lance
