@@ -27,30 +27,9 @@ Usage:
 # Core converters (always available)
 from src.converter.base import PDFtoMarkdown
 from src.converter.pymu import PymuConverter
-from src.converter.factory import ConverterFactory, ConverterType
+
 
 __all__ = [
     "PDFtoMarkdown",
     "PymuConverter",
-    "ConverterFactory",
-    "ConverterType",
 ]
-
-# Optional advanced converters
-try:
-    from src.converter.llm_vision_converter import LLMVisionConverter
-    __all__.append("LLMVisionConverter")
-except ImportError:
-    pass
-
-try:
-    from src.converter.hybrid_ocr_converter import HybridOCRConverter
-    __all__.append("HybridOCRConverter")
-except ImportError:
-    pass
-
-try:
-    from src.converter.enhanced_pymu_converter import EnhancedPyMuConverter
-    __all__.append("EnhancedPyMuConverter")
-except ImportError:
-    pass

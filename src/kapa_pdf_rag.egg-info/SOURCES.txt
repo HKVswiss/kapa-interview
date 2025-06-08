@@ -3,6 +3,7 @@ pyproject.toml
 setup.py
 src/agent/__init__.py
 src/agent/rag_agent.py
+src/agent/text_markdown_agent.py
 src/agent/types.py
 src/chunker/__init__.py
 src/chunker/base.py
@@ -16,6 +17,7 @@ src/converter/factory.py
 src/converter/hybrid_ocr_converter.py
 src/converter/llm_vision_converter.py
 src/converter/pymu.py
+src/converter/pymu_hybrid_withpages.py
 src/kapa_pdf_rag.egg-info/PKG-INFO
 src/kapa_pdf_rag.egg-info/SOURCES.txt
 src/kapa_pdf_rag.egg-info/dependency_links.txt
@@ -28,3 +30,4 @@ src/vector_store/__init__.py
 src/vector_store/in_memory.py
 src/vector_store/schema.py
 tests/test_pdf_to_md_conversion.py
+tests/test_pdf_to_md_conversion_hybrid_withpages.py

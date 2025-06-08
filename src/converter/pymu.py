@@ -17,7 +17,7 @@ class PymuConverter(PDFtoMarkdown):
     def convert(self, doc: LoadedPDF) -> str:
         try:
             # First try pymupdf4llm's markdown conversion
-            markdown = self._handle_scanned_pdf_enhanced(doc)
+            markdown = self._handle_normal_pdf(doc)
             if markdown and markdown.strip():
                 return markdown
 

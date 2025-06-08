@@ -15,7 +15,7 @@ from src.vector_store.in_memory import InMemoryVectorStore
 from src.agent.types import Document
 
 DEFAULT_MODEL = os.getenv("OPENAI_MODEL", "gpt-4.1-mini-2025-04-14")
-TOP_K = int(os.getenv("TOP_K", "3"))
+TOP_K = int(os.getenv("TOP_K", "5"))
 
 logger = logging.getLogger(__name__)
 
@@ -61,12 +61,10 @@ class RAGAgent:
         Re-runs are additive; call `self.store.reset()` outside if needed.
         """
         for doc in self.loader.load():
-            print(self._docs.keys())
 
             if doc.name in self._docs:  # skip duplicates
                 continue
-            # if "21098-ESPS2WROOM-scan" in doc.name:
-            #    breakpoint()
+
             markdown = self.converter.convert(doc)
             chunks = self.chunker.split(markdown)
 
@@ -100,4 +98,5 @@ class RAGAgent:
             messages=[{"role": "user", "content": prompt}],
             temperature=0.2,
         )
+
         return completion.choices[0].message.content.strip(), matches

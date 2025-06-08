@@ -11,8 +11,6 @@ class DirectoryPDFLoader:
     def load(self) -> List[LoadedPDF]:
         docs = []
         for p in self.path.glob("*.pdf"):
-            print(f"Loading {p}")
             with open(p, "rb") as f:
-                print(f"Loading {p.name}")
                 docs.append(LoadedPDF(name=p.name, raw_bytes=f.read()))
         return docs

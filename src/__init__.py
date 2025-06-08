@@ -23,11 +23,11 @@ Quick Start:
 """
 
 # Main components
-from .agent.rag_agent import RAGAgent
-from .converter.factory import ConverterFactory
-from .loader.pdf_loader import DirectoryPDFLoader
-from .chunker.markdown_section_chunker import MarkdownSectionChunker
-from .vector_store.in_memory import InMemoryVectorStore
+from src.agent.rag_agent import RAGAgent
+
+from src.loader.pdf_loader import DirectoryPDFLoader
+from src.chunker.markdown_section_chunker import MarkdownSectionChunker
+from src.vector_store.in_memory import InMemoryVectorStore
 
 # Common types
 from src.loader.types import LoadedPDF
@@ -42,18 +42,14 @@ from src.chunker.base import BaseChunker
 __all__ = [
     # Core RAG
     "RAGAgent",
-    "ConverterFactory",
-
     # Components
     "DirectoryPDFLoader",
     "MarkdownSectionChunker",
     "InMemoryVectorStore",
-
     # Types
     "LoadedPDF",
     "Chunk",
     "Document",
-
     # Base classes
     "PDFtoMarkdown",
     "PymuConverter",
@@ -61,23 +57,6 @@ __all__ = [
 ]
 
 # Optional advanced converters
-try:
-    from src.converter.llm_vision_converter import LLMVisionConverter
-    __all__.append("LLMVisionConverter")
-except ImportError:
-    pass
-
-try:
-    from src.converter.hybrid_ocr_converter import HybridOCRConverter
-    __all__.append("HybridOCRConverter")
-except ImportError:
-    pass
-
-try:
-    from src.converter.enhanced_pymu_converter import EnhancedPyMuConverter
-    __all__.append("EnhancedPyMuConverter")
-except ImportError:
-    pass
 
 # Version info
 __version__ = "0.1.0"

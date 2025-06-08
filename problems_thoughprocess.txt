@@ -1,14 +1,44 @@
-Problems:
-    1. scanned doccument is not read in the current setup
-    1. No Image is completely processsed
+
+Initial thoughts:
+    Problems:
+        1. scanned doccument is not read in the current setup
+        1. No Image is completely processsed
+        
+
+    Thouht process:
+        1. This is not such a realtime application, if there are multiple pdf readers one for text other tables, images, i could ensemble them at page level to make a clean consolidated mardown
+        2. I could use LLM to consolidate in an iterative loop
+        3. its mentioned that gpt4.1 is used does this have multi model capabilities so some question related to image can be ansered
+        
+    1. After fixing the pdf reader all the paragraphs of text was corrected. 
+    All the question have been answered but page numbers are not coming
 
 
+Final solution: and though process
+    Major problems:
+        1. Scanned doccuments are not at all read thats why all the question related to `21098-ESPS2WROOM-scan.pdf` are completely un naswered. 
+        ``` bash
+        pdf = pymupdf.open(stream=doc.raw_bytes, filetype="pdf")
+        markdown = pymupdf4llm.to_markdown(pdf, page_chunks=False)
+        ``` 
+        sol: 
+            1. The above comands completely ignore the scanned doccuments this will be fixed by using fitz package. 
+            2. The intial solution was to explore the usage of fitz package. 
+            3. `pymupdf` is processiing the plane text and this is usefult to create headdings this is later used for chunking and better chunks gives better retrival.
+            4. Though the solution wit `fitz` is working most of the time but it also retrives tables but the table is not human readable, this needs additional retrival to get proper tables. 
 
-
-Thouht process:
-    1. This is not such a realtime application, if there are multiple pdf readers one for text other tables, images, i could ensemble them at page level to make a clean consolidated mardown
-    2. I could use LLM to consolidate in an iterative loop
-    3. its mentioned that gpt4.1 is used does this have multi model capabilities so some question related to image can be ansered
-     
-1. After fixing the pdf reader all the paragraphs of text was corrected. 
-All the question have been answered but page numbers are not coming
+        2. Hybrid pdf to markdown converter with LLM rendering:
+            for every page:
+                1. The proposed solution uses `pymupdf` for paragraphs. 
+                2. `fitz` for tables. 
+                3. The retrived text from above two steps aligned is given to LLM proper mark down format. 
+                4. Processed files are stored in `data/processed_pages/llm`.
+                5. This approach gives humn readable mark down format. 
+        
+        3. All the questions are answered but 
+            "What is the **maximum storage temperature** for EFM8BB3?" the model failed to retrive the conext
+            Even though the information is present in table the model failed to retrive, this was solved by increasing top_k from 3 to 5. 
+        
+        4. Additionally two extra flags are added to streamlit.
+            1. "Number of chunks to retrieve" -- will be used as top_k in RAG
+            2. "use LLM refinement" -- if this flag is set the model uses llm for refining the ouput from pymupdf+fitz
