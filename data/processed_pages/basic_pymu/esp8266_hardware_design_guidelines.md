@@ -318,11 +318,11 @@ Espressif
 
 
 
-
 |Col1|Col2|Col3|Col4|Col5|
 |---|---|---|---|---|
 ||||||
 |31|30|29|28|27|
+
 
 
 
@@ -362,13 +362,15 @@ Power supply
 
 Power-on sequence and reset
 
+
+
 Flash
 
 - Crystal osci ~~l~~ lator
 
-RF
 
 
+         RF
 
          External resistor
 
@@ -468,6 +470,8 @@ at least 200 μs.
 
 We recommend that you use CHIP_EN, instead of EXT_RSTB, to reset the chip.
 
+
+
 1.4.3. Flash
 
 The demo flflash used on ESP8266EX is an SPI Flash with 2-MB ROM in an SOP8 (208 mil)
@@ -510,8 +514,6 @@ Figure 1-6. ESP8266EX Flash
 
 ESP8266EX can support 40 MHz, 26 MHz and 24 MHz crystal oscillators.Please select the
 right type of crystal oscillator that is used in the ESP Flash Download Tool. In circuit design,
-
-
 
 
 
@@ -606,12 +608,15 @@ See Figure 1-10c.
 11/32
 *[Submit Documentation Feedback](https://www.espressif.com/en/company/documents/documentation_feedback?docId=2667&sections=&version=2.8)* 2024.10
 
-Espressif
-
-
 1. ESP8266EX
 
+
 Figure 1-10c. UART Voltage-level Switch circuit
+
+
+
+Espressif
+
 
 When using the AT fifirmware, please note that the UART GPIO is already confifigured (refer to
 *[Hardware Connection](https://docs.espressif.com/projects/esp-at/en/release-v2.2.0.0_esp8266/Get_Started/Hardware_connection.html)* ). It is recommended to use the default confifiguration.
@@ -1256,16 +1261,15 @@ switch of GPIO0 inwards to enable UART Download mode;
 
 
 
-
-
-
-Espressif
-
-
 Figure 2-2. ESP-LAUNCHER Interface
 
 26/32
 *[Submit Documentation Feedback](https://www.espressif.com/en/company/documents/documentation_feedback?docId=2667&sections=&version=2.8)* 2024.10
+
+
+
+
+Espressif
 
 2.3.2. 5V Power Supply
 
@@ -1282,8 +1286,8 @@ Figure 2-2. ESP-LAUNCHER Interface
 
 
 
-2.3.3. Test Module
 
+2.3.3. Test Module
 
 
 
@@ -1326,6 +1330,7 @@ Figure 2-3. ESP-LAUNCHER 5V Power Supply Schematics
 
 
 
+
 ||Col2|
 |---|---|
 |||
@@ -1333,6 +1338,7 @@ Figure 2-3. ESP-LAUNCHER 5V Power Supply Schematics
 ||Col2|
 |---|---|
 |||
+
 
 
 
@@ -1364,6 +1370,7 @@ connected to the test board via the SMA antenna connector. The 2.54 mm pin heade
 makes test and development easy and convenient when using a breadboard.
 
 Figure 2-5. ESP-LAUNCHER Test Board
+
 
 
 
@@ -1442,6 +1449,9 @@ Figure 2-5. ESP-LAUNCHER Test Board
 || |
 |||
 
+
+
+
 |��|���� �|
 |---|---|
 || |
@@ -1487,6 +1497,13 @@ Figure 2-5. ESP-LAUNCHER Test Board
 || |
 |||
 
+
+
+
+
+
+
+
 |��|������ �|
 |---|---|
 || |
@@ -1506,13 +1523,6 @@ Figure 2-5. ESP-LAUNCHER Test Board
 |---|---|
 || |
 |||
-
-
-
-
-
-
-
 
 
 

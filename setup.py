@@ -12,6 +12,7 @@ with open("requirements.txt") as f:
 setup(
     name="kapa-pdf-rag",
     version="0.1.0",
+    package_dir={"": "src"},
     packages=find_namespace_packages(where="src", include=["*"]),
     install_requires=requirements,
     python_requires=">=3.8",

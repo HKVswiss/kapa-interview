@@ -76,7 +76,6 @@ accurate to ±2%
 
 
 
-
 **Lowest power mode with peripheral operational:**
 
 **Normal** **Idle** **Suspend** **Snooze** **Shutdown**
@@ -2053,6 +2052,7 @@ VDD
 
 
 
+
 **Figure 5.2. Debug Connection Diagram**
 
 **5.3 Other Connections**
@@ -2071,6 +2071,11 @@ Pin Definitions
 **6. Pin Definitions**
 
 **6.1 EFM8BB3x-QFN32 and EFM8BB3x-5QFN32 Pin Definitions**
+
+
+P1.1
+
+P1.2
 
 
 P1.6
@@ -2098,11 +2103,6 @@ P3.2
 
 
 
-P1.1
-
-P1.2
-
-
 
 
 P1.3
@@ -2110,6 +2110,7 @@ P1.3
 P1.4
 
 P1.5
+
 
 
 
@@ -2419,7 +2420,6 @@ P1.4
 **Figure 6.3. EFM8BB3x-QFN24 (QFN24-GI) and EFM8BB3x-4QFN24 (QFN24-AI) Pinout**
 
 **Table 6.3. Pin Definitions for EFM8BB3x-QFN24 (QFN24-GI) and EFM8BB3x-4QFN24 (QFN24-AI)**
-
 
 
 

@@ -1,8 +1,8 @@
 services:
   app:
     build: .
-    container_name: streamlit_app
-    image: app
+    container_name: kapa-pdf-rag
+    image: kapa-pdf-rag:latest
     ports:
       - "8501:8501"
     volumes:

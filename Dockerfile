@@ -7,17 +7,15 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 WORKDIR /workspace
 
-# Copy requirements and setup first for better caching
-COPY requirements.txt setup.py ./
-COPY src ./src
-
-# Install dependencies and package in development mode
+# Copy requirements first for better caching
+COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
-RUN pip install -e .
 
-# Copy source, ui, and sample data
-COPY app ./app
-COPY data ./data
+# Copy the whole project for development installation
+COPY . .
+
+# Install the package in development mode
+RUN pip install -e .
 
 EXPOSE 8501
 

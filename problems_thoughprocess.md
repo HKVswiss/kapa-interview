@@ -109,6 +109,9 @@ I have edited the Streamlit app to add extra variables:
    - **basic_pymu:** The maximum storage temperature for EFM8BB3 is 150°C.
    - **no_llm_refinement:** The maximum storage temperature for the EFM8BB3 is 150 °C.
    - **llm_refinement:** The maximum storage temperature for EFM8BB3 is 150 °C.
+   - **llm_refinement (top_k: 3):** The provided context does not contain information about the maximum storage temperature for the EFM8BB3.
+
+
 
 9. **How many multi-function I/O pins does EFM8BB3 have?**
    - **basic_pymu:** EFM8BB3 has 28 multifunction I/O pins in the QFP32 package.

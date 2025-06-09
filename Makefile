@@ -1,6 +1,9 @@
 default: help
-.PHONY: install test lint format clean docker-clean docker-build docker-up docker-down docker-shell
+
+# Project configuration
+PROJECT_NAME := kapa-pdf-rag
 PYTHON ?= python3
+.PHONY: install test lint format clean docker-clean docker-build docker-up docker-down docker-shell
 
 # Local development
 install:
@@ -9,7 +12,7 @@ install:
 	$(PYTHON) -m pip install -e .
 
 run:
-	streamlit run app/streamlit_app.py --logger.level=info
+	PYTHONPATH=. streamlit run app/streamlit_app.py --logger.level=info
 
 format:
 	isort src app
@@ -34,17 +37,15 @@ docker-logs:
 	docker compose logs -f
 
 docker-shell:
-	docker compose exec app bash
+	docker compose exec $(PROJECT_NAME) bash
 
 docker-restart: docker-down docker-up
 
 docker-clean:
-	docker compose down --remove-orphans
-	docker image prune -f
-	docker system prune -f --volumes
-	docker builder prune -a -f
+	docker compose down --remove-orphans -v
+	docker images --filter=reference='$(PROJECT_NAME)*' -q | xargs -r docker rmi
 
-# Combined operations
+# Combined operations (shortcuts)
 build: docker-build
 
 up: docker-up
@@ -58,17 +59,19 @@ restart: docker-restart
 logs: docker-logs
 
 help:
-	@echo "Available commands:"
-	@echo "  install       - Install dependencies locally"
-	@echo "  run           - Run streamlit locally"
-	@echo "  format        - Format code with black and isort"
-	@echo "  clean         - Clean up Python cache files"
+	@echo "$(PROJECT_NAME) - Available commands:"
 	@echo ""
-	@echo "Docker operations:"
-	@echo "  build         - Build Docker image"
-	@echo "  up            - Start containers"
-	@echo "  down          - Stop containers"
-	@echo "  restart       - Restart containers"
-	@echo "  shell         - Open shell in container"
-	@echo "  logs          - Show container logs"
-	@echo "  docker-clean  - Clean up Docker resources"
+	@echo "Local Development:"
+	@echo "  install       - Install dependencies locally"
+	@echo "  run          - Run streamlit locally"
+	@echo "  format       - Format code with black and isort"
+	@echo "  clean        - Clean up Python cache files"
+	@echo ""
+	@echo "Docker Operations:"
+	@echo "  build        - Build $(PROJECT_NAME) Docker image"
+	@echo "  up           - Start $(PROJECT_NAME) containers"
+	@echo "  down         - Stop $(PROJECT_NAME) containers"
+	@echo "  restart      - Restart containers"
+	@echo "  shell        - Open shell in container"
+	@echo "  logs         - Show container logs"
+	@echo "  docker-clean - Clean up $(PROJECT_NAME) Docker resources"
