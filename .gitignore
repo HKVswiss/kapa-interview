@@ -1,7 +1,6 @@
 .env
 __pycache__/*
 **/**.pyc
-data/pdfs
 .DS_Store
 .vscode/
 venv/
