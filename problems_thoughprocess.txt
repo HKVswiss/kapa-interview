@@ -1,0 +1,155 @@
+
+Initial thoughts:
+    Problems:
+        1. scanned doccument is not read in the current setup
+        1. No Image is completely processsed
+        2. name of this pdf is wrongly mentioned `esp8266-technical_reference_en.pdf` its `21098-ESPS2WROOM-scan.pdf`
+
+    Thouht process:
+        1. This is not such a realtime application, if there are multiple pdf readers one for text other tables, images, i could ensemble them at page level to make a clean consolidated mardown
+        2. I could use LLM to consolidate in an iterative loop
+        3. its mentioned that gpt4.1 is used does this have multi model capabilities so some question related to image can be ansered
+        
+    1. After fixing the pdf reader all the paragraphs of text was corrected. 
+    All the question have been answered but page numbers are not coming
+
+
+Final solution: and though process
+    Major problems:
+        1. Scanned doccuments are not at all read thats why all the question related to `21098-ESPS2WROOM-scan.pdf` are completely un naswered. 
+        ``` bash
+        pdf = pymupdf.open(stream=doc.raw_bytes, filetype="pdf")
+        markdown = pymupdf4llm.to_markdown(pdf, page_chunks=False)
+        ``` 
+        sol: 
+            1. The above comands completely ignore the scanned doccuments this will be fixed by using fitz package. 
+            2. The intial solution was to explore the usage of fitz package. 
+            3. `pymupdf` is processiing the plane text and this is usefult to create headdings this is later used for chunking and better chunks gives better retrival.
+            4. Though the solution wit `fitz` is working most of the time but it also retrives tables but the table is not human readable, this needs additional retrival to get proper tables. 
+
+        2. Hybrid pdf to markdown converter with LLM rendering:
+            for every page:
+                1. The proposed solution uses `pymupdf` for paragraphs. 
+                2. `fitz` for tables. 
+                3. The retrived text from above two steps aligned is given to LLM proper mark down format. 
+                4. Processed files are stored in `data/processed_pages/llm`.
+                5. This approach gives humn readable mark down format. 
+        
+        3. All the questions are answered but 
+            "What is the **maximum storage temperature** for EFM8BB3?" the model failed to retrive the conext
+            Even though the information is present in table the model failed to retrive, this was solved by increasing top_k from 3 to 5. 
+        
+        4. Additionally two extra flags are added to streamlit.
+            1. "Number of chunks to retrieve" -- will be used as top_k in RAG
+            2. "use LLM refinement" -- if this flag is set the model uses llm for refining the ouput from pymupdf+fitz
+
+
+Process: 
+    I have editted the streamlit to add extra varibles, 
+    1. over_write_existing_files, this flag will over write the existing markdown files
+    2. processing mode, this will have three options 
+                                a. basic_pymu  
+                                    - this is basic pymu reader missed tables
+                                    - this stores the processed files in data/processed_pages/basic_pymu
+                                    - if 'over_write_existing_files' is not set the files created in "data/processed_pages/basic_pymu" will be used for indexing. 
+                                b. no_llm_refinement
+                                    - hybrid version pymu reader + fitz (ocr)
+                                    - this works well, 
+                                    - this stores the processed files in data/processed_pages/nollm
+                                    - if 'over_write_existing_files' is not set the files created in "data/processed_pages/nollm" will be used for indexing.
+                                c. llm_refinement 
+                                    - hybrid version pymu reader + fitz (ocr) + LLM refinement
+                                    - this works well, 
+                                    - this stores the processed files in data/processed_pages/llm
+                                    - if 'over_write_existing_files' is not set the files created in "data/processed_pages/llm" will be used for indexing.
+
+
+
+Question answers:
+        1. What type of equipment is **B20111311**?
+
+            basic_pymu:  --------
+            no_llm_refinement: The type of equipment for B20111311 is a Modular Approval, Wi-Fi Device.
+            llm_refinement: The type of equipment for B20111311 is a Modular Approval, Wi-Fi Device.
+
+
+        2. When was the certificate for **US0057** issued?
+
+            basic_pymu:  --------
+            no_llm_refinement: The certificate for US0057 was issued on 2020-11-19.
+            llm_refinement: The certificate for US0057 was issued on 2020-11-19.
+
+        
+        3. Who holds the **21098-ESPS2WROOM** certificate?
+        
+            basic_pymu:  --------
+            no_llm_refinement: The holder of the 21098-ESPS2WROOM certificate is ESPRESSIF SYSTEMS (SHANGHAI) CO., LTD., located at Suite 204, Block 2, 690 Bibo Road, Zhang Jiang Hi-Tech Park, Shanghai 201203, China.
+            llm_refinement: The certificate 21098-ESPS2WROOM is held by ESPRESSIF SYSTEMS (SHANGHAI) CO., LTD.
+        
+
+        4. Can **ESP8266EX** be applied to any micro-controller design as a Wi-Fi adaptor?
+        
+            basic_pymu:     Yes, ESP8266EX can be applied to any micro-controller design as a Wi-Fi adaptor through SPI/SDIO or I2C/UART interfaces.
+
+            no_llm_refinement: Yes, ESP8266EX can be applied to any micro-controller design as a Wi-Fi adaptor through SPI/SDIO or I2C/UART interfaces.
+            llm_refinement: Yes, ESP8266EX can be applied to any micro-controller design as a Wi-Fi adaptor through SPI/SDIO or I2C/UART interfaces.
+   
+        5. What is the **frequency range** for ESP8266EX?
+        
+            basic_pymu: The ESP8266EX supports crystal oscillators with frequencies of 40 MHz, 26 MHz, and 24 MHz. 
+            no_llm_refinement: The frequency range for ESP8266EX is 2.4 GHz to 2.5 GHz (2400 MHz to 2483.5 MHz).
+            llm_refinement: The frequency range for ESP8266EX is 2.4 GHz ~ 2.5 GHz (2400 MHz ~ 2483.5 MHz).
+   
+        6. To what pin do I connect the **resistor** for ESP8266EX?
+        
+            basic_pymu:    The resistor mentioned in the context is connected to the flash CLK pin, which corresponds to Pin 21 (SD_CLK) of the ESP8266EX. Specifically, a 0402 resistor with an initial resistance of 200 Ω is connected in series with Pin 21 SD_CLK to reduce drive current and eliminate external interruption.
+
+            no_llm_refinement: The resistor should be connected to the ERS12K pin (Pin31) of the ESP8266EX. The external ground resistor connected to this pin requires high accuracy, with a recommended value of 12K ± 1%.
+            llm_refinement: You connect the resistor to the RES12K pin (Pin 31) of the ESP8266EX.
+   
+        7. What’s the **flash memory** of EFM8BB31F32G-D-QFP32?
+        
+            basic_pymu:  The flash memory of the EFM8BB31F32G-D-QFP32 is 32 kB.
+            no_llm_refinement: The resistor should be connected to the ERS12K pin (Pin31) of the ESP8266EX. The external ground resistor connected to this pin requires high accuracy, with a recommended value of 12K ± 1%.
+            llm_refinement: The flash memory of the EFM8BB31F32G-D-QFP32 is 32 kB.
+   
+        8. What is the **maximum storage temperature** for EFM8BB3?
+        
+            basic_pymu:  The maximum storage temperature for EFM8BB3 is 150°C.
+            no_llm_refinement: The maximum storage temperature for the EFM8BB3 is 150 °C.
+            llm_refinement: The maximum storage temperature for EFM8BB3 is 150 °C.
+   
+        9. How many **multi-function I/O pins** does EFM8BB3 have? 
+        
+            basic_pymu:  EFM8BB3 has 28 multifunction I/O pins in the QFP32 package.
+            no_llm_refinement: Therefore, the exact number of multifunction I/O pins for the EFM8BB3 is not specified in the given context.
+            llm_refinement: The EFM8BB3 has up to 29 multi-function I/O pins.
+   
+        10. What is the **minimum Voltage Reference Range for DACs**?
+        
+            basic_pymu:  The context does not provide the minimum Voltage Reference Range for DACs.
+            no_llm_refinement: The minimum Voltage Reference Range for DACs is 1.15 V.
+            llm_refinement: The minimum Voltage Reference Range for DACs is 1.15 V.
+   
+        11. What are the different **power modes** for EFM8BB3?
+        
+            basic_pymu: Normal Mode, Idle Mode, Suspend Mode, Stop Mode, Shutdown Mode
+            no_llm_refinement:  Normal , Idle , Suspend , Stop ,snooze ,Shutdown 
+            llm_refinement: Normal, Idle, Suspend, Snooze, Stop, Shutdown
+
+
+
+
+
+
+
+
+observations:
+    basic_pymu:  fails to read tables, when this system is used with rag it some produces irrrelevent answers.
+    no_llm_refinement: is better than basy_pymu as it can process extra data and tables:
+    llm_refinement: gives clean ouput, more over you have page by page comparision of information for reference and citing(referencing) the information. 
+
+
+New Capabilities:
+    TODO 
+    - this system Can not not precess images, if information is in images, this can not read it, need some LLM with visual capabilities. 

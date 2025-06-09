@@ -3,7 +3,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 from typing import List, Optional
 
-from ..chunker.types import Chunk
+from src.chunker.types import Chunk
 
 
 @dataclass

@@ -1,6 +1,6 @@
 from abc import abstractmethod
 
-from ..loader.types import LoadedPDF
+from src.loader.types import LoadedPDF
 
 
 class PDFtoMarkdown:

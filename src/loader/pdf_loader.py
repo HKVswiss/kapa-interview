@@ -1,7 +1,7 @@
 from pathlib import Path
 from typing import List
 
-from .types import LoadedPDF
+from src.loader.types import LoadedPDF
 
 
 class DirectoryPDFLoader:

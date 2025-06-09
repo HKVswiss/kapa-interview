@@ -212,6 +212,7 @@ class MarkdownSectionChunker(BaseChunker):
         Recursively divide a 'MarkdownSectionChunker' into chunks. If parent and child sections
         are smaller than the 'max_chars' limit they will be merged.
         """
+
         heading = self._create_chunk_heading(heading_prefix, section.title)
 
         # If heading_parent is None, it means we are at the first heading of the document
@@ -263,4 +264,5 @@ class MarkdownSectionChunker(BaseChunker):
 
         # At the rest of the children to the result
         result.extend(children)
+        # breakpoint()
         return result
