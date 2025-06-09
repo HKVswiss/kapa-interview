@@ -1,0 +1,80 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kapa-pdf-rag"
+version = "0.1.0"
+description = "PDF to Markdown conversion and RAG system"
+authors = [
+    {name = "Kapa.ai", email = "engineering@kapa.ai"},
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "streamlit>=1.45.0",
+    "PyMuPDF>=1.26.0",
+    "lancedb>=0.22.0",
+    "pyarrow>=20.0.0",
+    "tantivy>=0.24.0",
+    "pylance>=0.27.0",
+    "openai>=1.82.0",
+    "mistune>=3.0.0",
+    "langchain>=0.1.17",
+    "pymupdf4llm>=0.0.24",
+]
+
+[project.optional-dependencies]
+dev = [
+    "black>=25.1.0",
+    "isort>=6.0.0",
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "mypy>=1.0.0",
+]
+ocr = [
+    "pytesseract>=0.3.10",
+    "Pillow>=10.2.0",
+    "numpy>=1.24.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/kapa-ai/pdf-rag"
+Repository = "https://github.com/kapa-ai/pdf-rag"
+Documentation = "https://github.com/kapa-ai/pdf-rag/blob/main/README.md"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-dir]
+"" = "src"
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
+
+[tool.isort]
+profile = "black"
+line_length = 88
+multi_line_output = 3
+
+[tool.mypy]
+python_version = "3.8"
+warn_return_any = true
+warn_unused_configs = true
+ignore_missing_imports = true
+disallow_untyped_defs = false
+check_untyped_defs = true
+ 

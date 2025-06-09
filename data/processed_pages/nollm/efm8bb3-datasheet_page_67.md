@@ -1,0 +1,57 @@
+# Page 68
+
+## Text from PDF
+
+EFM8BB3 Data Sheet
+QFN32-AI Package Specifications
+
+|Dimension|Min|Typ|Max|
+|---|---|---|---|
+|Note:<br>1. All dimensions shown are in millimeters (mm) unless otherwise noted.<br>2. Dimensioning and Tolerancing per ANSI Y14.5M-1994.<br>3. Recommended card reflow profile is per the JEDEC/IPC J-STD-020 specification for Small Body Components.|Note:<br>1. All dimensions shown are in millimeters (mm) unless otherwise noted.<br>2. Dimensioning and Tolerancing per ANSI Y14.5M-1994.<br>3. Recommended card reflow profile is per the JEDEC/IPC J-STD-020 specification for Small Body Components.|Note:<br>1. All dimensions shown are in millimeters (mm) unless otherwise noted.<br>2. Dimensioning and Tolerancing per ANSI Y14.5M-1994.<br>3. Recommended card reflow profile is per the JEDEC/IPC J-STD-020 specification for Small Body Components.|Note:<br>1. All dimensions shown are in millimeters (mm) unless otherwise noted.<br>2. Dimensioning and Tolerancing per ANSI Y14.5M-1994.<br>3. Recommended card reflow profile is per the JEDEC/IPC J-STD-020 specification for Small Body Components.|
+
+
+
+**silabs.com** | Building a more connected world. Rev. 1.5 | 68
+
+
+
+## OCR Text
+
+EFM8BB3 Data Sheet
+
+QFN32-Al Package Specifications
+
+Dimension
+
+Min
+
+Max
+
+Typ
+
+Note:
+
+1. All dimensions shown are in millimeters (mm) unless otherwise noted.
+
+2. Dimensioning and Tolerancing per ANSI Y14.5M-1994.
+
+3. Recommended card reflow profile is per the JEDEC/IPC J-STD-020 specification for Small Body Components.
+
+silabs.com | Building a more connected world.
+
+Rev. 1.5 | 68
+
+## Tables
+
+EFM8BB3 Data Sheet
+QFN32-Al Package Specifications
+Dimension Min Max Typ
+Note:
+1. All dimensions shown are in millimeters (mm) unless otherwise noted.
+2. Dimensioning and Tolerancing per ANSI Y14.5M-1994.
+3. Recommended card reflow profile is per the JEDEC/IPC J-STD-020 specification for Small Body Components.
+silabs.com | Building a more connected world. Rev. 1.5 | 68
+
+
+---
+

@@ -5,17 +5,17 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         build-essential \
         && rm -rf /var/lib/apt/lists/*
 
-COPY . /workspace
-
 WORKDIR /workspace
 
+# Copy requirements first for better caching
 COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy source, ui, and sample data
-COPY src ./src
-COPY app ./app
-COPY data ./data
+# Copy the whole project for development installation
+COPY . .
+
+# Install the package in development mode
+RUN pip install -e .
 
 EXPOSE 8501
 

@@ -1,7 +1,7 @@
 from abc import abstractmethod
 from typing import List
 
-from .types import Chunk
+from src.chunker.types import Chunk
 
 
 class BaseChunker:

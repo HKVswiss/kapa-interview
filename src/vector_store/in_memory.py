@@ -16,7 +16,7 @@ from typing import List, Tuple
 import lancedb
 import pandas as pd
 
-from .schema import Document
+from src.vector_store.schema import Document
 
 TOP_K = int(os.getenv("TOP_K", "5"))
 
