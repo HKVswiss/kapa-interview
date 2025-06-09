@@ -71,59 +71,59 @@ I have edited the Streamlit app to add extra variables:
 ## Question Answers
 
 1. **What type of equipment is B20111311?**
-   -**basic_pymu:** --------
-   -**no_llm_refinement:** The type of equipment for B20111311 is a Modular Approval, Wi-Fi Device.
-   -**llm_refinement:** The type of equipment for B20111311 is a Modular Approval, Wi-Fi Device.
+   - **basic_pymu:** --------
+   - **no_llm_refinement:** The type of equipment for B20111311 is a Modular Approval, Wi-Fi Device.
+   - **llm_refinement:** The type of equipment for B20111311 is a Modular Approval, Wi-Fi Device.
 
 2. **When was the certificate for US0057 issued?**
-   -**basic_pymu:** --------
-   -**no_llm_refinement:** The certificate for US0057 was issued on 2020-11-19.
-   -**llm_refinement:** The certificate for US0057 was issued on 2020-11-19.
+   - **basic_pymu:** --------
+   - **no_llm_refinement:** The certificate for US0057 was issued on 2020-11-19.
+   - **llm_refinement:** The certificate for US0057 was issued on 2020-11-19.
 
 3. **Who holds the 21098-ESPS2WROOM certificate?**
-   -**basic_pymu:** --------
-   -**no_llm_refinement:** The holder of the 21098-ESPS2WROOM certificate is ESPRESSIF SYSTEMS (SHANGHAI) CO., LTD., located at Suite 204, Block 2, 690 Bibo Road, Zhang Jiang Hi-Tech Park, Shanghai 201203, China.
-   -**llm_refinement:** The certificate 21098-ESPS2WROOM is held by ESPRESSIF SYSTEMS (SHANGHAI) CO., LTD.
+   - **basic_pymu:** --------
+   - **no_llm_refinement:** The holder of the 21098-ESPS2WROOM certificate is ESPRESSIF SYSTEMS (SHANGHAI) CO., LTD., located at Suite 204, Block 2, 690 Bibo Road, Zhang Jiang Hi-Tech Park, Shanghai 201203, China.
+   - **llm_refinement:** The certificate 21098-ESPS2WROOM is held by ESPRESSIF SYSTEMS (SHANGHAI) CO., LTD.
 
 4. **Can ESP8266EX be applied to any micro-controller design as a Wi-Fi adaptor?**
-   -**basic_pymu:** Yes, ESP8266EX can be applied to any micro-controller design as a Wi-Fi adaptor through SPI/SDIO or I2C/UART interfaces.
-   -**no_llm_refinement:** Yes, ESP8266EX can be applied to any micro-controller design as a Wi-Fi adaptor through SPI/SDIO or I2C/UART interfaces.
-   -**llm_refinement:** Yes, ESP8266EX can be applied to any micro-controller design as a Wi-Fi adaptor through SPI/SDIO or I2C/UART interfaces.
+   - **basic_pymu:** Yes, ESP8266EX can be applied to any micro-controller design as a Wi-Fi adaptor through SPI/SDIO or I2C/UART interfaces.
+   - **no_llm_refinement:** Yes, ESP8266EX can be applied to any micro-controller design as a Wi-Fi adaptor through SPI/SDIO or I2C/UART interfaces.
+   - **llm_refinement:** Yes, ESP8266EX can be applied to any micro-controller design as a Wi-Fi adaptor through SPI/SDIO or I2C/UART interfaces.
 
 5. **What is the frequency range for ESP8266EX?**
-   -**basic_pymu:** The ESP8266EX supports crystal oscillators with frequencies of 40 MHz, 26 MHz, and 24 MHz.
-   -**no_llm_refinement:** The frequency range for ESP8266EX is 2.4 GHz to 2.5 GHz (2400 MHz to 2483.5 MHz).
-   -**llm_refinement:** The frequency range for ESP8266EX is 2.4 GHz ~ 2.5 GHz (2400 MHz ~ 2483.5 MHz).
+   - **basic_pymu:** The ESP8266EX supports crystal oscillators with frequencies of 40 MHz, 26 MHz, and 24 MHz.
+   - **no_llm_refinement:** The frequency range for ESP8266EX is 2.4 GHz to 2.5 GHz (2400 MHz to 2483.5 MHz).
+   - **llm_refinement:** The frequency range for ESP8266EX is 2.4 GHz ~ 2.5 GHz (2400 MHz ~ 2483.5 MHz).
 
 6. **To what pin do I connect the resistor for ESP8266EX?**
-   -**basic_pymu:** The resistor mentioned in the context is connected to the flash CLK pin, which corresponds to Pin 21 (SD_CLK) of the ESP8266EX. Specifically, a 0402 resistor with an initial resistance of 200 Ω is connected in series with Pin 21 SD_CLK to reduce drive current and eliminate external interruption.
-   -**no_llm_refinement:** The resistor should be connected to the ERS12K pin (Pin31) of the ESP8266EX. The external ground resistor connected to this pin requires high accuracy, with a recommended value of 12K ± 1%.
-   -**llm_refinement:** You connect the resistor to the RES12K pin (Pin 31) of the ESP8266EX.
+   - **basic_pymu:** The resistor mentioned in the context is connected to the flash CLK pin, which corresponds to Pin 21 (SD_CLK) of the ESP8266EX. Specifically, a 0402 resistor with an initial resistance of 200 Ω is connected in series with Pin 21 SD_CLK to reduce drive current and eliminate external interruption.
+   - **no_llm_refinement:** The resistor should be connected to the ERS12K pin (Pin31) of the ESP8266EX. The external ground resistor connected to this pin requires high accuracy, with a recommended value of 12K ± 1%.
+   - **llm_refinement:** You connect the resistor to the RES12K pin (Pin 31) of the ESP8266EX.
 
 7. **What’s the flash memory of EFM8BB31F32G-D-QFP32?**
-   -**basic_pymu:** The flash memory of the EFM8BB31F32G-D-QFP32 is 32 kB.
-   -**no_llm_refinement:** The resistor should be connected to the ERS12K pin (Pin31) of the ESP8266EX. The external ground resistor connected to this pin requires high accuracy, with a recommended value of 12K ± 1%.
-   -**llm_refinement:** The flash memory of the EFM8BB31F32G-D-QFP32 is 32 kB.
+   - **basic_pymu:** The flash memory of the EFM8BB31F32G-D-QFP32 is 32 kB.
+   - **no_llm_refinement:** The resistor should be connected to the ERS12K pin (Pin31) of the ESP8266EX. The external ground resistor connected to this pin requires high accuracy, with a recommended value of 12K ± 1%.
+   - **llm_refinement:** The flash memory of the EFM8BB31F32G-D-QFP32 is 32 kB.
 
 8. **What is the maximum storage temperature for EFM8BB3?**
-   -**basic_pymu:** The maximum storage temperature for EFM8BB3 is 150°C.
-   -**no_llm_refinement:** The maximum storage temperature for the EFM8BB3 is 150 °C.
-   -**llm_refinement:** The maximum storage temperature for EFM8BB3 is 150 °C.
+   - **basic_pymu:** The maximum storage temperature for EFM8BB3 is 150°C.
+   - **no_llm_refinement:** The maximum storage temperature for the EFM8BB3 is 150 °C.
+   - **llm_refinement:** The maximum storage temperature for EFM8BB3 is 150 °C.
 
 9. **How many multi-function I/O pins does EFM8BB3 have?**
-   -**basic_pymu:** EFM8BB3 has 28 multifunction I/O pins in the QFP32 package.
-   -**no_llm_refinement:** Therefore, the exact number of multifunction I/O pins for the EFM8BB3 is not specified in the given context.
-   -**llm_refinement:** The EFM8BB3 has up to 29 multi-function I/O pins.
+   - **basic_pymu:** EFM8BB3 has 28 multifunction I/O pins in the QFP32 package.
+   - **no_llm_refinement:** Therefore, the exact number of multifunction I/O pins for the EFM8BB3 is not specified in the given context.
+   - **llm_refinement:** The EFM8BB3 has up to 29 multi-function I/O pins.
 
 10. **What is the minimum Voltage Reference Range for DACs?**
-    -**basic_pymu:** The context does not provide the minimum Voltage Reference Range for DACs.
-    -**no_llm_refinement:** The minimum Voltage Reference Range for DACs is 1.15 V.
-    -**llm_refinement:** The minimum Voltage Reference Range for DACs is 1.15 V.
+    - **basic_pymu:** The context does not provide the minimum Voltage Reference Range for DACs.
+    - **no_llm_refinement:** The minimum Voltage Reference Range for DACs is 1.15 V.
+    - **llm_refinement:** The minimum Voltage Reference Range for DACs is 1.15 V.
 
 11. **What are the different power modes for EFM8BB3?**
-    -**basic_pymu:** Normal Mode, Idle Mode, Suspend Mode, Stop Mode, Shutdown Mode
-    -**no_llm_refinement:** Normal, Idle, Suspend, Stop, Snooze, Shutdown
-    -**llm_refinement:** Normal, Idle, Suspend, Snooze, Stop, Shutdown
+    - **basic_pymu:** Normal Mode, Idle Mode, Suspend Mode, Stop Mode, Shutdown Mode
+    - **no_llm_refinement:** Normal, Idle, Suspend, Stop, Snooze, Shutdown
+    - **llm_refinement:** Normal, Idle, Suspend, Snooze, Stop, Shutdown
 
 ---
 
