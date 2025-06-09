@@ -107,6 +107,8 @@ Use the tables below to gauge progress after you replace `PymuConverter`.
 | ✗ Needs improvement | How many **multi-function I/O pins** does EFM8BB3 have? | Up to 29 | 10 |
 | ✗ Needs improvement | What is the **minimum Voltage Reference Range for DACs**? | 1.15 V | 31 |
 | ✗ Needs improvement | What are the different **power modes** for EFM8BB3? | Normal, Idle, Suspend, Stop, Snooze, Shutdown | 10 |
+can you tell flash memory of EFM8BB3-1F32G-D-QFP32?
+
 
 **Goal:** After implementing your improved converter, most—ideally all—rows
 currently marked **Needs improvement** should return the correct information.

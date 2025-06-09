@@ -17,7 +17,7 @@ class PymuConverter(PDFtoMarkdown):
     def convert(self, doc: LoadedPDF) -> str:
         try:
             # First try pymupdf4llm's markdown conversion
-            markdown = self._handle_scanned_pdf_enhanced(doc)
+            markdown = self._handle_normal_pdf(doc)
             if markdown and markdown.strip():
                 return markdown
 
@@ -26,7 +26,7 @@ class PymuConverter(PDFtoMarkdown):
 
         except Exception as e:
             # If pymupdf4llm fails, try OCR
-            return self._handle_scanned_pdf(doc)
+            return self._handle_scanned_pdf_enhanced(doc)
 
     # ────────────────────────────────────────────────────────────────
     def _handle_normal_pdf(self, doc: LoadedPDF) -> str:
@@ -40,12 +40,10 @@ class PymuConverter(PDFtoMarkdown):
         zoom = 2  # 2x resolution for better OCR
         mat = fitz.Matrix(zoom, zoom)
         pdf = fitz.open(stream=doc.raw_bytes, filetype="pdf")
-        table_seperator = "===================Tables=============================\n\n"
-        page_seperator = "===================End Page===========================\n\n"
 
         text = ""
         # To store reconstructed tables
-        breakpoint()
+
         for page_number, page in enumerate(pdf[0:10]):
             tables = []
             table_seperator = (
@@ -183,5 +181,5 @@ class PymuConverter(PDFtoMarkdown):
                 text += pytesseract.image_to_string(img) + "\n\n"
         finally:
             pdf.close()
-        breakpoint()
+
         return text

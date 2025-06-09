@@ -13,7 +13,7 @@ import unittest
 class TestPDFToMarkdownConversion(unittest.TestCase):
 
     def setUp(self):
-        self.test_pdf_path = "/home/harivydana/Interview/Kaiko/kapa-interview/data/pdfs/esp8266_hardware_design_guidelines.pdf"  # Change this to your actual PDF file name
+        self.test_pdf_path = "data/pdfs/esp8266_hardware_design_guidelines.pdf"  # Change this to your actual PDF file name
         self.converter = PymuConverter()
 
     def test_conversion(self):
