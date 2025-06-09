@@ -1,3 +1,7 @@
+# Page 5
+
+## Text from PDF
+
 EFM8BB3 Data Sheet
 Ordering Information
 
@@ -15,6 +19,8 @@ The A-grade (i.e. EFM8BB31F64A-C-5QFN32 or EFM8BB31F64A-C-4QFN24) devices receiv
 **silabs.com** | Building a more connected world. Rev. 1.5 | 5
 
 
+
+## OCR Text
 
 EFM8BB3 Data Sheet
 
@@ -106,6 +112,8 @@ silabs.com | Building a more connected world.
 
 Rev. 1.5 | 5
 
+## Tables
+
 EFM8BB3 Data Sheet
 Ordering Information
 Package
@@ -146,5 +154,5 @@ ess (PPAP) documentation. PPAP documentation is available at www.silabs.com with
 silabs.com | Building a more connected world. Rev. 1.5 | 5
 
 
----Page 5 
+---
 

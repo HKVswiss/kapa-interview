@@ -1,3 +1,7 @@
+# Page 27
+
+## Text from PDF
+
 1. ESP8266EX
 
 I2C works in the master mode and can connect to multiple sensors. The slave devices are
@@ -29,6 +33,8 @@ Espressif
 *[Submit Documentation Feedback](https://www.espressif.com/en/company/documents/documentation_feedback?docId=2667&sections=&version=2.8)* 2024.10
 
 
+
+## OCR Text
 
 1. ESP8266EX
 
@@ -70,6 +76,8 @@ Submit Documentation Feedback
 
 Espressif
 
+## Tables
+
 1. ESP8266EX
 12C works in the master mode and can connect to multiple sensors. The slave devices are
 identified through the addressing mode, as each slave device has a unique address.
@@ -90,5 +98,5 @@ module and relay control module.
 Submit Documentation Feedback 2024.10 Espressif
 
 
----Page 27 
+---
 

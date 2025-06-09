@@ -1,3 +1,7 @@
+# Page 28
+
+## Text from PDF
+
 2. ESP-LAUNCHER
 # 2. E S P-LA U N C HER
 
@@ -75,6 +79,8 @@ Espressif
 *[Submit Documentation Feedback](https://www.espressif.com/en/company/documents/documentation_feedback?docId=2667&sections=&version=2.8)* 2024.10
 
 
+
+## OCR Text
 
 2. ESP-LAUNCHER
 
@@ -282,6 +288,8 @@ Submit Documentation Feedback
 
 2024.10
 
+## Tables
+
 2. ESP-LAUNCHER
 2. ESP-LAUNCHER
 2.1. Overview
@@ -349,5 +357,5 @@ The modules/interfaces integrated on the development board are described in Tabl
 Espressif Submit Documentation Feedback 2024.10
 
 
----Page 28 
+---
 

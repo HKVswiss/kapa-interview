@@ -1,3 +1,7 @@
+# Page 12
+
+## Text from PDF
+
 EFM8BB3 Data Sheet
 
 System Overview
@@ -82,6 +86,8 @@ The UART module provides the following features:
 **silabs.com** | Building a more connected world. Rev. 1.5 | 12
 
 
+
+## OCR Text
 
 EFM8BB3 Data Sheet
 
@@ -195,6 +201,8 @@ silabs.com | Building a more connected world.
 
 Rev. 1.5 | 12
 
+## Tables
+
 EFM8BB3 Data Sheet
 System Overview
 Timers (Timer 0, Timer 1, Timer 2, Timer 3, Timer 4, and Timer 5)
@@ -244,5 +252,5 @@ The UART module provides the following features:
 silabs.com | Building a more connected world. Rev. 1.5 | 12
 
 
----Page 12 
+---
 

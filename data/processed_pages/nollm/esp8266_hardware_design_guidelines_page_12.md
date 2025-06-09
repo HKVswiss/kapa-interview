@@ -1,3 +1,7 @@
+# Page 13
+
+## Text from PDF
+
 1. ESP8266EX
 
 1.4.2. Power-on Sequence and Power Reset
@@ -39,6 +43,8 @@ Espressif
 *[Submit Documentation Feedback](https://www.espressif.com/en/company/documents/documentation_feedback?docId=2667&sections=&version=2.8)* 2024.10
 
 
+
+## OCR Text
 
 1. ESP8266EX
 
@@ -108,6 +114,8 @@ Submit Documentation Feedback
 
 Espressif
 
+## Tables
+
 1. ESP8266EX
 1.4.2. Power-on Sequence and Power Reset
 1.4.2.1. Power-on Sequence
@@ -142,5 +150,5 @@ initial resistance of the resistor is 200 Q.
 Submit Documentation Feedback 2024.10 Espressif
 
 
----Page 13 
+---
 

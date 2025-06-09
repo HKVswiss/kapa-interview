@@ -1,3 +1,7 @@
+# Page 42
+
+## Text from PDF
+
 EFM8BB3 Data Sheet
 Typical Connection Diagrams
 
@@ -30,6 +34,8 @@ Circuit Board Design Notes" contains detailed information on these connections. 
 **silabs.com** | Building a more connected world. Rev. 1.5 | 42
 
 
+
+## OCR Text
 
 EFM8BB3 Data Sheet
 
@@ -97,6 +103,8 @@ silabs.com | Building a more connected world.
 
 Rev. 1.5 | 42
 
+## Tables
+
 EFM8BB3 Data Sheet
 Typical Connection Diagrams
 5.2 Debug
@@ -127,5 +135,5 @@ Labs website (www.silabs.com/8bit-appnotes).
 silabs.com | Building a more connected world. Rev. 1.5 | 42
 
 
----Page 42 
+---
 

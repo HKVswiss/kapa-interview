@@ -1,3 +1,7 @@
+# Page 33
+
+## Text from PDF
+
 2. ESP-LAUNCHER
 # 2.4. Test Board
 
@@ -62,6 +66,11 @@ Figure 2-5. ESP-LAUNCHER Test Board
 |---|---|---|---|---|---|
 |  ||||||
 
+
+
+
+
+
 |��|��� �|
 |---|---|
 |||
@@ -81,11 +90,6 @@ Figure 2-5. ESP-LAUNCHER Test Board
 |---|---|
 || |
 |||
-
-
-
-
-
 
 |��|���� �|
 |---|---|
@@ -167,6 +171,9 @@ Figure 2-5. ESP-LAUNCHER Test Board
 
 
 
+
+
+
 |��|���� �|
 |---|---|
 || |
@@ -202,6 +209,8 @@ Figure 2-6. ESP-LAUNCHER Test Board Schematics
 *[Submit Documentation Feedback](https://www.espressif.com/en/company/documents/documentation_feedback?docId=2667&sections=&version=2.8)* 2024.10
 
 
+
+## OCR Text
 
 2. ESP-LAUNCHER
 
@@ -353,6 +362,8 @@ Submit Documentation Feedback
 
 Espressif
 
+## Tables
+
 2. ESP-LAUNCHER
 2.4. Test Board
 A test board is embedded in ESP-LAUNCHER, as shown in Figure 2-5. The external size of
@@ -417,5 +428,5 @@ Figure 2-6. ESP-LAUNCHER Test Board Schematics
 Submit Documentation Feedback 2024.10 Espressif
 
 
----Page 33 
+---
 

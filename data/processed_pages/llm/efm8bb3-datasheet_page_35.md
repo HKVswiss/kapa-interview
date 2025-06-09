@@ -8,36 +8,22 @@
 
 ## Table 4.18. SMBus Peripheral Timing Formulas (Master Mode)
 
-| Parameter                                   | Symbol  | Clocks       |
-|---------------------------------------------|---------|--------------|
-| SMBus Operating Frequency                    | f_SMB   | f_CSO / 3    |
-| Bus Free Time Between STOP and START Conditions | t_BUF   | 2 / f_CSO    |
-| Hold Time After (Repeated) START Condition  | t_HD:STA| 1 / f_CSO    |
-| Repeated START Condition Setup Time         | t_SU:STA| 2 / f_CSO    |
-| STOP Condition Setup Time                    | t_SU:STO| 2 / f_CSO    |
-| Clock Low Period                             | t_LOW   | 1 / f_CSO    |
-| Clock High Period                            | t_HIGH  | 2 / f_CSO    |
+| Parameter                                   | Symbol  | Clocks   |
+|---------------------------------------------|---------|----------|
+| SMBus Operating Frequency                    | f_SMB   | f_CSO / 3|
+| Bus Free Time Between STOP and START Conditions | t_BUF   | 2 / f_CSO|
+| Hold Time After (Repeated) START Condition  | t_HD:STA | 1 / f_CSO|
+| Repeated START Condition Setup Time          | t_SU:STA | 2 / f_CSO|
+| STOP Condition Setup Time                     | t_SU:STO | 2 / f_CSO|
+| Clock Low Period                              | t_LOW   | 1 / f_CSO|
+| Clock High Period                             | t_HIGH  | 2 / f_CSO|
 
 **Note:**
 - f_CSO is the SMBus peripheral clock source overflow frequency.
 
 ## Figure 4.1. SMBus Peripheral Timing Diagram (Master Mode)
 
-```
-SCL:  V_IH  ---|\_____/|--- V_IL
-
-SDA:  V_IH  ---|\_____/|--- V_IL
-```
-
-Timing parameters shown in the diagram include:
-- t_HIGH
-- t_HD:STA
-- t_HD:DAT
-- t_SU:STA
-- t_SU:STO
-- t_SU:DAT
-- t_LOW
-- t_BUF
+The timing diagram illustrates the relationship between signals SCL and SDA with respect to the timing parameters defined above, including t_HIGH, t_LOW, t_HD:STA, t_SU:STA, t_SU:STO, t_BUF, and others.
 
 ---
 *Page 36*

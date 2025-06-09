@@ -1,3 +1,7 @@
+# Page 21
+
+## Text from PDF
+
 1. ESP8266EX
 
 Note:
@@ -13,6 +17,7 @@ If the positions recommended are not suitable, please make sure that the module 
 covered by any metal shell. The antenna area of the module and the area 15 mm outside
 the antenna should be kept clean, (namely no copper, routing, components on it) as shown
 in Figure 1-14:
+
 
 
 
@@ -47,6 +52,8 @@ Espressif
 *[Submit Documentation Feedback](https://www.espressif.com/en/company/documents/documentation_feedback?docId=2667&sections=&version=2.8)* 2024.10
 
 
+
+## OCR Text
 
 1. ESP8266EX
 
@@ -126,6 +133,8 @@ Submit Documentation Feedback
 
 Espressif
 
+## Tables
+
 1. ESP8266EX
 LU Note:
 As is shown in Figure 1-13, the recommended position of ESP8266EX module on the base board should be:
@@ -162,5 +171,5 @@ of the vias.
 Submit Documentation Feedback 2024.10 Espressif
 
 
----Page 21 
+---
 

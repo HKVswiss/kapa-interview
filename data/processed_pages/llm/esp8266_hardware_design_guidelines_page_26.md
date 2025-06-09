@@ -1,6 +1,4 @@
-# ESP8266EX Applications
-
-## I2C Interface
+# ESP8266EX
 
 I2C works in the master mode and can connect to multiple sensors. The slave devices are identified through the addressing mode, as each slave device has a unique address.
 
@@ -19,4 +17,5 @@ ESP8266EX can be used for developing smart plug products. The GPIOs control the 
 - Relay control module
 
 ---
+
 *Page 27*

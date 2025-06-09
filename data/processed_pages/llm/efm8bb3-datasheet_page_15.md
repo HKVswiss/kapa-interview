@@ -4,7 +4,7 @@
 
 An analog comparator is used to compare the voltage of two analog inputs, with a digital output indicating which input voltage is higher. External input connections to device I/O pins and internal connections are available through separate multiplexers on the positive and negative inputs. Hysteresis, response time, and current consumption may be programmed to suit the specific needs of the application.
 
-The comparator includes the following features:
+### Comparator Features:
 
 - Up to 10 (CMP0) or 9 (CMP1) external positive inputs
 - Up to 10 (CMP0) or 9 (CMP1) external negative inputs
@@ -28,9 +28,11 @@ Reset circuitry allows the controller to be easily placed in a predefined defaul
 - External port pins are forced to a known state.
 - Interrupts and timers are disabled.
 
-All registers are reset to the predefined values noted in the register descriptions unless the bits only reset with a power-on reset. The contents of RAM are unaffected during a reset; any previously stored data is preserved as long as power is not lost. By default, the Port I/O latches are reset to 1 in open-drain mode, with weak pullups enabled during and after the reset. Optionally, firmware may configure the port I/O, DAC outputs, and precision reference to maintain state through system resets other than power-on resets. For Supply Monitor and power-on resets, the RSTb pin is driven low until the device exits the reset state. On exit from the reset state, the program counter (PC) is reset, and the system clock defaults to an internal oscillator. The Watchdog Timer is enabled, and program execution begins at location 0x0000.
+All registers are reset to the predefined values noted in the register descriptions unless the bits only reset with a power-on reset. The contents of RAM are unaffected during a reset; any previously stored data is preserved as long as power is not lost. By default, the Port I/O latches are reset to 1 in open-drain mode, with weak pullups enabled during and after the reset. Optionally, firmware may configure the port I/O, DAC outputs, and precision reference to maintain state through system resets other than power-on resets.
 
-Reset sources on the device include the following:
+For Supply Monitor and power-on resets, the RSTb pin is driven low until the device exits the reset state. On exit from the reset state, the program counter (PC) is reset, and the system clock defaults to an internal oscillator. The Watchdog Timer is enabled, and program execution begins at location 0x0000.
+
+### Reset sources on the device include:
 
 - Power-on reset
 - External reset pin

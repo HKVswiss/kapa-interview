@@ -1,3 +1,7 @@
+# Page 36
+
+## Text from PDF
+
 Espressif
 
 
@@ -12,6 +16,8 @@ For detailed information on ESP-WROOM-02D/ESP-WOOM-02U, please refer to *[ESP](h
 *[Submit Documentation Feedback](https://www.espressif.com/en/company/documents/documentation_feedback?docId=2667&sections=&version=2.8)* 2024.10
 
 
+
+## OCR Text
 
 3. ESP8266EX Module
 
@@ -87,6 +93,8 @@ Submit Documentation Feedback
 
 Espressif
 
+## Tables
+
 3. ESP8266EX Module
 GND BM NT
 ESP-\WROOM-O; i] "
@@ -113,5 +121,5 @@ WROOM-02D/ESP-WROOM-02U Datasheet.
 Submit Documentation Feedback 2024.10 Espressif
 
 
----Page 36 
+---
 

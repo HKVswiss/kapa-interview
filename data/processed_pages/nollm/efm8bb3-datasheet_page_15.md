@@ -1,3 +1,7 @@
+# Page 16
+
+## Text from PDF
+
 EFM8BB3 Data Sheet
 
 System Overview
@@ -80,6 +84,8 @@ protocol.
 **silabs.com** | Building a more connected world. Rev. 1.5 | 16
 
 
+
+## OCR Text
 
 EFM8BB3 Data Sheet
 
@@ -191,6 +197,8 @@ silabs.com | Building a more connected world.
 
 Rev. 1.5 | 16
 
+## Tables
+
 EFM8BB3 Data Sheet
 System Overview
 Low Current Comparators (CMP0, CMP1)
@@ -240,5 +248,5 @@ protocol.
 silabs.com | Building a more connected world. Rev. 1.5 | 16
 
 
----Page 16 
+---
 

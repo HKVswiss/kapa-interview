@@ -1,6 +1,6 @@
 # ESP8266EX Module Schematics
 
-![ESP8266EX Module Schematics](Figure_1-3_ESP8266EX_Module_Schematics.png)
+![Figure 1-3. ESP8266EX Module Schematics](Figure_1-3_ESP8266EX_Module_Schematics.png)
 
 The ESP8266EX schematics include seven aspects:
 

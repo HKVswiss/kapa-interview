@@ -1,3 +1,7 @@
+# Page 31
+
+## Text from PDF
+
 EFM8BB3 Data Sheet
 Electrical Specifications
 
@@ -45,6 +49,8 @@ Electrical Specifications
 **silabs.com** | Building a more connected world. Rev. 1.5 | 31
 
 
+
+## OCR Text
 
 EFM8BB3 Data Sheet
 
@@ -256,6 +262,8 @@ silabs.com | Building a more connected world.
 
 Rev. 1.5 | 31
 
+## Tables
+
 EFM8BB3 Data Sheet
 Electrical Specifications
 4.1.13 DACs
@@ -294,5 +302,5 @@ glitch during start-up. If smooth start-up is required, the minimum loading capa
 silabs.com | Building a more connected world. Rev. 1.5 | 31
 
 
----Page 31 
+---
 

@@ -1,3 +1,7 @@
+# Page 24
+
+## Text from PDF
+
 EFM8BB3 Data Sheet
 Electrical Specifications
 
@@ -50,6 +54,8 @@ Electrical Specifications
 **silabs.com** | Building a more connected world. Rev. 1.5 | 24
 
 
+
+## OCR Text
 
 EFM8BB3 Data Sheet
 
@@ -235,6 +241,8 @@ silabs.com | Building a more connected world.
 
 Rev. 1.5 | 24
 
+## Tables
+
 EFM8BB3 Data Sheet
 Electrical Specifications
 4.1.6 Internal Oscillators
@@ -271,5 +279,5 @@ Time
 silabs.com | Building a more connected world. Rev. 1.5 | 24
 
 
----Page 24 
+---
 

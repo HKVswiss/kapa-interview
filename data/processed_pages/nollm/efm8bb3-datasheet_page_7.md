@@ -1,3 +1,7 @@
+# Page 8
+
+## Text from PDF
+
 13.7 Revision 1.0 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .88
 
 13.8 Revision 0.4 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .88
@@ -11,6 +15,8 @@
 **silabs.com** | Building a more connected world. Rev. 1.5 | 8
 
 
+
+## OCR Text
 
 13.7 Revision 1.0
 
@@ -40,6 +46,8 @@ a more connected world.
 
 5| 8
 
+## Tables
+
 13.7 Revision 1.0 88
 13.8 Revision 0.4 88
 13.9 Revision 0.3 88
@@ -48,5 +56,5 @@ a more connected world.
 sil com | Build a more connected world. 5| 8
 
 
----Page 8 
+---
 

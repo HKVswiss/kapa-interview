@@ -1,3 +1,7 @@
+# Page 40
+
+## Text from PDF
+
 EFM8BB3 Data Sheet
 Electrical Specifications
 
@@ -39,6 +43,8 @@ more information on the available quality and reliability data, see the Quality 
 **silabs.com** | Building a more connected world. Rev. 1.5 | 40
 
 
+
+## OCR Text
 
 EFM8BB3 Data Sheet
 
@@ -194,6 +200,8 @@ silabs.com | Building a more connected world.
 
 Rev. 1.5 | 40
 
+## Tables
+
 EFM8BB3 Data Sheet
 Electrical Specifications
 4.3 Absolute Maximum Ratings
@@ -230,5 +238,5 @@ Note:
 silabs.com | Building a more connected world. Rev. 1.5 | 40
 
 
----Page 40 
+---
 

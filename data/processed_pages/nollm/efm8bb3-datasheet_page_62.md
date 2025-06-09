@@ -1,3 +1,7 @@
+# Page 63
+
+## Text from PDF
+
 EFM8BB3 Data Sheet
 QFN32-GI Package Specifications
 
@@ -32,6 +36,8 @@ QFN32-GI Package Specifications
 **silabs.com** | Building a more connected world. Rev. 1.5 | 63
 
 
+
+## OCR Text
 
 EFM8BB3 Data Sheet
 
@@ -203,6 +209,8 @@ silabs.com | Building a more connected world.
 
 Rev. 1.5 | 63
 
+## Tables
+
 EFM8BB3 Data Sheet
 QFN32-GI Package Specifications
 7. QFN32-GI Package Specifications
@@ -257,5 +265,5 @@ eee 0.10
 silabs.com | Building a more connected world. Rev. 1.5 | 63
 
 
----Page 63 
+---
 

@@ -1,3 +1,7 @@
+# Page 3
+
+## Text from PDF
+
 EFM8BB3 Data Sheet
 Ordering Information
 
@@ -72,6 +76,8 @@ product selection guide shows the features available on each family member.
 **silabs.com** | Building a more connected world. Rev. 1.5 | 3
 
 
+
+## OCR Text
 
 EFM8BB3 Data Sheet
 
@@ -243,6 +249,8 @@ silabs.com | Building a more connected world.
 
 Rev. 1.5 | 3
 
+## Tables
+
 EFM8BB3 Data Sheet
 Ordering Information
 2. Ordering Information
@@ -312,5 +320,5 @@ EFM8BB31F64G-D-QFN24 4352 20 12 Yes QFN24-GI
 silabs.com | Building a more connected world. Rev. 1.5 | 3
 
 
----Page 3 
+---
 

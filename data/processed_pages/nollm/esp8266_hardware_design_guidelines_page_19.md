@@ -1,3 +1,7 @@
+# Page 20
+
+## Text from PDF
+
 1. ESP8266EX
 
          - The third layer is the POWER layer where only power lines can be placed. It is
@@ -36,6 +40,8 @@ Figure 1-13. ESP8266EX Module Antenna Position on Base Board
 *[Submit Documentation Feedback](https://www.espressif.com/en/company/documents/documentation_feedback?docId=2667&sections=&version=2.8)* 2024.10
 
 
+
+## OCR Text
 
 1. ESP8266EX
 
@@ -119,6 +125,8 @@ Submit Documentation Feedback
 
 Espressif
 
+## Tables
+
 1. ESP8266EX
 The third layer is the POWER layer where only power lines can be placed. It is
 acceptable to place some signal lines under unavoidable circumstances.
@@ -152,5 +160,5 @@ Figure 1-13. ESP8266EX Module Antenna Position on Base Board
 Submit Documentation Feedback 2024.10 Espressif
 
 
----Page 20 
+---
 

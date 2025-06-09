@@ -1,3 +1,7 @@
+# Page 84
+
+## Text from PDF
+
 EFM8BB3 Data Sheet
 QSOP24 Package Specifications
 
@@ -15,6 +19,8 @@ QSOP24 Package Specifications
 **silabs.com** | Building a more connected world. Rev. 1.5 | 84
 
 
+
+## OCR Text
 
 EFM8BB3 Data Sheet
 
@@ -64,6 +70,8 @@ silabs.com | Building a more connected world.
 
 Rev. 1.5 | 84
 
+## Tables
+
 EFM8BB3 Data Sheet
 QSOP24 Package Specifications
 Dimension Min Max Typ
@@ -80,5 +88,5 @@ Note:
 silabs.com | Building a more connected world. Rev. 1.5 | 84
 
 
----Page 84 
+---
 

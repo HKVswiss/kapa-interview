@@ -1,3 +1,7 @@
+# Page 25
+
+## Text from PDF
+
 1. ESP8266EX
 
 distance between the chip and the noise sources decreases the interference and
@@ -61,6 +65,8 @@ Espressif
 *[Submit Documentation Feedback](https://www.espressif.com/en/company/documents/documentation_feedback?docId=2667&sections=&version=2.8)* 2024.10
 
 
+
+## OCR Text
 
 1. ESP8266EX
 
@@ -148,6 +154,8 @@ Submit Documentation Feedback
 
 Espressif
 
+## Tables
+
 1. ESP8266EX
 distance between the chip and the noise sources decreases the interference and
 reduces the coupled noise.
@@ -191,5 +199,5 @@ Solution:
 Submit Documentation Feedback 2024.10 Espressif
 
 
----Page 25 
+---
 

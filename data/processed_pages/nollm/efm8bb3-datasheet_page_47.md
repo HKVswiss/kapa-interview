@@ -1,3 +1,7 @@
+# Page 48
+
+## Text from PDF
+
 **6.2 EFM8BB3x-QFP32 Pin Definitions**
 
 P0.0
@@ -75,6 +79,8 @@ P2.0
 **silabs.com** | Building a more connected world. Rev. 1.5 | 48
 
 
+
+## OCR Text
 
 EFM8BB3 Data Sheet
 
@@ -262,6 +268,8 @@ silabs.com | Building a more connected world.
 
 Rev. 1.5 | 48
 
+## Tables
+
 EFM8BB3 Data Sheet
 Pin Definitions
 6.2 EFM8BB3x-QFP32 Pin Definitions
@@ -299,5 +307,5 @@ C2CK C2 Debug Clock
 silabs.com | Building a more connected world. Rev. 1.5 | 48
 
 
----Page 48 
+---
 

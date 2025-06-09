@@ -1,3 +1,7 @@
+# Page 7
+
+## Text from PDF
+
 **6. Pin Definitions .** **.** **.** **.** **.** **.** **.** **.** **.** **.** **.** **.** **.** **.** **.** **.** **.** **.** **.** **.** **.** **.** **.** **.** **.** **.** **.** **.** **.** **.** **43**
 
 6.1 EFM8BB3x-QFN32 and EFM8BB3x-5QFN32 Pin Definitions . . . . . . . . . . . . . .43
@@ -73,6 +77,8 @@
 **silabs.com** | Building a more connected world. Rev. 1.5 | 7
 
 
+
+## OCR Text
 
 Pin Definitions
 
@@ -222,6 +228,8 @@ QFP32 Package Specifications.
 
 Rev. 1.5| 7
 
+## Tables
+
 Pin Definitions 43
 6.1 EFM8BB3x-QFN32 and EFM8BB3x-5QFN32 Pin Definitions 43
 6.2 EFM8BB3x-QFP32 Pin Definitions 48
@@ -280,5 +288,5 @@ QFN32-Al Package Specifications 67
 1m | Building a more connected world Rev. 1.5| 7
 
 
----Page 7 
+---
 

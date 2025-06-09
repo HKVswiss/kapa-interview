@@ -1,3 +1,7 @@
+# Page 43
+
+## Text from PDF
+
 EFM8BB3 Data Sheet
 
 Pin Definitions
@@ -55,6 +59,8 @@ P1.5
 **silabs.com** | Building a more connected world. Rev. 1.5 | 43
 
 
+
+## OCR Text
 
 EFM8BB3 Data Sheet
 
@@ -134,6 +140,8 @@ Rev.
 
 | 43
 
+## Tables
+
 EFM8BB3 Data Sheet
 Pin Definitions
 6. Pin Definitions
@@ -157,5 +165,5 @@ Figure 6.1. EFM8BB3x-QFN32 (QFN32-Gl) and EFM8BB3x-5QFN32 (QFN32-Al) Pinout
 sil com | Building a more connected world. Rev. | 43
 
 
----Page 43 
+---
 

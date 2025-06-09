@@ -1,4 +1,10 @@
+# Page 2
+
+## Text from PDF
+
 None
+
+## OCR Text
 
 ANNEX A TO CERTIFICATE
 
@@ -98,6 +104,8 @@ Bay Area Compliance Laboratories Corp. (BACL)
 
 Tel: 1 (408) 732-9162 Fax: 1 (408) 732-9164 Web: www.baclcorp.com
 
+## Tables
+
 ANNEX A TO CERTIFICATE
 CB Identifier TAC Identifier Certification No. Issue Date
 US0057 B20111311 21098-ESPS2WROOM 2020-11-19
@@ -142,5 +150,5 @@ Web:
 www.baclcorp.com
 
 
----Page 2 
+---
 

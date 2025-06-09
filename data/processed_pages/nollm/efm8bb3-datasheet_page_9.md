@@ -1,3 +1,7 @@
+# Page 10
+
+## Text from PDF
+
 EFM8BB3 Data Sheet
 
 System Overview
@@ -49,6 +53,8 @@ The port control block offers the following features:
 **silabs.com** | Building a more connected world. Rev. 1.5 | 10
 
 
+
+## OCR Text
 
 EFM8BB3 Data Sheet
 
@@ -292,6 +298,8 @@ silabs.com | Building a more connected world.
 
 Rev. 1.5 | 10
 
+## Tables
+
 EFM8BB3 Data Sheet
 System Overview
 3.2 Power
@@ -350,5 +358,5 @@ The port control block offers the following features:
 silabs.com | Building a more connected world. Rev. 1.5 | 10
 
 
----Page 10 
+---
 

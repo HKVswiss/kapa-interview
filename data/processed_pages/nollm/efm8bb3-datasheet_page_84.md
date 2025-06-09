@@ -1,3 +1,7 @@
+# Page 85
+
+## Text from PDF
+
 EFM8BB3 Data Sheet
 QSOP24 Package Specifications
 
@@ -20,6 +24,8 @@ QSOP24 Package Specifications
 **silabs.com** | Building a more connected world. Rev. 1.5 | 85
 
 
+
+## OCR Text
 
 EFM8BB3 Data Sheet
 
@@ -83,6 +89,8 @@ silabs.com | Building a more connected world.
 
 Rev. 1.5 | 85
 
+## Tables
+
 EFM8BB3 Data Sheet
 QSOP24 Package Specifications
 12.2 PCB Land Pattern
@@ -110,5 +118,5 @@ minimum, all the way around the pad.
 silabs.com | Building a more connected world. Rev. 1.5 | 85
 
 
----Page 85 
+---
 

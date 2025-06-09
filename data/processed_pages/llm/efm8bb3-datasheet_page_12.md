@@ -2,7 +2,7 @@
 
 ## Universal Asynchronous Receiver/Transmitter (UART1)
 
-UART1 is an asynchronous, full duplex serial port offering a variety of data formatting options. It includes a dedicated baud rate generator with a 16-bit timer and selectable prescaler, capable of generating a wide range of baud rates. A received data FIFO allows UART1 to receive multiple bytes before data loss or overflow occurs.
+UART1 is an asynchronous, full duplex serial port offering a variety of data formatting options. It includes a dedicated baud rate generator with a 16-bit timer and selectable prescaler, capable of generating a wide range of baud rates. A received data FIFO allows UART1 to receive multiple bytes before data is lost and an overflow occurs.
 
 **UART1 Features:**
 
@@ -20,7 +20,7 @@ UART1 is an asynchronous, full duplex serial port offering a variety of data for
 
 ## Serial Peripheral Interface (SPI0)
 
-The SPI module provides access to a flexible, full-duplex synchronous serial bus. It can operate as a main (clock driver) or secondary (clock receiver) interface in both 3-wire or 4-wire modes, supporting multiple main/secondary devices on a single SPI bus. The chip-select (NSS) signal can be configured as input to select SPI in secondary mode or to disable main mode operation to avoid contention. NSS can also be firmware-controlled as a chip-select output or disabled to reduce pin count. Additional general purpose I/O pins can select multiple secondary devices.
+The SPI module provides access to a flexible, full-duplex synchronous serial bus. It can operate as a main (clock driver) or secondary (clock receiver) interface in both 3-wire or 4-wire modes, supporting multiple main/secondary devices on a single SPI bus. The chip-select (NSS) signal can be configured as an input to select SPI in secondary mode or to disable main mode operation in environments with multiple main interfaces, avoiding contention on the SPI bus. NSS can also be configured as a firmware-controlled chip-select output in main interface mode or disabled to reduce pin count. Additional general purpose port I/O pins can select multiple secondary devices.
 
 **SPI0 Features:**
 

@@ -1,3 +1,7 @@
+# Page 3
+
+## Text from PDF
+
 Documentation Change Notifification
 
 Espressif provides email notififications to keep customers updated on changes to
@@ -10,6 +14,8 @@ Download certifificates for Espressif products from *[https://www.espressif.com/
 
 
 
+## OCR Text
+
 Documentation Change Notification
 
 Espressif provides email notifications to keep customers updated on changes to
@@ -22,6 +28,8 @@ Download certificates for Espressif products from /hitps:/Avww.espressif.com/en/
 
 certificates.
 
+## Tables
+
 Documentation Change Notification
 Espressif provides email notifications to keep customers updated on changes to
 technical documentation. Please subscribe at httos://www.espressif.com/en/subscribe.
@@ -30,5 +38,5 @@ Download certificates for Espressif products from /hitps:/Avww.espressif.com/en/
 certificates.
 
 
----Page 3 
+---
 

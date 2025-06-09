@@ -1,3 +1,7 @@
+# Page 2
+
+## Text from PDF
+
 EFM8BB3 Data Sheet
 
 Feature List
@@ -112,6 +116,8 @@ RoHS compliant.
 **silabs.com** | Building a more connected world. Rev. 1.5 | 2
 
 
+
+## OCR Text
 
 EFM8BB3 Data Sheet
 
@@ -259,6 +265,8 @@ silabs.com | Building a more connected world.
 
 Rev. 1.5 | 2
 
+## Tables
+
 EFM8BB3 Data Sheet
 Feature List
 1. Feature List
@@ -310,5 +318,5 @@ RoHS compliant.
 silabs.com | Building a more connected world. Rev. 1.5 | 2
 
 
----Page 2 
+---
 

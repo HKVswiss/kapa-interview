@@ -1,8 +1,6 @@
-# EFM8BB3 Data Sheet
+# EFM8BB3 Data Sheet - System Overview
 
-## System Overview
-
-### 3.2 Power
+## 3.2 Power
 
 All internal circuitry draws power from the VDD supply pin. External I/O pins are powered from the VIO supply voltage (or VDD on devices without a separate VIO connection), while most of the internal circuitry is supplied by an on-chip LDO regulator. Control over the device power can be achieved by enabling/disabling individual peripherals as needed. Each analog peripheral can be disabled when not in use and placed in low power mode. Digital peripherals, such as timers and serial buses, have their clocks gated off and draw little power when they are not in use.
 
@@ -46,7 +44,7 @@ All internal circuitry draws power from the VDD supply pin. External I/O pins ar
 2. Set STOP bit in PCON0 | • RSTb pin reset  
 • Power-on reset |
 
-### 3.3 I/O
+## 3.3 I/O
 
 Digital and analog resources are externally available on the device’s multi-purpose I/O pins. Port pins P0.0-P2.3 can be defined as general-purpose I/O (GPIO), assigned to one of the internal digital resources through the crossbar or dedicated channels, or assigned to an analog function. Port pins P2.4 to P3.7 can be used as GPIO. Additionally, the C2 Interface Data signal (C2D) is shared with P3.0 or P3.7, depending on the package option.
 
@@ -60,5 +58,4 @@ The port control block offers the following features:
 - Up to 24 direct-pin interrupt sources with shared interrupt vector (Port Match).
 
 ---
-
 *Page 10*

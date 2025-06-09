@@ -1,4 +1,4 @@
-# EFM8BB3 Data Sheet - System Overview
+# EFM8BB3 Data Sheet
 
 ## 3.7 Analog
 
@@ -34,4 +34,5 @@ The DAC modules are 12-bit Digital-to-Analog Converters with the capability to s
 - Supports references from internal supply, on-chip precision reference, or external VREF pin
 
 ---
+
 *Page 15*

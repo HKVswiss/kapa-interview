@@ -1,3 +1,7 @@
+# Page 29
+
+## Text from PDF
+
 2. ESP-LAUNCHER
 
 
@@ -21,6 +25,8 @@ Table 2-1. ESP-LAUNCHER Module Description
 Espressif
 
 
+
+## OCR Text
 
 2. ESP-LAUNCHER
 
@@ -148,6 +154,8 @@ Submit Documentation Feedback
 
 2024.10
 
+## Tables
+
 2. ESP-LAUNCHER
 Table 2-1. ESP-LAUNCHER Module Description
 a
@@ -202,5 +210,5 @@ Flash2 (2-1-11).
 Espressif Submit Documentation Feedback 2024.10
 
 
----Page 29 
+---
 

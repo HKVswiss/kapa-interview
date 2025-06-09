@@ -1,3 +1,7 @@
+# Page 32
+
+## Text from PDF
+
 EFM8BB3 Data Sheet
 Electrical Specifications
 
@@ -46,6 +50,8 @@ Electrical Specifications
 **silabs.com** | Building a more connected world. Rev. 1.5 | 32
 
 
+
+## OCR Text
 
 EFM8BB3 Data Sheet
 
@@ -307,6 +313,8 @@ silabs.com | Building a more connected world.
 
 Rev. 1.5 | 32
 
+## Tables
+
 EFM8BB3 Data Sheet
 Electrical Specifications
 4.1.14 Comparators
@@ -349,5 +357,5 @@ CPHYP = 11 16 mV
 silabs.com | Building a more connected world. Rev. 1.5 | 32
 
 
----Page 32 
+---
 

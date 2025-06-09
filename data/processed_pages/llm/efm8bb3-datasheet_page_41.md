@@ -9,21 +9,29 @@ For more information on debug connections, see the example schematics and inform
 ### Figure 5.2. Debug Connection Diagram
 
 ```
-External EFM8BB3 Device          Debug Adapter
-
 VDD
-
-C2CK x --- 1k ---+                +--- 1k --- C2CK (if pin sharing)
-                 |                |
-C2D  x --- 1k ---+--- System ---+--- 1k --- C2D  (if pin sharing)
-
-GND ox ------------------------- GND
+  |
+  | 1k
+  |----[ ]---- C2CK (RSTb) pin (if pin sharing)
+  |           |
+  |           | 1k
+  |           |
+External    System
+EFM8BB3     Circuitry
+Device
+  |           |
+  | 1k        | 1k
+  |----[ ]---- C2D (GPIO) pin (if pin sharing)
+  |
+ GND
+  |
+Debug Adapter
 ```
 
 
 ## 5.3 Other Connections
 
-Other components or connections may be required to meet the system-level requirements. Application Note AN203: "8-bit MCU Printed Circuit Board Design Notes" contains detailed information on these connections. Application Notes can be accessed on the Silicon Labs website ([http://www.silabs.com/8bit-appnotes](http://www.silabs.com/8bit-appnotes)).
+Other components or connections may be required to meet the system-level requirements. Application Note AN203: "8-bit MCU Printed Circuit Board Design Notes" contains detailed information on these connections. Application Notes can be accessed on the Silicon Labs website ([www.silabs.com/8bit-appnotes](http://www.silabs.com/8bit-appnotes)).
 
 ---
 *Page 42*

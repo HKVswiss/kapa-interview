@@ -1,3 +1,7 @@
+# Page 19
+
+## Text from PDF
+
 1. ESP8266EX
 
 Note:
@@ -43,6 +47,8 @@ Espressif
 *[Submit Documentation Feedback](https://www.espressif.com/en/company/documents/documentation_feedback?docId=2667&sections=&version=2.8)* 2024.10
 
 
+
+## OCR Text
 
 1. ESP8266EX
 
@@ -146,6 +152,8 @@ GND plane.
 
 Espressif
 
+## Tables
+
 1. ESP8266EX
 LU Note:
 Please refer to the design of ESP-WWROOM-S2 for further details.
@@ -187,5 +195,5 @@ GND plane.
 2024.10 Espressif
 
 
----Page 19 
+---
 

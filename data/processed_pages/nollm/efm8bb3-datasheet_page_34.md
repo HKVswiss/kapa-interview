@@ -1,3 +1,7 @@
+# Page 35
+
+## Text from PDF
+
 EFM8BB3 Data Sheet
 Electrical Specifications
 
@@ -42,6 +46,8 @@ Electrical Specifications
 **silabs.com** | Building a more connected world. Rev. 1.5 | 35
 
 
+
+## OCR Text
 
 EFM8BB3 Data Sheet
 
@@ -267,6 +273,8 @@ silabs.com | Building a more connected world.
 
 Rev. 1.5 | 35
 
+## Tables
+
 EFM8BB3 Data Sheet
 Electrical Specifications
 4.1.17 SMBus
@@ -305,5 +313,5 @@ Clock High Period {HIGH 26 504 us
 silabs.com | Building a more connected world. Rev. 1.5 | 35
 
 
----Page 35 
+---
 

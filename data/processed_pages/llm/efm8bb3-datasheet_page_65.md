@@ -37,4 +37,5 @@ TTTTTT #
 
 ---
 
-*Page 66*
+*silabs.com | Building a more connected world.*  
+*Rev. 1.5 | Page 66*

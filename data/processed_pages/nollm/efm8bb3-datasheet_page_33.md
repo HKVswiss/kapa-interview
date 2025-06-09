@@ -1,3 +1,7 @@
+# Page 34
+
+## Text from PDF
+
 EFM8BB3 Data Sheet
 Electrical Specifications
 
@@ -47,6 +51,8 @@ Electrical Specifications
 **silabs.com** | Building a more connected world. Rev. 1.5 | 34
 
 
+
+## OCR Text
 
 EFM8BB3 Data Sheet
 
@@ -210,6 +216,8 @@ silabs.com | Building a more connected world.
 
 Rev. 1.5 | 34
 
+## Tables
+
 EFM8BB3 Data Sheet
 Electrical Specifications
 4.1.16 Port lO
@@ -249,5 +257,5 @@ P3.3
 silabs.com | Building a more connected world. Rev. 1.5 | 34
 
 
----Page 34 
+---
 

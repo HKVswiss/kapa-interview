@@ -1,3 +1,7 @@
+# Page 59
+
+## Text from PDF
+
 EFM8BB3 Data Sheet
 
 Pin Definitions
@@ -24,6 +28,8 @@ Pin Definitions
 **silabs.com** | Building a more connected world. Rev. 1.5 | 59
 
 
+
+## OCR Text
 
 EFM8BB3 Data Sheet
 
@@ -179,6 +185,8 @@ silabs.com | Building a more connected world.
 
 Rev. 1.5 | 59
 
+## Tables
+
 EFM8BB3 Data Sheet
 Pin Definitions
 Pin Pin Name Description Crossbar Capability Additional Digital Analog Functions
@@ -220,5 +228,5 @@ CLU3A.14
 silabs.com | Building a more connected world. Rev. 1.5 | 59
 
 
----Page 59 
+---
 

@@ -1,6 +1,8 @@
+# Page 11
+
+## Text from PDF
+
 1. ESP8266EX
-
-
 
 
 
@@ -48,30 +50,26 @@
 
 
 
+
 Figure 1-3. ESP8266EX Module Schematics
 
 The ESP8266EX schematics include seven aspects:
 
-  Power supply
+         Power supply
 
-  Power-on sequence and reset
+         Power-on sequence and reset
 
+         Flash
 
+         - Crystal osci ~~l~~ lator
 
-Flash
+         RF
 
-- Crystal osci ~~l~~ lator
-
-RF
-
-External resistor
-
-
+         External resistor
 
          UART
 
 1.4.1. Power Supply
-
 
 1.4.1.1. Digital Power Supply
 
@@ -87,6 +85,8 @@ Espressif
 *[Submit Documentation Feedback](https://www.espressif.com/en/company/documents/documentation_feedback?docId=2667&sections=&version=2.8)* 2024.10
 
 
+
+## OCR Text
 
 ESP8266EX
 
@@ -360,6 +360,8 @@ Submit Documentation Feedback
 
 Espressif
 
+## Tables
+
 ESP8266EX
 2 g 8
 ‘The values of C1 and C2 vary with th
@@ -432,5 +434,5 @@ digital power supply pins is 1.8 V ~ 3.3 V.
 Submit Documentation Feedback 2024.10 Espressif
 
 
----Page 11 
+---
 

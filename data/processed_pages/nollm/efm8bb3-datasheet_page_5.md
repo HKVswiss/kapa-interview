@@ -1,3 +1,7 @@
+# Page 6
+
+## Text from PDF
+
 # **Table of Contents**
 
 **1. Feature List .** **.** **.** **.** **.** **.** **.** **.** **.** **.** **.** **.** **.** **.** **.** **.** **.** **.** **.** **.** **.** **.** **.** **.** **.** **.** **.** **.** **.** **.** **.** **. 2**
@@ -74,6 +78,8 @@
 **silabs.com** | Building a more connected world. Rev. 1.5 | 6
 
 
+
+## OCR Text
 
 Table of Contents
 
@@ -285,6 +291,8 @@ a1
 
 Rev. 1.5] 6
 
+## Tables
+
 Table of Contents
 1. Feature List
 2. Ordering Information
@@ -336,5 +344,5 @@ Regulator
 1m | Building a more connected world Rev. 1.5] 6
 
 
----Page 6 
+---
 

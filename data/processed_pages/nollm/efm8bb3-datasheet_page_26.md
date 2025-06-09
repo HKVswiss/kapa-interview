@@ -1,3 +1,7 @@
+# Page 27
+
+## Text from PDF
+
 EFM8BB3 Data Sheet
 Electrical Specifications
 
@@ -44,6 +48,8 @@ Electrical Specifications
 **silabs.com** | Building a more connected world. Rev. 1.5 | 27
 
 
+
+## OCR Text
 
 EFM8BB3 Data Sheet
 
@@ -311,6 +317,8 @@ silabs.com | Building a more connected world.
 
 Rev. 1.5 | 27
 
+## Tables
+
 EFM8BB3 Data Sheet
 Electrical Specifications
 Parameter Symbol Test Condition Min Typ Max Unit
@@ -357,5 +365,5 @@ Spurious-Free Dynamic Range SFDR 12 Bit Mode 74 dB
 silabs.com | Building a more connected world. Rev. 1.5 | 27
 
 
----Page 27 
+---
 

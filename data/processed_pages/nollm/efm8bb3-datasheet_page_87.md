@@ -1,3 +1,7 @@
+# Page 88
+
+## Text from PDF
+
 EFM8BB3 Data Sheet
 
 Revision History
@@ -84,6 +88,8 @@ instead of before.
 **silabs.com** | Building a more connected world. Rev. 1.5 | 88
 
 
+
+## OCR Text
 
 EFM8BB3 Data Sheet
 
@@ -213,6 +219,8 @@ silabs.com | Building a more connected world.
 
 Rev. 1.5 | 88
 
+## Tables
+
 EFM8BB3 Data Sheet
 Revision History
 13.5 Revision 1.1
@@ -260,5 +268,5 @@ instead of before.
 silabs.com | Building a more connected world. Rev. 1.5 | 88
 
 
----Page 88 
+---
 

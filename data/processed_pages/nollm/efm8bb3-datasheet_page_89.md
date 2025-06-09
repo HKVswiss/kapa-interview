@@ -1,3 +1,7 @@
+# Page 90
+
+## Text from PDF
+
 **Disclaimer**
 
 Silicon Labs intends to provide customers with the latest, accurate, and in-depth documentation of all peripherals and modules available for system and software implementers using or intending to use the Silicon Labs products. Characterization data, available modules and peripherals, memory sizes and memory addresses refer to each
@@ -29,6 +33,8 @@ trademark of ARM Limited. Wi-Fi is a registered trademark of the Wi-Fi Alliance.
 ## **www.silabs.com**
 
 
+
+## OCR Text
 
 Simplicity Studio
 
@@ -114,6 +120,8 @@ SILICON LABS
 
 www.silabs.com
 
+## Tables
+
 Simplicity Studio
 One-click access to MCU and wireless
 tools, documentation, software,
@@ -161,5 +169,5 @@ USA
 SILICON LABS www.silabs.com
 
 
----Page 90 
+---
 

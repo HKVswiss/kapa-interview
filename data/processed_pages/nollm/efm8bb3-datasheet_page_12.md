@@ -1,3 +1,7 @@
+# Page 13
+
+## Text from PDF
+
 EFM8BB3 Data Sheet
 
 System Overview
@@ -79,6 +83,8 @@ The SMBus module includes the following features:
 **silabs.com** | Building a more connected world. Rev. 1.5 | 13
 
 
+
+## OCR Text
 
 EFM8BB3 Data Sheet
 
@@ -224,6 +230,8 @@ silabs.com | Building a more connected world.
 
 Rev. 1.5 | 13
 
+## Tables
+
 EFM8BB3 Data Sheet
 System Overview
 Universal Asynchronous Receiver/Transmitter (UART1)
@@ -272,5 +280,5 @@ The SMBus module includes the following features:
 silabs.com | Building a more connected world. Rev. 1.5 | 13
 
 
----Page 13 
+---
 

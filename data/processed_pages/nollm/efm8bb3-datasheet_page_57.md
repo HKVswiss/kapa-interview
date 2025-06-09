@@ -1,3 +1,7 @@
+# Page 58
+
+## Text from PDF
+
 **6.4 EFM8BB3x-QSOP24 Pin Definitions**
 
 P0.3
@@ -99,6 +103,8 @@ P1.7
 **silabs.com** | Building a more connected world. Rev. 1.5 | 58
 
 
+
+## OCR Text
 
 EFM8BB3 Data Sheet
 
@@ -260,6 +266,8 @@ Rev.
 
 | 58
 
+## Tables
+
 EFM8BB3 Data Sheet
 Pin Definitions
 6.4 EFM8BB3x-QSOP24 Pin Definitions
@@ -298,5 +306,5 @@ CLU3A.9
 sil com | Building a more connected world. Rev. | 58
 
 
----Page 58 
+---
 

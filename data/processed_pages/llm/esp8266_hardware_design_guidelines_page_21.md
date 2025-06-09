@@ -7,14 +7,14 @@
 ## Crystal Oscillator Design
 
 - The crystal oscillator should be placed as close to the XTAL pins as possible without making the traces too long.
-- The crystal cannot be placed too close to the chip to prevent interference; the recommended distance is 0.8 mm (see Figure 1-16).
+- The crystal cannot be placed too close to the chip to prevent interference; the recommended distance is 0.8 mm (see Figure 1-16 in the original document).
 - It is good practice to use via stitching around the clock trace to ensure low ground-plane impedance.
 - There should be no vias on the input and output traces; thus, the traces cannot cross layers.
 - Input and output traces should not be routed over one another, even on different layers.
 - Place the input and output bypass capacitors near the left or right side of the chip, not on the traces.
-- Avoid routing high-frequency digital signal lines under the crystal oscillator; ideally, no signal lines should be routed underneath.
+- Do not route high-frequency digital signal lines under the crystal oscillator; ideally, avoid routing any signal line underneath it.
 - A larger copper area on the top layer around the crystal oscillator is beneficial.
-- Do not place magnetic components nearby that may cause interference, such as power-switching converter components or unshielded inductors.
+- Avoid placing magnetic components nearby that may cause interference, such as power-switching converter components or unshielded inductors.
 
 ---
 

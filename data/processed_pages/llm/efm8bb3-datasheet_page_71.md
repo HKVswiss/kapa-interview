@@ -1,4 +1,6 @@
-# EFM8BB3 Data Sheet - QFP32 Package Specifications
+# EFM8BB3 Data Sheet
+
+## QFP32 Package Specifications
 
 | Dimension | Min       | Typ  | Max  |
 |-----------|-----------|------|------|
@@ -18,4 +20,4 @@
 
 ---
 
-*silabs.com | Building a more connected world. Rev. 1.5 | Page 72*
+*Page 72*

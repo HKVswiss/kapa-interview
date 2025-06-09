@@ -1,3 +1,7 @@
+# Page 31
+
+## Text from PDF
+
 2. ESP-LAUNCHER
 
 4. Remove R58 on the PCB and disconnect GPIO14 with the infrared transmitting tube;
@@ -93,6 +97,7 @@ switch of GPIO0 inwards to enable UART Download mode;
 
 
 
+
 Figure 2-2. ESP-LAUNCHER Interface
 
 26/32
@@ -104,6 +109,8 @@ Figure 2-2. ESP-LAUNCHER Interface
 Espressif
 
 
+
+## OCR Text
 
 2. ESP-LAUNCHER
 
@@ -391,6 +398,8 @@ Submit Documentation Feedback
 
 2024.10
 
+## Tables
+
 2. ESP-LAUNCHER
 Remove R68 on the PCB and disconnect GPIO14 with the infrared transmitting tube;
 Remove the pull-down resistor R29 of MTDO/IO15 (next to J11);
@@ -482,5 +491,5 @@ Figure 2-2. ESP-LAUNCHER Interface
 Espressif Submit Documentation Feedback 2024.10
 
 
----Page 31 
+---
 

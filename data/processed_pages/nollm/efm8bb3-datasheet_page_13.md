@@ -1,3 +1,7 @@
+# Page 14
+
+## Text from PDF
+
 EFM8BB3 Data Sheet
 
 System Overview
@@ -62,6 +66,8 @@ system event triggers.
 **silabs.com** | Building a more connected world. Rev. 1.5 | 14
 
 
+
+## OCR Text
 
 EFM8BB3 Data Sheet
 
@@ -155,6 +161,8 @@ silabs.com | Building a more connected world.
 
 Rev. 1.5 | 14
 
+## Tables
+
 EFM8BB3 Data Sheet
 System Overview
 12C Slave (IZCSLAVE0)
@@ -195,5 +203,5 @@ chronous operations
 silabs.com | Building a more connected world. Rev. 1.5 | 14
 
 
----Page 14 
+---
 

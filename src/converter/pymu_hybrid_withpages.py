@@ -11,6 +11,7 @@ from src.loader.types import LoadedPDF
 from src.converter.base import PDFtoMarkdown
 from src.agent.text_markdown_agent import TextToMarkdownAgent
 from pathlib import Path
+from typing import Optional
 
 
 class PymuConverter(PDFtoMarkdown):
@@ -18,7 +19,7 @@ class PymuConverter(PDFtoMarkdown):
         self,
         markup_dir,
         save_intermediate_pages=False,
-        use_llm_refinement=True,
+        use_llm_refinement="basic_pymu",  # Changed default to basic_pymu
         overwrite_md_files=False,
     ):
         super().__init__()
@@ -28,25 +29,54 @@ class PymuConverter(PDFtoMarkdown):
         self.use_llm_refinement = use_llm_refinement
         self.overwrite_md_files = overwrite_md_files
 
-        if not self.markup_dir:
-            os.makedirs(self.markup_dir, exist_ok=True)
-
-        self.text_markdown_agent = TextToMarkdownAgent()
-
-        if self.use_llm_refinement:
+        # Create mode-specific directories
+        if self.use_llm_refinement == "basic_pymu":
+            self.markup_dir = os.path.join(self.markup_dir, "basic_pymu")
+        elif self.use_llm_refinement == "llm_refinement":
             self.markup_dir = os.path.join(self.markup_dir, "llm")
-            Path(self.markup_dir).mkdir(parents=True, exist_ok=True)
-        else:
+        elif self.use_llm_refinement == "no_llm_refinement":
             self.markup_dir = os.path.join(self.markup_dir, "nollm")
-            Path(self.markup_dir).mkdir(parents=True, exist_ok=True)
+        else:
+            print(f"Warning: Undefined processing mode {use_llm_refinement}, falling back to basic_pymu")
+            self.use_llm_refinement = "basic_pymu"
+            self.markup_dir = os.path.join(self.markup_dir, "basic_pymu")
 
-    def convert(self, doc: LoadedPDF) -> str:
+        # Ensure directory exists
+        Path(self.markup_dir).mkdir(parents=True, exist_ok=True)
+
+        # Initialize text markdown agent if needed
+        self.text_markdown_agent = TextToMarkdownAgent() if use_llm_refinement == "llm_refinement" else None
+
+    def convert(self, doc: LoadedPDF) -> Optional[str]:
         """Main conversion method that processes a PDF document page by page."""
         try:
-            return self.process_pdf_by_pages(doc)
+            if self.use_llm_refinement == "basic_pymu":
+                # Use basic PyMuPDF conversion
+                return self._handle_basic_conversion(doc)
+            else:
+                # Use advanced processing with or without LLM refinement
+                return self.process_pdf_by_pages(doc)
         except Exception as e:
             print(f"Error processing PDF: {e}")
             return f"Error processing PDF: {e}"
+
+    def _handle_basic_conversion(self, doc: LoadedPDF) -> str:
+        """Handle basic PDF conversion using PyMuPDF."""
+        pdf = pymupdf.open(stream=doc.raw_bytes, filetype="pdf")
+        markdown = pymupdf4llm.to_markdown(pdf, page_chunks=False)
+        pdf.close()
+        # Check if markdown is empty or contains only whitespace
+        if not markdown or not markdown.strip():
+            return "No meaningful content found in PDF."
+    
+        # Save the converted markdown if requested
+        if self.save_intermediate_pages:
+            doc_name = Path(doc.name).stem
+            output_path = os.path.join(self.markup_dir, f"{doc_name}.md")
+            with open(output_path, "w") as f:
+                f.write(markdown)
+
+        return markdown
 
     def process_pdf_by_pages(self, doc: LoadedPDF) -> str:
         """Process each page of the PDF document using multiple methods."""
@@ -57,10 +87,8 @@ class PymuConverter(PDFtoMarkdown):
         all_pages_text = ""
 
         try:
-
             # Process each page
             for page_num in range(len(fitz_doc)):
-
                 page_file_path = os.path.join(
                     self.markup_dir, f"{doc_name}_page_{page_num}.md"
                 )
@@ -68,7 +96,6 @@ class PymuConverter(PDFtoMarkdown):
                     print(f"Skipping page {page_file_path} as it already exists.")
                     with open(page_file_path, "r") as page_file:
                         page_md = page_file.read()
-
                 else:
                     print(f"Processing page {page_file_path}.")
                     # Extract text using different methods
@@ -76,14 +103,12 @@ class PymuConverter(PDFtoMarkdown):
                         pymupdf_doc, fitz_doc, page_num
                     )
 
-                    if self.use_llm_refinement:
+                    # Apply LLM refinement if enabled
+                    if self.use_llm_refinement == "llm_refinement" and self.text_markdown_agent:
                         page_md = self.text_markdown_agent.text_to_markdown(page_md)
 
                     if self.save_intermediate_pages:
                         # Save page to file
-                        page_file_path = os.path.join(
-                            self.markup_dir, f"{doc_name}_page_{page_num}.md"
-                        )
                         with open(page_file_path, "w") as page_file:
                             page_file.write(page_md)
 

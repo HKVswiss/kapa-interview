@@ -27,9 +27,8 @@ st.set_page_config(page_title="Chat over PDFs", layout="wide")
 # ────────────────────────────────────────────────────────────────
 # Session-state defaults
 # ────────────────────────────────────────────────────────────────
-if "use_llm_refinement" not in st.session_state:
-    st.session_state.use_llm_refinement = False
-use_llm_refinement = st.session_state.use_llm_refinement
+if "processing_mode" not in st.session_state:
+    st.session_state.processing_mode = "basic_pymu"
 
 if "top_k" not in st.session_state:
     st.session_state.top_k = 5
@@ -37,27 +36,38 @@ if "top_k" not in st.session_state:
 if "mode" not in st.session_state:
     st.session_state.mode = "Browse"
 
+if "overwrite_files" not in st.session_state:
+    st.session_state.overwrite_files = False
+
+if "is_indexed" not in st.session_state:
+    st.session_state.is_indexed = False
+
 # Initialize agent first
 # Initialize or reinitialize agent based on settings
 should_reinit = (
     "agent" not in st.session_state
-    or st.session_state.agent.converter.use_llm_refinement != use_llm_refinement
+    or st.session_state.agent.converter.use_llm_refinement
+    != st.session_state.processing_mode
     or st.session_state.agent.top_k != st.session_state.top_k
 )
 
 if should_reinit:
+    # Pass the processing mode directly - it's already a string with the correct value
     st.session_state.agent = RAGAgent(
         loader=DirectoryPDFLoader(DATA_DIR),
         converter=PymuConverter(
             markup_dir,
             save_intermediate_pages=True,
-            use_llm_refinement=use_llm_refinement,
-            overwrite_md_files=False,
+            use_llm_refinement=st.session_state.processing_mode,
+            overwrite_md_files=st.session_state.overwrite_files,
         ),
         chunker=MarkdownSectionChunker(),
         store=InMemoryVectorStore(),
         top_k=st.session_state.top_k,
     )
+    # If we had an indexed state before, reindex with new settings
+    if "is_indexed" in st.session_state and st.session_state.is_indexed:
+        st.session_state.agent.index()
 
 agent = st.session_state.agent
 
@@ -78,20 +88,19 @@ with st.sidebar:
                 converter=PymuConverter(
                     markup_dir,
                     save_intermediate_pages=True,
-                    use_llm_refinement=use_llm_refinement,
-                    overwrite_md_files=False,
+                    use_llm_refinement=st.session_state.processing_mode,
+                    overwrite_md_files=st.session_state.overwrite_files,
                 ),
                 chunker=MarkdownSectionChunker(),
                 store=InMemoryVectorStore(),
                 top_k=st.session_state.top_k,
             )
-            st.session_state.mode = "Browse"
             st.rerun()
     else:
         if st.button("📄 Load & index PDFs", use_container_width=True):
             agent.index()
+            st.session_state.is_indexed = True
             st.session_state.index_msg = f"Indexed {len(agent.docs)} PDF(s)"
-            st.session_state.mode = "Browse"
             st.rerun()
 
     if not agent.docs:
@@ -107,6 +116,18 @@ with st.sidebar:
     # Settings section - Third row
     st.markdown("### Settings")
 
+    # Processing mode selection
+    st.session_state.processing_mode = st.radio(
+        "PDF Processing Mode",
+        options=["basic_pymu", "llm_refinement", "no_llm_refinement"],
+        format_func=lambda x: {
+            "basic_pymu": "Basic PyMu",
+            "llm_refinement": "With LLM Refinement",
+            "no_llm_refinement": "Without LLM Refinement",
+        }[x],
+        help="Select how PDFs should be processed and converted to markdown.",
+    )
+
     # top_k selection
     top_k = st.selectbox(
         "Number of chunks to retrieve",
@@ -116,11 +137,11 @@ with st.sidebar:
     )
     st.session_state.top_k = top_k
 
-    # LLM refinement checkbox
-    st.session_state.use_llm_refinement = st.checkbox(
-        "🤖 Use LLM Refinement",
-        value=st.session_state.use_llm_refinement,
-        help="If enabled, GPT-based cleanup will refine the converted Markdown from PDFs.",
+    # Overwrite files control
+    st.session_state.overwrite_files = st.checkbox(
+        "Overwrite existing files",
+        value=st.session_state.overwrite_files,
+        help="If checked, will overwrite existing processed files. If unchecked, will reuse existing files.",
     )
 
 # ────────────────────────────────────────────────────────────────

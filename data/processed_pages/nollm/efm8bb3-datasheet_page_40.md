@@ -1,3 +1,7 @@
+# Page 41
+
+## Text from PDF
+
 EFM8BB3 Data Sheet
 Typical Connection Diagrams
 
@@ -24,6 +28,8 @@ possible.
 **silabs.com** | Building a more connected world. Rev. 1.5 | 41
 
 
+
+## OCR Text
 
 EFM8BB3 Data Sheet
 
@@ -65,6 +71,8 @@ silabs.com | Building a more connected world.
 
 Rev. 1.5 | 41
 
+## Tables
+
 EFM8BB3 Data Sheet
 Typical Connection Diagrams
 5. Typical Connection Diagrams
@@ -85,5 +93,5 @@ Figure 5.1. Power Connection Diagram
 silabs.com | Building a more connected world. Rev. 1.5 | 41
 
 
----Page 41 
+---
 

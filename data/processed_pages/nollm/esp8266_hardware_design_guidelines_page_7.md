@@ -1,3 +1,7 @@
+# Page 8
+
+## Text from PDF
+
 1. ESP8266EX
 
 
@@ -19,6 +23,8 @@ Espressif
 *[Submit Documentation Feedback](https://www.espressif.com/en/company/documents/documentation_feedback?docId=2667&sections=&version=2.8)* 2024.10
 
 
+
+## OCR Text
 
 1. ESP8266EX
 
@@ -198,6 +204,8 @@ Submit Documentation Feedback
 
 2024.10
 
+## Tables
+
 1. ESP8266EX
 Items Parameters Categories
 Package size QFN32-pin (5 mm x 5 mm)
@@ -240,5 +248,5 @@ Table 1-2 lists the definitions and functions of each pin.
 Espressif Submit Documentation Feedback 2024.10
 
 
----Page 8 
+---
 

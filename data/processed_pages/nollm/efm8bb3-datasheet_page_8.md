@@ -1,3 +1,7 @@
+# Page 9
+
+## Text from PDF
+
 **3. System Overview**
 
 **3.1 Introduction**
@@ -67,6 +71,8 @@ Data Sheet. For more information on each module including register definitions, 
 **silabs.com** | Building a more connected world. Rev. 1.5 | 9
 
 
+
+## OCR Text
 
 EFM8BB3 Data Sheet
 
@@ -270,6 +276,8 @@ silabs.com | Building a more connected world.
 
 Rev. 1.5 | 9
 
+## Tables
+
 EFM8BB3 Data Sheet
 System Overview
 3. System Overview
@@ -323,5 +331,5 @@ mation on any errata, see the EFM8BB3 Errata.
 silabs.com | Building a more connected world. Rev. 1.5 | 9
 
 
----Page 9 
+---
 

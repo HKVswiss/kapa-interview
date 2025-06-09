@@ -1,3 +1,7 @@
+# Page 25
+
+## Text from PDF
+
 EFM8BB3 Data Sheet
 Electrical Specifications
 
@@ -31,6 +35,8 @@ Electrical Specifications
 **silabs.com** | Building a more connected world. Rev. 1.5 | 25
 
 
+
+## OCR Text
 
 EFM8BB3 Data Sheet
 
@@ -186,6 +192,8 @@ silabs.com | Building a more connected world.
 
 Rev. 1.5 | 25
 
+## Tables
+
 EFM8BB3 Data Sheet
 Electrical Specifications
 4.1.8 External Oscillator
@@ -212,5 +220,5 @@ XFCN = 111 1.6 3.2 MHz
 silabs.com | Building a more connected world. Rev. 1.5 | 25
 
 
----Page 25 
+---
 

@@ -1,3 +1,7 @@
+# Page 81
+
+## Text from PDF
+
 EFM8BB3 Data Sheet
 QFN24-AI Package Specifications
 
@@ -25,6 +29,8 @@ QFN24-AI Package Specifications
 **silabs.com** | Building a more connected world. Rev. 1.5 | 81
 
 
+
+## OCR Text
 
 EFM8BB3 Data Sheet
 
@@ -94,6 +100,8 @@ silabs.com | Building a more connected world.
 
 Rev. 1.5 | 81
 
+## Tables
+
 EFM8BB3 Data Sheet
 QFN24-Al Package Specifications
 11.2 PCB Land Pattern
@@ -123,5 +131,5 @@ Y2 2.55
 silabs.com | Building a more connected world. Rev. 1.5 | 81
 
 
----Page 81 
+---
 

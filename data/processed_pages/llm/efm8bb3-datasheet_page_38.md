@@ -2,9 +2,9 @@
 
 ---
 
-### SPI Slave Timing (CKPHA = 1)
+### Figure 4.5. SPI Slave Timing (CKPHA = 1)
 
-- SCK is shown for CKPOL = 0. SCK is the opposite polarity for CKPOL = 1.
+*Note: SCK is shown for CKPOL = 0. SCK is the opposite polarity for CKPOL = 1.*
 
 ---
 

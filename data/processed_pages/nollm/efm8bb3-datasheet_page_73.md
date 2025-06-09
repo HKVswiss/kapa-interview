@@ -1,3 +1,7 @@
+# Page 74
+
+## Text from PDF
+
 EFM8BB3 Data Sheet
 QFP32 Package Specifications
 
@@ -23,6 +27,8 @@ The package marking consists of:
 **silabs.com** | Building a more connected world. Rev. 1.5 | 74
 
 
+
+## OCR Text
 
 EFM8BB3 Data Sheet
 
@@ -66,6 +72,8 @@ silabs.com | Building a more connected world.
 
 Rev. 1.5 | 74
 
+## Tables
+
 EFM8BB3 Data Sheet
 QFP32 Package Specifications
 9.3 Package Marking
@@ -84,5 +92,5 @@ The package marking consists of:
 silabs.com | Building a more connected world. Rev. 1.5 | 74
 
 
----Page 74 
+---
 

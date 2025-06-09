@@ -1,3 +1,7 @@
+# Page 32
+
+## Text from PDF
+
 2.3.2. 5V Power Supply
 
 
@@ -43,6 +47,17 @@ Figure 2-3. ESP-LAUNCHER 5V Power Supply Schematics
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 ||Col2|
 |---|---|
 |||
@@ -50,17 +65,6 @@ Figure 2-3. ESP-LAUNCHER 5V Power Supply Schematics
 ||Col2|
 |---|---|
 |||
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -83,6 +87,8 @@ Figure 2-4. ESP-LAUNCHER Test Module Schematics
 *[Submit Documentation Feedback](https://www.espressif.com/en/company/documents/documentation_feedback?docId=2667&sections=&version=2.8)* 2024.10
 
 
+
+## OCR Text
 
 2. ESP-LAUNCHER
 
@@ -414,6 +420,8 @@ Submit Documentation Feedback
 
 Espressif
 
+## Tables
+
 2. ESP-LAUNCHER
 2.3.2. 5V Power Supply
 exrsv ext_sv
@@ -499,5 +507,5 @@ Figure 2-4. ESP-LAUNCHER Test Module Schematics
 Submit Documentation Feedback 2024.10 Espressif
 
 
----Page 32 
+---
 

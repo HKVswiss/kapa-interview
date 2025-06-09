@@ -1,12 +1,13 @@
-1. ESP8266EX
+# Page 17
 
-
-Figure 1-10c. UART Voltage-level Switch circuit
-
-
+## Text from PDF
 
 Espressif
 
+
+1. ESP8266EX
+
+Figure 1-10c. UART Voltage-level Switch circuit
 
 When using the AT fifirmware, please note that the UART GPIO is already confifigured (refer to
 *[Hardware Connection](https://docs.espressif.com/projects/esp-at/en/release-v2.2.0.0_esp8266/Get_Started/Hardware_connection.html)* ). It is recommended to use the default confifiguration.
@@ -15,6 +16,8 @@ When using the AT fifirmware, please note that the UART GPIO is already confifig
 *[Submit Documentation Feedback](https://www.espressif.com/en/company/documents/documentation_feedback?docId=2667&sections=&version=2.8)* 2024.10
 
 
+
+## OCR Text
 
 1. ESP8266EX
 
@@ -92,6 +95,8 @@ Submit Documentation Feedback
 
 2024.10
 
+## Tables
+
 1. ESP8266EX
 5v0 3v3 3v3
 Rt R2 R3
@@ -114,5 +119,5 @@ Hardware Connection). It is recommended to use the default configuration.
 Espressif Submit Documentation Feedback 2024.10
 
 
----Page 17 
+---
 

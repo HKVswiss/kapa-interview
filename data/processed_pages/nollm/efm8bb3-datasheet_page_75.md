@@ -1,3 +1,7 @@
+# Page 76
+
+## Text from PDF
+
 EFM8BB3 Data Sheet
 QFN24-GI Package Specifications
 
@@ -31,6 +35,8 @@ QFN24-GI Package Specifications
 **silabs.com** | Building a more connected world. Rev. 1.5 | 76
 
 
+
+## OCR Text
 
 EFM8BB3 Data Sheet
 
@@ -150,6 +156,8 @@ silabs.com | Building a more connected world.
 
 Rev. 1.5 | 76
 
+## Tables
+
 EFM8BB3 Data Sheet
 QFN24-GI Package Specifications
 Table 10.1. Package Dimensions
@@ -182,5 +190,5 @@ designation.
 silabs.com | Building a more connected world. Rev. 1.5 | 76
 
 
----Page 76 
+---
 

@@ -1,3 +1,7 @@
+# Page 79
+
+## Text from PDF
+
 EFM8BB3 Data Sheet
 QFN24-AI Package Specifications
 
@@ -30,6 +34,8 @@ QFN24-AI Package Specifications
 **silabs.com** | Building a more connected world. Rev. 1.5 | 79
 
 
+
+## OCR Text
 
 EFM8BB3 Data Sheet
 
@@ -165,6 +171,8 @@ silabs.com | Building a more connected world.
 
 Rev. 1.5 | 79
 
+## Tables
+
 EFM8BB3 Data Sheet
 QFN24-Al Package Specifications
 11. QFN24-Al Package Specifications
@@ -211,5 +219,5 @@ ddd 0.10
 silabs.com | Building a more connected world. Rev. 1.5 | 79
 
 
----Page 79 
+---
 

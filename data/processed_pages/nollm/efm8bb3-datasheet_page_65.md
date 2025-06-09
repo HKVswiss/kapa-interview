@@ -1,3 +1,7 @@
+# Page 66
+
+## Text from PDF
+
 EFM8BB3 Data Sheet
 QFN32-GI Package Specifications
 
@@ -26,6 +30,8 @@ The package marking consists of:
 **silabs.com** | Building a more connected world. Rev. 1.5 | 66
 
 
+
+## OCR Text
 
 EFM8BB3 Data Sheet
 
@@ -99,6 +105,8 @@ silabs.com | Building a more connected world.
 
 Rev. 1.5 | 66
 
+## Tables
+
 EFM8BB3 Data Sheet
 QFN32-GI Package Specifications
 mension Max
@@ -131,5 +139,5 @@ The package marking consists of:
 silabs.com | Building a more connected world. Rev. 1.5 | 66
 
 
----Page 66 
+---
 

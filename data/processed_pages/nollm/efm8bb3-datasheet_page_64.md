@@ -1,3 +1,7 @@
+# Page 65
+
+## Text from PDF
+
 EFM8BB3 Data Sheet
 QFN32-GI Package Specifications
 
@@ -22,6 +26,8 @@ QFN32-GI Package Specifications
 **silabs.com** | Building a more connected world. Rev. 1.5 | 65
 
 
+
+## OCR Text
 
 EFM8BB3 Data Sheet
 
@@ -103,6 +109,8 @@ e
 
 0.4
 
+## Tables
+
 EFM8BB3 Data Sheet
 QFN32-GI Package Specifications
 7.2 PCB Land Pattern
@@ -132,5 +140,5 @@ Y2 3.0
 e 0.4
 
 
----Page 65 
+---
 

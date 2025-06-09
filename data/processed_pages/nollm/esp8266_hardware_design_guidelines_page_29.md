@@ -1,3 +1,7 @@
+# Page 30
+
+## Text from PDF
+
 2. ESP-LAUNCHER
 
 
@@ -31,6 +35,8 @@ To use the SDIO/SPI interfaces on ESP-LAUNCHER, please follow the steps below:
 *[Submit Documentation Feedback](https://www.espressif.com/en/company/documents/documentation_feedback?docId=2667&sections=&version=2.8)* 2024.10
 
 
+
+## OCR Text
 
 2. ESP-LAUNCHER
 
@@ -138,6 +144,8 @@ Submit Documentation Feedback
 
 2024.10
 
+## Tables
+
 2. ESP-LAUNCHER
 a
 There are multiple modules that can be connected to the ESP-LAUNCHER for testing and
@@ -182,5 +190,5 @@ To use the SDIO/SPI interfaces on ESP-LAUNCHER, please follow the steps below:
 Espressif Submit Documentation Feedback 2024.10
 
 
----Page 30 
+---
 

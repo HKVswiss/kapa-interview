@@ -1,3 +1,7 @@
+# Page 19
+
+## Text from PDF
+
 EFM8BB3 Data Sheet
 Electrical Specifications
 
@@ -26,6 +30,8 @@ All electrical parameters in all tables are specified under the conditions liste
 **silabs.com** | Building a more connected world. Rev. 1.5 | 19
 
 
+
+## OCR Text
 
 EFM8BB3 Data Sheet
 
@@ -113,6 +119,8 @@ silabs.com | Building a more connected world.
 
 Rev. 1.5 | 19
 
+## Tables
+
 EFM8BB3 Data Sheet
 Electrical Specifications
 4. Electrical Specifications
@@ -134,5 +142,5 @@ Note:
 silabs.com | Building a more connected world. Rev. 1.5 | 19
 
 
----Page 19 
+---
 

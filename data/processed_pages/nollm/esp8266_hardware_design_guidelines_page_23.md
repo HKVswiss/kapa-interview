@@ -1,3 +1,7 @@
+# Page 24
+
+## Text from PDF
+
 1. ESP8266EX
 
 Figure 1-17. ESP8266EX RF Design
@@ -26,6 +30,8 @@ Espressif
 *[Submit Documentation Feedback](https://www.espressif.com/en/company/documents/documentation_feedback?docId=2667&sections=&version=2.8)* 2024.10
 
 
+
+## OCR Text
 
 1. ESP8266EX
 
@@ -99,6 +105,8 @@ and away from the CPU and DDR, the main high-frequency noise sources. The
 
 Espressif
 
+## Tables
+
 1. ESP8266EX
 af LiANTA
 3
@@ -130,5 +138,5 @@ and away from the CPU and DDR, the main high-frequency noise sources. The
 2024.10 Espressif
 
 
----Page 24 
+---
 

@@ -1,3 +1,7 @@
+# Page 15
+
+## Text from PDF
+
 EFM8BB3 Data Sheet
 
 System Overview
@@ -65,6 +69,8 @@ sources.
 **silabs.com** | Building a more connected world. Rev. 1.5 | 15
 
 
+
+## OCR Text
 
 EFM8BB3 Data Sheet
 
@@ -178,6 +184,8 @@ silabs.com | Building a more connected world.
 
 Rev. 1.5 | 15
 
+## Tables
+
 EFM8BB3 Data Sheet
 System Overview
 3.7 Analog
@@ -216,5 +224,5 @@ sources.
 silabs.com | Building a more connected world. Rev. 1.5 | 15
 
 
----Page 15 
+---
 

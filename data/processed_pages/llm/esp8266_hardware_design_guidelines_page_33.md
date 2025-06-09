@@ -9,7 +9,18 @@ Espressif provides two types of modules, the SMD module (ESP-WROOM-02) and the D
 - On-board PCB antenna gain: 2 dBi.
 - Functionality: Works as the SDIO/SPI slave with SPI speed up to 8 Mbps.
 
-**Figure 3-1. ESP-WROOM-S2 Module**
+### Figure 3-1. ESP-WROOM-S2 Module
+
+```
++-------+-------+-------+-------+-------+-------+-------+-------+
+| ANTI  | SYN   | eco   | sa    | €N    | GND   | (Gna) | YGRY  |
+| wee   | «     | ral   | ADC_IN| v3    | U2    | RST   | 1016  |
+| z     | 105   | 10    | TXD   | 10:   |       | RXD   | 100   |
+| ee    | os    | (ee 2 | Tui\rd2| 104   | we    | a8    | S00/MISO|
+| /109  | .?    | ie    | ee    | SCLK  | /c    | Ge    | U3    |
+| GND   | CMD/  | wos:  |       |       |       |       |       |
++-------+-------+-------+-------+-------+-------+-------+-------+
+```
 
 For details of ESP-WROOM-S2, please refer to the *ESP-WROOM-S2 Datasheet*.
 
@@ -20,4 +31,5 @@ For details of ESP-WROOM-S2, please refer to the *ESP-WROOM-S2 Datasheet*.
 - On-board PCB antenna gain: 2 dBi.
 
 ---
+
 *Page 34*

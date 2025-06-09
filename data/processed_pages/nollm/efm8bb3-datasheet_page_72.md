@@ -1,3 +1,7 @@
+# Page 73
+
+## Text from PDF
+
 EFM8BB3 Data Sheet
 QFP32 Package Specifications
 
@@ -21,6 +25,8 @@ QFP32 Package Specifications
 **silabs.com** | Building a more connected world. Rev. 1.5 | 73
 
 
+
+## OCR Text
 
 EFM8BB3 Data Sheet
 
@@ -112,6 +118,8 @@ silabs.com | Building a more connected world.
 
 Rev. 1.5 | 73
 
+## Tables
+
 EFM8BB3 Data Sheet
 QFP32 Package Specifications
 9.2 PCB Land Pattern
@@ -148,5 +156,5 @@ minimum, all the way around the pad.
 silabs.com | Building a more connected world. Rev. 1.5 | 73
 
 
----Page 73 
+---
 

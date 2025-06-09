@@ -15,7 +15,7 @@ Several counter/timers are included in the device: two are 16-bit counter/timers
 
 ### Timer 2, Timer 3, Timer 4, and Timer 5 Features:
 
-- Clock sources include SYSCLK, SYSCLK divided by 12, or the External Clock divided by 8.
+- Clock sources for all timers include SYSCLK, SYSCLK divided by 12, or the External Clock divided by 8.
 - LFOSC0 divided by 8 may be used to clock Timer 3 and Timer 4 in active or suspend/snooze power modes.
 - Timer 4 is a low-power wake source and can be chained together with Timer 3.
 - 16-bit auto-reload timer mode

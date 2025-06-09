@@ -1,4 +1,4 @@
-# EFM8BB3 Data Sheet - Electrical Specifications
+# EFM8BB3 Data Sheet
 
 ## 4.1.2 Power Consumption
 
@@ -19,8 +19,8 @@
 | Suspend Mode - Core halted and high frequency clocks stopped, Supply monitor off | I_DD | LFO Stopped | — | 120 | 300 | µA |
 | Snooze Mode - Core halted and high frequency clocks stopped. Regulator in low-power state, Supply monitor off | I_DD | LFO Running | — | 23 | 190 | µA |
 | Snooze Mode - Core halted and high frequency clocks stopped. Regulator in low-power state, Supply monitor off | I_DD | LFO Stopped | — | 19 | 186 | µA |
-| Stop Mode - Core halted and all clocks stopped, Internal LDO On, Supply monitor off | I_DD |  | — | 120 | 300 | µA |
-| Shutdown Mode - Core halted and all clocks stopped, Internal LDO Off, Supply monitor off | I_DD |  | — | 0.2 | 0.91 | µA |
+| Stop Mode - Core halted and all clocks stopped, Internal LDO On, Supply monitor off | I_DD | — | — | 120 | 300 | µA |
+| Shutdown Mode - Core halted and all clocks stopped, Internal LDO Off, Supply monitor off | I_DD | — | — | 0.2 | 0.91 | µA |
 
 | **Digital Core Supply Current (I-grade or A-grade devices, -40 °C to +125 °C)** | | | | | | |
 | Normal Mode - Full speed with code executing from flash | I_DD | F = 49 MHz (HFOSC1) SYSCLK | — | 5 | 14.4 | mA |
@@ -35,4 +35,5 @@
 | Suspend Mode - Core halted and high frequency clocks stopped, Supply monitor off | I_DD | LFO Stopped | — | 120 | 755 | µA |
 
 ---
+
 *Page 20*

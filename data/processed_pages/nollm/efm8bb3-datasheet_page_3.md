@@ -1,3 +1,7 @@
+# Page 4
+
+## Text from PDF
+
 EFM8BB3 Data Sheet
 Ordering Information
 
@@ -39,6 +43,8 @@ Ordering Information
 **silabs.com** | Building a more connected world. Rev. 1.5 | 4
 
 
+
+## OCR Text
 
 EFM8BB3 Data Sheet
 
@@ -548,6 +554,8 @@ silabs.com | Building a more connected world.
 
 Rev. 1.5 | 4
 
+## Tables
+
 EFM8BB3 Data Sheet
 Ordering Information
 Package
@@ -635,5 +643,5 @@ Yes QFN32-Al
 silabs.com | Building a more connected world. Rev. 1.5 | 4
 
 
----Page 4 
+---
 

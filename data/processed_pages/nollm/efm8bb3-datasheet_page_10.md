@@ -1,3 +1,7 @@
+# Page 11
+
+## Text from PDF
+
 EFM8BB3 Data Sheet
 
 System Overview
@@ -58,6 +62,8 @@ associated I/O line (CEXn) which is routed through the crossbar to port I/O when
 **silabs.com** | Building a more connected world. Rev. 1.5 | 11
 
 
+
+## OCR Text
 
 EFM8BB3 Data Sheet
 
@@ -145,6 +151,8 @@ silabs.com | Building a more connected world.
 
 Rev. 1.5 | 11
 
+## Tables
+
 EFM8BB3 Data Sheet
 System Overview
 3.4 Clocking
@@ -180,5 +188,5 @@ associated I/O line (CEXn) which is routed through the crossbar to port I/O when
 silabs.com | Building a more connected world. Rev. 1.5 | 11
 
 
----Page 11 
+---
 

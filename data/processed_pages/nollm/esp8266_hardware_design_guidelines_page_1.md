@@ -1,3 +1,7 @@
+# Page 2
+
+## Text from PDF
+
 # A bout Thi s Gu i de
 
 This document provides product information of ESP8266EX series, including ESP8266EX
@@ -74,6 +78,8 @@ Updated the Figure 1-3 and Figure 1-8;
 Added description in Section 1.4.7 about UART GPIO confifiguration.
 
 
+
+## OCR Text
 
 About This Guide
 
@@ -191,6 +197,8 @@ Updated the Figure 1-3 and Figure 1-8;
 
 Added description in Section 1.4.7 about UART GPIO configuration.
 
+## Tables
+
 About This Guide
 This document provides product information of ESP8266EX series, including ESP8266EX
 chip, ESP-LAUNCHER development board and ESP8266EX modules.
@@ -227,5 +235,5 @@ Updated the title page and disclaimer page;
 Added description in Section 1.4.7 about UART GPIO configuration.
 
 
----Page 2 
+---
 

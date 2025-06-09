@@ -1,11 +1,12 @@
 # EFM8BB3 Data Sheet
+
 ## 7. QFN32-GI Package Specifications
 
 ### 7.1 Package Dimensions
 
 #### Figure 7.1. Package Drawing
 
-*Note: The package drawing image is referenced here.*
+*Note: The figure shows the top and bottom views of the QFN32-GI package with pin numbering and seating plane details.*
 
 #### Table 7.1. Package Dimensions
 

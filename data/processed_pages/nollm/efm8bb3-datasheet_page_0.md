@@ -1,3 +1,7 @@
+# Page 1
+
+## Text from PDF
+
 # **EFM8 Busy Bee Family** **EFM8BB3 Data Sheet**
 
 The EFM8BB3, part of the Busy Bee family of MCUs, is a performance line of 8-bit microcontrollers with a comprehensive analog and digital feature set in small packages.
@@ -84,6 +88,8 @@ accurate to ±2%
 **silabs.com** | Building a more connected world. **Copyright © 2024 by Silicon Laboratories** Rev. 1.5
 
 
+
+## OCR Text
 
 SILICON LABS
 
@@ -315,6 +321,8 @@ Copyright © 2024 by Silicon Laboratories
 
 Rev. 1.5
 
+## Tables
+
 SILICON LABS
 EFM8 Busy Bee Family
 EFM8BB3 Data Sheet A)
@@ -355,5 +363,5 @@ Normal Bi ise BB suspena BB snooze Bi shutdown
 silabs.com | Building a more connected world. Copyright © 2024 by Silicon Laboratories Rev. 1.5
 
 
----Page 1 
+---
 

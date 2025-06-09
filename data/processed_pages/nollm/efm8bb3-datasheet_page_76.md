@@ -1,3 +1,7 @@
+# Page 77
+
+## Text from PDF
+
 **10.2 PCB Land Pattern**
 
 
@@ -37,6 +41,8 @@ QFN24-GI Package Specifications
 **silabs.com** | Building a more connected world. Rev. 1.5 | 77
 
 
+
+## OCR Text
 
 EFM8BB3 Data Sheet
 
@@ -114,6 +120,8 @@ silabs.com | Building a more connected world.
 
 Rev. 1.5 | 77
 
+## Tables
+
 EFM8BB3 Data Sheet
 QFN24-GI Package Specifications
 10.2 PCB Land Pattern
@@ -144,5 +152,5 @@ Y3 0.4
 silabs.com | Building a more connected world. Rev. 1.5 | 77
 
 
----Page 77 
+---
 

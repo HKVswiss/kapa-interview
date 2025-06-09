@@ -1,3 +1,7 @@
+# Page 1
+
+## Text from PDF
+
 # ESP8266
 
 
@@ -7,6 +11,8 @@ Hardware Design Guidelines
 www.espressif.com
 
 
+
+## OCR Text
 
 ESP8266
 
@@ -20,6 +26,8 @@ L
 
 www.espressif.com
 
+## Tables
+
 ESP8266
 Hardware Design Guidelines
 version 2.8
@@ -29,5 +37,5 @@ L
 www.espressif.com
 
 
----Page 1 
+---
 

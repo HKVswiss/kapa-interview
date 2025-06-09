@@ -19,7 +19,7 @@ The EFM8BB3 device family are fully integrated, mixed-signal system-on-a-chip MC
 - Power-on reset circuit and brownout detectors
 
 ### I/O
-- Up to 29 total multifunction I/O pins:
+- Up to 29 total multifunction I/O pins
   - Up to 25 pins 5 V tolerant under bias
   - Selectable state retention through reset events
   - Flexible peripheral crossbar for peripheral routing

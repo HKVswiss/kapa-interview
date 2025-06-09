@@ -6,26 +6,31 @@
 
 **Figure 6.1. EFM8BB3x-QFN32 (QFN32-GI) and EFM8BB3x-5QFN32 (QFN32-AI) Pinout (Top View)**
 
-| Pin Number | Pin Name     |
-|------------|--------------|
-| 24         | P1.1 / P0.0  |
-| 23         | VIO          |
-| 22         | P1.2         |
-| 21         | VDD          |
-| 20         | P1.3         |
-| 19         | RSTb / C2CK  |
-| 18         | P1.4         |
-| 17         | P3.7 / C2D   |
-| 16         | P3.4         |
-| 15         | P3.3         |
-| 14         | P3.2         |
-| 13         | P1.5         |
-| 12         | P1.6         |
-| 11         | P1.7         |
-| 10         | P2.0         |
-| 9          | GND          |
+```
+Pin Number | Pin Name
+-----------|----------
+24         | P1.1
+23         | P1.2
+22         | P1.3
+20         | P1.5
+           | P1.4 (implied between 1.3 and 1.5)
+           | P1.6
+           | P1.7
+           | P2.0
+           | P0.0
+           | VIO
+           | VDD
+           | RSTb / C2CK
+           | P3.7 / C2D
+           | P3.4
+           | P3.3
+           | P3.2
+           | GND
+```
 
-*Note: Pin numbers and assignments are based on the QFN32 package top view.*
+*Note: The exact pin numbering for some pins is not fully clear from the source, but the above represents the main pins shown in the pinout figure.*
 
 ---
-*Page 43*
+
+*silabs.com | Building a more connected world.*  
+*Rev. 1.5 | Page 43*

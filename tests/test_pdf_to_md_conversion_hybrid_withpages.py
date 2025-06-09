@@ -20,7 +20,7 @@ class TestPDFToMarkdownConversion(unittest.TestCase):
         self.converter = PymuConverter(
             markup_dir,
             save_intermediate_pages=True,
-            use_llm_refinement=True,
+            use_llm_refinement="llm_refinement",  # Changed from True to "llm_refinement"
             overwrite_md_files=False,
         )
 

@@ -10,7 +10,7 @@ The clock control system offers the following features:
 - 24.5 MHz internal oscillator (HFOSC0), accurate to ±2% over supply and temperature corners.
 - 49 MHz internal oscillator (HFOSC1), accurate to ±2% over supply and temperature corners.
 - 80 kHz low-frequency oscillator (LFOSC0).
-- External RC, and CMOS clock options (EXTCLK and EXTOSC).
+- External RC and CMOS clock options (EXTCLK and EXTOSC).
 - Clock divider with eight settings for flexible clock scaling:
   - Divide the selected clock source by 1, 2, 4, 8, 16, 32, 64, or 128.
 - HFOSC0 and HFOSC1 include 1.5x pre-scalers for further flexibility.
@@ -28,13 +28,14 @@ Features:
 - 16-bit time base
 - Programmable clock divisor and clock source selection
 - Up to six independently-configurable channels
-- 8, 9, 10, 11 and 16-bit PWM modes (center or edge-aligned operation)
+- 8, 9, 10, 11, and 16-bit PWM modes (center or edge-aligned operation)
 - Output polarity control
 - Frequency output mode
-- Capture on rising, falling or any edge
+- Capture on rising, falling, or any edge
 - Compare function for arbitrary waveform generation
 - Software timer (internal compare) mode
 - Can accept hardware “kill” signal from comparator 0 or comparator 1
 
 ---
+
 *Page 11*

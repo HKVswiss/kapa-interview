@@ -1,3 +1,7 @@
+# Page 23
+
+## Text from PDF
+
 1. ESP8266EX
 
 Figure 1-16. ESP8266EX Crystal Oscillators
@@ -36,6 +40,8 @@ Espressif
 *[Submit Documentation Feedback](https://www.espressif.com/en/company/documents/documentation_feedback?docId=2667&sections=&version=2.8)* 2024.10
 
 
+
+## OCR Text
 
 1. ESP8266EX
 
@@ -93,6 +99,8 @@ tation Feedback
 
 Espressif
 
+## Tables
+
 1. ESP8266EX
 z
 2
@@ -120,5 +128,5 @@ copper.
 Submit Docum: tation Feedback 2024.10 Espressif
 
 
----Page 23 
+---
 

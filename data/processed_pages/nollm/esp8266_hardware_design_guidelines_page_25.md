@@ -1,3 +1,7 @@
+# Page 26
+
+## Text from PDF
+
 1. ESP8266EX
 
 This problem is caused by improper layout and can be solved by re-layout. See Section 1.5
@@ -65,6 +69,8 @@ Espressif
 *[Submit Documentation Feedback](https://www.espressif.com/en/company/documents/documentation_feedback?docId=2667&sections=&version=2.8)* 2024.10
 
 
+
+## OCR Text
 
 1. ESP8266EX
 
@@ -154,6 +160,8 @@ Submit Documentation Feedback
 
 Espressif
 
+## Tables
+
 1. ESP8266EX
 This problem is caused by improper layout and can be solved by re-layout. See Section 1.5
 for details.
@@ -191,5 +199,5 @@ ESP8266EX can be used for developing sensor products by using the I2C interface.
 Submit Documentation Feedback 2024.10 Espressif
 
 
----Page 26 
+---
 

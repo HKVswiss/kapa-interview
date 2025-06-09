@@ -1,3 +1,7 @@
+# Page 6
+
+## Text from PDF
+
 1. ESP8266EX
 # 1. E S P 8 2 66 EX
 
@@ -48,6 +52,8 @@ Espressif
 *[Submit Documentation Feedback](https://www.espressif.com/en/company/documents/documentation_feedback?docId=2667&sections=&version=2.8)* 2024.10
 
 
+
+## OCR Text
 
 1. ESP8266EX
 
@@ -127,6 +133,8 @@ Submit Documentation Feedback
 
 Espressif
 
+## Tables
+
 1. ESP8266EX
 1. ESP8266EX
 1.1. Overview
@@ -159,5 +167,5 @@ Figure 1-1 shows the functional blocks of ESP8266EX.
 Submit Documentation Feedback 2024.10 Espressif
 
 
----Page 6 
+---
 

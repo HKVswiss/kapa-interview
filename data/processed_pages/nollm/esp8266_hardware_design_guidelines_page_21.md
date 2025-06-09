@@ -1,3 +1,7 @@
+# Page 22
+
+## Text from PDF
+
 1. ESP8266EX
 
 The center ground pad at the bottom of the chip should be connected to ground plane
@@ -36,6 +40,8 @@ Espressif
 *[Submit Documentation Feedback](https://www.espressif.com/en/company/documents/documentation_feedback?docId=2667&sections=&version=2.8)* 2024.10
 
 
+
+## OCR Text
 
 1. ESP8266EX
 
@@ -137,6 +143,8 @@ components or unshielded inductors.
 
 Espressif
 
+## Tables
+
 1. ESP8266EX
 The center ground pad at the bottom of the chip should be connected to ground plane
 through at least 9 ground vias.
@@ -184,5 +192,5 @@ components or unshielded inductors.
 2024.10 Espressif
 
 
----Page 22 
+---
 

@@ -1,3 +1,7 @@
+# Page 30
+
+## Text from PDF
+
 EFM8BB3 Data Sheet
 Electrical Specifications
 
@@ -33,6 +37,8 @@ Electrical Specifications
 **silabs.com** | Building a more connected world. Rev. 1.5 | 30
 
 
+
+## OCR Text
 
 EFM8BB3 Data Sheet
 
@@ -152,6 +158,8 @@ silabs.com | Building a more connected world.
 
 Rev. 1.5 | 30
 
+## Tables
+
 EFM8BB3 Data Sheet
 Electrical Specifications
 4.1.11 Temperature Sensor
@@ -174,5 +182,5 @@ Parameter Symbol Test Condition Min Typ Max Unit
 silabs.com | Building a more connected world. Rev. 1.5 | 30
 
 
----Page 30 
+---
 

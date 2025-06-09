@@ -1,3 +1,7 @@
+# Page 15
+
+## Text from PDF
+
 1.4.5. RF
 
 
@@ -56,6 +60,8 @@ For the applications that are sensitive to this feature, users can exchange the 
 *[Submit Documentation Feedback](https://www.espressif.com/en/company/documents/documentation_feedback?docId=2667&sections=&version=2.8)* 2024.10
 
 
+
+## OCR Text
 
 1. ESP8266EX
 
@@ -181,6 +187,8 @@ Submit Documentation Feedback
 
 Espressif
 
+## Tables
+
 1. ESP8266EX
 1.4.5. RF
 The impedance of the ESP8266 PA output end is 39 + j6 O, so the matched impedance is
@@ -225,5 +233,5 @@ For the applications that are sensitive to this feature, users can exchange the 
 Submit Documentation Feedback 2024.10 Espressif
 
 
----Page 15 
+---
 

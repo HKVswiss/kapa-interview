@@ -8,7 +8,7 @@
 
 ### Table 9.2. PCB Land Pattern Dimensions
 
-| Dimension | Min  | Max  |
+| Dimension | Min   | Max   |
 |-----------|-------|-------|
 | C1        | 8.40  | 8.50  |
 | C2        | 8.40  | 8.50  |
@@ -17,6 +17,7 @@
 | Y1        | 1.5   | 1.5   |
 
 ### Notes:
+
 1. All dimensions shown are in millimeters (mm) unless otherwise noted.
 2. This Land Pattern Design is based on the IPC-7351 guidelines.
 3. All metal pads are to be non-solder mask defined (NSMD). Clearance between the solder mask and the metal pad is to be 60 µm minimum, all the way around the pad.

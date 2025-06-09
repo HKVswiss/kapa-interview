@@ -1,3 +1,7 @@
+# Page 18
+
+## Text from PDF
+
 EFM8BB3 Data Sheet
 
 System Overview
@@ -16,6 +20,8 @@ System Overview
 **silabs.com** | Building a more connected world. Rev. 1.5 | 18
 
 
+
+## OCR Text
 
 EFM8BB3 Data Sheet
 
@@ -43,6 +49,8 @@ silabs.com | Building a more connected world.
 
 Rev. 1.5 | 18
 
+## Tables
+
 EFM8BB3 Data Sheet
 System Overview
 Table 3.3. Summary of Pins for Bootload Mode Entry
@@ -54,5 +62,5 @@ silabs.com | Building a more connected world.
 Rev. 1.5 | 18
 
 
----Page 18 
+---
 

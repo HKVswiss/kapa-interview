@@ -1,10 +1,13 @@
 # 10.2 PCB Land Pattern
 
-## EFM8BB3 Data Sheet - QFN24-GI Package Specifications
+**EFM8BB3 Data Sheet**  
+**QFN24-GI Package Specifications**
+
+---
 
 ### Figure 10.2. PCB Land Pattern Drawing
 
-*Diagram illustrating the PCB land pattern with labeled dimensions: C1, C2, e, f, X1, X2, Y1, Y2, Y3.*
+*(Diagram not included in markdown)*
 
 ---
 
@@ -24,4 +27,5 @@
 
 ---
 
-*Source: silabs.com | Building a more connected world. Rev. 1.5 | Page 77*
+*silabs.com | Building a more connected world.*  
+*Rev. 1.5 | Page 77*

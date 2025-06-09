@@ -28,4 +28,5 @@ The package marking consists of:
 
 ---
 
-*Page 82*
+*silabs.com | Building a more connected world.*  
+*Rev. 1.5 | Page 82*

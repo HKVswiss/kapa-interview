@@ -1,3 +1,7 @@
+# Page 17
+
+## Text from PDF
+
 EFM8BB3 Data Sheet
 
 System Overview
@@ -39,7 +43,6 @@ can be found in *AN945: EFM8 Factory Bootloader User Guide* [. Application notes
 
 
 
-
 Bootloader Vector
 
 
@@ -61,6 +64,8 @@ Reset Vector
 **silabs.com** | Building a more connected world. Rev. 1.5 | 17
 
 
+
+## OCR Text
 
 EFM8BB3 Data Sheet
 
@@ -152,6 +157,8 @@ silabs.com | Building a more connected world.
 
 Rev. 1.5 | 17
 
+## Tables
+
 EFM8BB3 Data Sheet
 System Overview
 3.10 Bootloader
@@ -193,5 +200,5 @@ RX - P0.5
 silabs.com | Building a more connected world. Rev. 1.5 | 17
 
 
----Page 17 
+---
 

@@ -1,3 +1,7 @@
+# Page 23
+
+## Text from PDF
+
 EFM8BB3 Data Sheet
 Electrical Specifications
 
@@ -39,6 +43,8 @@ Electrical Specifications
 **silabs.com** | Building a more connected world. Rev. 1.5 | 23
 
 
+
+## OCR Text
 
 EFM8BB3 Data Sheet
 
@@ -188,6 +194,8 @@ silabs.com | Building a more connected world.
 
 Rev. 1.5 | 23
 
+## Tables
+
 EFM8BB3 Data Sheet
 Electrical Specifications
 4.1.4 Flash Memory
@@ -219,5 +227,5 @@ CLKDIV = 0x00
 silabs.com | Building a more connected world. Rev. 1.5 | 23
 
 
----Page 23 
+---
 

@@ -1,7 +1,7 @@
 # EFM8BB3 Data Sheet - Pin Definitions
 
-| Pin Number | Pin Name | Description       | Crossbar Capability | Additional Digital Functions                          | Analog Functions                  |
-|------------|----------|-------------------|---------------------|-----------------------------------------------------|---------------------------------|
+| Pin Number | Pin Name | Description       | Crossbar Capability | Additional Digital Functions                         | Analog Functions                  |
+|------------|----------|-------------------|---------------------|----------------------------------------------------|---------------------------------|
 | 25         | P1.0     | Multifunction I/O | Yes                 | P1MAT.0, CLU1OUT, CLU0A.12, CLU1A.10, CLU2A.10, CLU3B.12 | ADC0.6, CMP0P.6, CMP0N.6, CMP1P.1, CMP1N.1 |
 | 26         | P0.7     | Multifunction I/O | Yes                 | P0MAT.7, INT0.7, INT1.7, CLU0B.11, CLU1B.9, CLU3A.11 | ADC0.5, CMP0P.5, CMP0N.5, CMP1P.0, CMP1N.0 |
 | 27         | P0.6     | Multifunction I/O | Yes                 | P0MAT.6, CNVSTR, INT0.6, INT1.6, CLU0A.11, CLU1B.8, CLU3A.10 | ADC0.4, CMP0P.4, CMP0N.4         |

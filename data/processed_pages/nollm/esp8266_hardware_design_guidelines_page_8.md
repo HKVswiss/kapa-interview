@@ -1,3 +1,7 @@
+# Page 9
+
+## Text from PDF
+
 1. ESP8266EX
 
 
@@ -16,6 +20,8 @@ Espressif
 *[Submit Documentation Feedback](https://www.espressif.com/en/company/documents/documentation_feedback?docId=2667&sections=&version=2.8)* 2024.10
 
 
+
+## OCR Text
 
 1. ESP8266EX
 
@@ -199,6 +205,8 @@ Submit Documentation Feedback
 
 2024.10
 
+## Tables
+
 1. ESP8266EX
 Table 1-2. ESP8266EX Pin Definitions
 a
@@ -237,5 +245,5 @@ a1 SDIO_CLK vO Connects to SD_CLK (Series R: 200 ©); SPILCLK; GPIO 6
 Espressif Submit Documentation Feedback 2024.10
 
 
----Page 9 
+---
 

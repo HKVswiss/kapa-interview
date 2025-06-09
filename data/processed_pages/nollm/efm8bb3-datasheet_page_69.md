@@ -1,3 +1,7 @@
+# Page 70
+
+## Text from PDF
+
 EFM8BB3 Data Sheet
 QFN32-AI Package Specifications
 
@@ -26,6 +30,8 @@ The package marking consists of:
 **silabs.com** | Building a more connected world. Rev. 1.5 | 70
 
 
+
+## OCR Text
 
 EFM8BB3 Data Sheet
 
@@ -89,6 +95,8 @@ silabs.com | Building a more connected world.
 
 Rev. 1.5 | 70
 
+## Tables
+
 EFM8BB3 Data Sheet
 QFN32-Al Package Specifications
 mension mm
@@ -120,5 +128,5 @@ The package marking consists of:
 silabs.com | Building a more connected world. Rev. 1.5 | 70
 
 
----Page 70 
+---
 

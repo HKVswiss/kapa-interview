@@ -1,4 +1,10 @@
+# Page 1
+
+## Text from PDF
+
 None
+
+## OCR Text
 
 Bay Area Compliance
 
@@ -254,6 +260,8 @@ Date 0}
 
 11-19
 
+## Tables
+
 Bay Area Compliance Labs Corp.
 BAY AREA COMPLIANCE LABORATORIES CORP.
 CERTIFICATE OF COMPLIANCE
@@ -350,5 +358,5 @@ Deng
 Date: 2020.11.19 Sunnyvale, CA 94089, USA 11:28:44 -08'00" Date 0} 11-19
 
 
----Page 1 
+---
 

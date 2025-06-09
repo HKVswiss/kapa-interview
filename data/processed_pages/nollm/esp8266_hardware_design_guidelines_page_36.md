@@ -1,3 +1,7 @@
+# Page 37
+
+## Text from PDF
+
 Disclaimer and Copyright Notice
 
 Information in this document, including URL references, is subject to change without notice.
@@ -23,6 +27,8 @@ Copyright © 2024 Espressif Systems (Shanghai) Co., Ltd. All rights reserved.
 
 
 
+## OCR Text
+
 @) ESPRESSIF
 
 Disclaimer and Copyright Notice
@@ -53,6 +59,8 @@ Copyright © 2024 Espressif Systems (Shanghai) Co., Ltd. All rights reserved.
 
 www.espressif.com
 
+## Tables
+
 @) ESPRESSIF
 Disclaimer and Copyright Notice
 Information in this document, including URL references, is subject to change without notice.
@@ -70,5 +78,5 @@ Copyright © 2024 Espressif Systems (Shanghai) Co., Ltd. All rights reserved.
 www.espressif.com
 
 
----Page 37 
+---
 

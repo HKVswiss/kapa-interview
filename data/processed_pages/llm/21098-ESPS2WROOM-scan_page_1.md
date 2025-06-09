@@ -7,20 +7,18 @@
 ## Technical Parameters
 
 | Emission Designators | Frequency Range (MHz) | RF Power (Watt) | Emission Bandwidth (kHz) |
-|---------------------|-----------------------|-----------------|--------------------------|
-| 13M3G1D             | 2412 - 2462           | 0.170           | 13347                    |
-| 17M4D1D             | 2412 - 2462           | 0.316           | 17435                    |
-| 18M3D1D             | 2412 - 2462           | 0.265           | 18277                    |
-| 36M8D1D             | 2422 - 2452           | 0.193           | 36794                    |
+|---------------------|-----------------------|----------------|--------------------------|
+| 13M3G1D             | 2412 - 2462           | 0.170          | 13347                    |
+| 17M4D1D             | 2412 - 2462           | 0.316          | 17435                    |
+| 18M3D1D             | 2412 - 2462           | 0.265          | 18277                    |
+| 36M8D1D             | 2422 - 2452           | 0.193          | 36794                    |
 
 ## Antenna Information
 
 - ESP32-S2-WROOM: PCB Antenna, 3.4 dBi
 - ESP32-S2-WROOM-1: Dipole Antenna, 2.33 dBi
 
----
-
-**Certificate of Compliance**
+## Remarks and Comments
 
 This certificate has no validity if the Certification No. shown above is not listed in the REL.
 

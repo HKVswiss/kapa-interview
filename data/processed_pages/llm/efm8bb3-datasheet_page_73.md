@@ -1,6 +1,7 @@
-# EFM8BB3 Data Sheet - QFP32 Package Specifications
+# EFM8BB3 Data Sheet
+## QFP32 Package Specifications
 
-## 9.3 Package Marking
+### 9.3 Package Marking
 
 **Figure 9.3. Package Marking**
 
@@ -14,4 +15,4 @@ The package marking consists of:
 
 ---
 
-*silabs.com | Building a more connected world. Rev. 1.5 | Page 74*
+*Page 74*

@@ -1,3 +1,7 @@
+# Page 7
+
+## Text from PDF
+
 1. ESP8266EX
 
 
@@ -29,6 +33,8 @@ Table 1-1. ESP8266EX Specififications
 Espressif
 
 
+
+## OCR Text
 
 ESP8266EX
 
@@ -186,6 +192,8 @@ Submit Documentation Feedback
 
 2024.10
 
+## Tables
+
 ESP8266EX
 RE Analog MAC Interface
 receive receive UART
@@ -230,5 +238,5 @@ Storage temperature range -40 °C ~ 125°C
 Espressif Submit Documentation Feedback 2024.10
 
 
----Page 7 
+---
 

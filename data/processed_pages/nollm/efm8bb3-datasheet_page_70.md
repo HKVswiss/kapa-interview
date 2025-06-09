@@ -1,3 +1,7 @@
+# Page 71
+
+## Text from PDF
+
 EFM8BB3 Data Sheet
 QFP32 Package Specifications
 
@@ -26,6 +30,8 @@ QFP32 Package Specifications
 **silabs.com** | Building a more connected world. Rev. 1.5 | 71
 
 
+
+## OCR Text
 
 EFM8BB3 Data Sheet
 
@@ -157,6 +163,8 @@ silabs.com | Building a more connected world.
 
 Rev. 1.5 | 71
 
+## Tables
+
 EFM8BB3 Data Sheet
 QFP32 Package Specifications
 9. QFP32 Package Specifications
@@ -199,5 +207,5 @@ D1 7.00 BSC
 silabs.com | Building a more connected world. Rev. 1.5 | 71
 
 
----Page 71 
+---
 

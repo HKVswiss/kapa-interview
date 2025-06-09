@@ -1,8 +1,8 @@
 # EFM8BB3 Data Sheet - QFN24-GI Package Specifications
 
-| Dimension | Min (mm) | Max (mm) |
-|-----------|----------|----------|
-| c         | 0.25     | 0.35     |
+| Dimension | Min  | Max  |
+|-----------|------|------|
+| c         | 0.25 | 0.35 |
 
 ### Notes:
 1. All dimensions shown are in millimeters (mm) unless otherwise noted.
@@ -32,4 +32,5 @@ The package marking consists of:
 
 ---
 
-*silabs.com | Building a more connected world. Rev. 1.5 | Page 78*
+*silabs.com | Building a more connected world.*  
+*Rev. 1.5 | Page 78*

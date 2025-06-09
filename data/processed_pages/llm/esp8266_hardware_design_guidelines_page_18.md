@@ -1,4 +1,4 @@
-# ESP8266EX
+# 1. ESP8266EX
 
 **Note:**
 
@@ -16,8 +16,6 @@ This chapter introduces the ESP8266EX PCB layout design by using the ESP8266EX a
 
 ### Figure 1-12. ESP8266EX PCB Layout
 
-*(Figure not included in this text)*
-
 ### 1.6.1. General Principles of PCB Layout Design
 
 The PCB has four layers:
@@ -26,5 +24,4 @@ The PCB has four layers:
 - The second layer is the GND layer, where no signal lines are laid to ensure a complete GND plane.
 
 ---
-
 *Page 19*

@@ -4,7 +4,7 @@
 
 ### Figure 11.2. PCB Land Pattern Drawing
 
-*(Figure not included in text)*
+*(Figure not included in this text version)*
 
 ### Table 11.2. PCB Land Pattern Dimensions
 

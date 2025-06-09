@@ -1,3 +1,7 @@
+# Page 21
+
+## Text from PDF
+
 EFM8BB3 Data Sheet
 Electrical Specifications
 
@@ -37,6 +41,8 @@ Electrical Specifications
 **silabs.com** | Building a more connected world. Rev. 1.5 | 21
 
 
+
+## OCR Text
 
 EFM8BB3 Data Sheet
 
@@ -280,6 +286,8 @@ silabs.com | Building a more connected world.
 
 Rev. 1.5 | 21
 
+## Tables
+
 EFM8BB3 Data Sheet
 Electrical Specifications
 Parameter Symbol Test Condition Min Typ Max Unit
@@ -323,5 +331,5 @@ Voltage Supply Monitor (VMONO) IvMon 15 20 pA
 silabs.com | Building a more connected world. Rev. 1.5 | 21
 
 
----Page 21 
+---
 

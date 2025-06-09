@@ -1,3 +1,7 @@
+# Page 37
+
+## Text from PDF
+
 EFM8BB3 Data Sheet
 Electrical Specifications
 
@@ -42,6 +46,8 @@ MOSI
 **silabs.com** | Building a more connected world. Rev. 1.5 | 37
 
 
+
+## OCR Text
 
 EFM8BB3 Data Sheet
 
@@ -207,6 +213,8 @@ silabs.com | Building a more connected world.
 
 Rev. 1.5 | 37
 
+## Tables
+
 EFM8BB3 Data Sheet
 Electrical Specifications
 4.1.18 SPI
@@ -247,5 +255,5 @@ Figure 4.2. SPI Master Timing (CKPHA = 0)
 silabs.com | Building a more connected world. Rev. 1.5 | 37
 
 
----Page 37 
+---
 

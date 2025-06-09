@@ -1,3 +1,7 @@
+# Page 35
+
+## Text from PDF
+
 3. ESP8266EX Module
 
 Figure 3-2. ESP-WROOM-02 Module
@@ -24,6 +28,8 @@ Espressif
 *[Submit Documentation Feedback](https://www.espressif.com/en/company/documents/documentation_feedback?docId=2667&sections=&version=2.8)* 2024.10
 
 
+
+## OCR Text
 
 3. ESP8266EX Module
 
@@ -121,6 +127,8 @@ Submit Documentation Feedback
 
 Espressif
 
+## Tables
+
 3. ESP8266EX Module
 an
 ow
@@ -165,5 +173,5 @@ ESP-WROOM-02U integrates a U.FL connector and has no onboard antenna.
 Submit Documentation Feedback 2024.10 Espressif
 
 
----Page 35 
+---
 

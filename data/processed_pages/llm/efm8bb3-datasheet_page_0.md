@@ -26,24 +26,17 @@ These devices offer state-of-the-art performance by integrating a 12-bit ADC, in
 - Smart sensors
 - Automotive control
 
-## Additional Features
+## Block Diagram Overview
 
-- Core / Memory Clock Management
-- CIP-51 8051 Core
-- External High Frequency Oscillator 49 MHz RC
-- Internal LDO Regulator
-- Power-On Reset (50 MHz) Oscillator
-- Flash Program Memory (up to 4352 bytes)
-- RAM Memory (up to 64 KB)
-- Debug Interface with C2
-- Low Frequency 24.5 MHz RC Oscillator
-- Brown-Out Detector
-- Serial Interfaces: UART, SPI, I2C Slave, SMBus
-- External Timers, PCA/PWM, Watchdog Timer
-- Up to 4x Configurable Logic Units
-- Analog Interfaces: ADC, Comparators, Voltage DAC, Voltage Reference
-- Security features
-- Pin Reset and Pin Wakeup
+| Core / Memory | Clock Management | Energy Management |
+|---------------|------------------|-------------------|
+| CIP-51 8051 Core (50 MHz) | External High Frequency Oscillator 49 MHz RC | Internal LDO Regulator Power-On Reset |
+| Flash Program Memory (up to 64 KB) | Internal Low Frequency 24.5 MHz RC Oscillator | Brown-Out Detector with C2 |
+| RAM Memory (up to 4352 bytes) | Debug Interface | |
+
+| Serial Interfaces | I/O Ports | Timers and Triggers | Analog Interfaces | Security |
+|-------------------|-----------|-------------------|-------------------|----------|
+| 2x UART, SPI, PC/SMBus, I2C Slave | Up to 29 multifunction I/O pins with Pin Reset and Pin Wakeup | 6-channel PWM / PCA, Six 16-bit general-purpose timers, Timer 3/4, Watchdog Timer | One 12-bit/10-bit ADC, Two analog comparators, Up to four 12-bit DACs, Internal temperature sensor, Voltage Reference DAC | Interrupts |
 
 ## Power Modes with Peripheral Operation
 

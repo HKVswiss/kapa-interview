@@ -1,3 +1,7 @@
+# Page 33
+
+## Text from PDF
+
 EFM8BB3 Data Sheet
 Electrical Specifications
 
@@ -37,6 +41,8 @@ Electrical Specifications
 **silabs.com** | Building a more connected world. Rev. 1.5 | 33
 
 
+
+## OCR Text
 
 EFM8BB3 Data Sheet
 
@@ -204,6 +210,8 @@ silabs.com | Building a more connected world.
 
 Rev. 1.5 | 33
 
+## Tables
+
 EFM8BB3 Data Sheet
 Electrical Specifications
 Parameter Test Condition Min Max Uni Symbol Typ
@@ -230,5 +238,5 @@ Using an internal connection
 silabs.com | Building a more connected world. Rev. 1.5 | 33
 
 
----Page 33 
+---
 

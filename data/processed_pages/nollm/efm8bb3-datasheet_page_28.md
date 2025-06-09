@@ -1,3 +1,7 @@
+# Page 29
+
+## Text from PDF
+
 EFM8BB3 Data Sheet
 Electrical Specifications
 
@@ -50,6 +54,8 @@ Electrical Specifications
 **silabs.com** | Building a more connected world. Rev. 1.5 | 29
 
 
+
+## OCR Text
 
 EFM8BB3 Data Sheet
 
@@ -249,6 +255,8 @@ silabs.com | Building a more connected world.
 
 Rev. 1.5 | 29
 
+## Tables
+
 EFM8BB3 Data Sheet
 Electrical Specifications
 4.1.10 Voltage Reference
@@ -289,5 +297,5 @@ REF = 3.0 V
 silabs.com | Building a more connected world. Rev. 1.5 | 29
 
 
----Page 29 
+---
 

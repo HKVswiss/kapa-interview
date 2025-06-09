@@ -1,3 +1,7 @@
+# Page 18
+
+## Text from PDF
+
 1. ESP8266EX
 
 # 1.5. Slave SDIO/SPI
@@ -23,6 +27,8 @@ Figure 1-11. Schematics of ESP8266EX as a Slave SDIO
 *[Submit Documentation Feedback](https://www.espressif.com/en/company/documents/documentation_feedback?docId=2667&sections=&version=2.8)* 2024.10
 
 
+
+## OCR Text
 
 2024.10
 
@@ -284,6 +290,8 @@ Slave SDIO/SPI
 
 Espressif
 
+## Tables
+
 2024.10
 1. ESP8266EX
 oxo
@@ -419,5 +427,5 @@ Slave SDIO/SPI 1.5.
 Espressif
 
 
----Page 18 
+---
 

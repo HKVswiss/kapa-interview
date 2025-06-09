@@ -1,3 +1,7 @@
+# Page 10
+
+## Text from PDF
+
 1. ESP8266EX
 
 *Note:*
@@ -24,6 +28,8 @@ Espressif
 *[Submit Documentation Feedback](https://www.espressif.com/en/company/documents/documentation_feedback?docId=2667&sections=&version=2.8)* 2024.10
 
 
+
+## OCR Text
 
 1. ESP8266EX
 
@@ -123,6 +129,8 @@ Submit Documentation Feedback
 
 2024.10
 
+## Tables
+
 1. ESP8266EX
 AP
 24 GPIOS vO GPIO5
@@ -151,5 +159,5 @@ The complete circuit diagram of ESP8266EX is illustrated in Figure 1-3.
 Espressif Submit Documentation Feedback 2024.10
 
 
----Page 10 
+---
 

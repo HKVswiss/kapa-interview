@@ -1,3 +1,7 @@
+# Page 16
+
+## Text from PDF
+
 Espressif
 
 
@@ -26,6 +30,8 @@ See Figure 1-10c.
 *[Submit Documentation Feedback](https://www.espressif.com/en/company/documents/documentation_feedback?docId=2667&sections=&version=2.8)* 2024.10
 
 
+
+## OCR Text
 
 1. ESP8266EX
 
@@ -101,6 +107,8 @@ Submit Documentation Feedback
 
 Espressif
 
+## Tables
+
 1. ESP8266EX
 (GPIO15), UOCTS (GPIO13). After the exchange, GPIO15 and GPIO13 will be connected
 respectively to MCU_RXD and MCU_TXD as swapped UOTXD and UORXD for serial
@@ -130,5 +138,5 @@ See Figure 1-10c.
 Submit Documentation Feedback 2024.10 Espressif
 
 
----Page 16 
+---
 
